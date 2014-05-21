@@ -29,6 +29,8 @@ gem 'spring',        group: :development
 
 
   gem 'rails_layout', group: :development
+    gem 'rspec-rails', '~> 3.0.0.beta'
+
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
