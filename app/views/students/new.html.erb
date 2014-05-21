@@ -1,0 +1,11 @@
+<h1>Welcome to kids bootcamp </h1>
+<%= form_for @student do |student| %>
+<%= student.label :first_name %>
+<%= student.text_field :first_name %>
+<%= student.label :last_name %>
+<%= student.text_field :last_name %>
+<%= student.label :age %>
+<%= student.select :age, (10..101).to_a %>
+<%= student.submit %>
+
+<% end %>

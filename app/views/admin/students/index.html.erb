@@ -1,0 +1,29 @@
+<h1>Admin Panal</h1><br>
+<div class="row">
+
+	<span class="col">	<h3>First Name:</h3> </span>
+	<span class="col">	<h3>Last Name: </h3></span>
+	<span class="col">	<h3>Age: </h3></span>
+	<span class="col">	<h3>Skill Level:</h3> </span>
+	
+</div>
+<br>
+
+
+
+
+	<% @students.each do |student| %>
+	<div class="row">
+	<span class="col">	<%= student.first_name %> </span>
+	<span class="col">	<%= student.last_name %> </span>
+	<span class="col">	<%= student.age %> </span>
+	<span class="col">
+		<span class="level"><%= student.skill_level%>
+			</span> 
+				<a href="fasdf" class="increase" data-val= <%=student.id %> >Increase </a>
+				
+				
+	 </span>
+	</div>
+	<% end %>
+
