@@ -53,5 +53,9 @@ Rails.application.routes.draw do
   #     # (app/controllers/admin/products_controller.rb)
   #     resources :products
   #   end
+  resources :students, :only => [:create,:new]
+  namespace :admin do
+    resources :students, :only => [:show]
+  end
   root to: "students#index"
 end
