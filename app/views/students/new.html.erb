@@ -1,11 +1,18 @@
-<h1>Welcome to kids bootcamp </h1>
-<%= form_for @student do |student| %>
-<%= student.label :first_name %>
-<%= student.text_field :first_name %>
-<%= student.label :last_name %>
-<%= student.text_field :last_name %>
-<%= student.label :age %>
-<%= student.select :age, (10..101).to_a %>
-<%= student.submit %>
-
-<% end %>
+<body class="unique">
+<div class="small-6 large-centered columns">
+	<div class="main_signup">
+		<h3>Please create an account so we can better serve your child</h3>	
+		<%= form_for @student do |student| %>
+		<%= student.label :first_name %>
+		<%= student.text_field :first_name %>
+		<%= student.label :last_name %>
+		<%= student.text_field :last_name %>
+		<%= student.label :email, "Best Email to contact you at" %>
+		<%= student.email_field :email %>
+		<%= student.label :age %>
+		<%= student.select :age, (10..101).to_a %>
+		<%= student.submit %>
+		<% end %>
+	</div>
+</div>
+</div>
