@@ -1,14 +1,22 @@
 @import "foundation";
-
+@mixin usefont {
+	color:white;
+	font-size:6em;line-height: 1;
+	font-weight:bold;
+	text-align:center;
+}
+@mixin eachblock{
+	padding-top:4em;
+	padding-bottom:4em;
+}
 //META INPUTS
 @mixin border-radius($radius) {
   -webkit-border-radius: $radius;
      -moz-border-radius: $radius;
       -ms-border-radius: $radius;
           border-radius: $radius;
-}
-
- 
+};
+$main-color:#068fd5;
 $main-background-tabbed: #d3d9dc;
 $main-background-color: #f5f5f5;
 $box-color: #ffffff;
@@ -18,7 +26,9 @@ $dark-blue: #28384f;
 $blue-link: #295882;
 $blue-link-hover: #295882;
 $light-blue-link: #85c3dd;
-
+body{
+	margin:none;
+}
 .unique {
   background: url(llcgirl.jpg) no-repeat center center fixed; 
   -webkit-background-size: cover;
@@ -29,19 +39,39 @@ $light-blue-link: #85c3dd;
 
 main {
   background: transparent !important;
+  padding-left:0;
+  padding-right:0;
+  width: 100%;
+}
+.move{
+	margin-top:40px;
 }
 
-.main_signup {
-	@include border-radius(10px);
-	margin-top: 40px;
-	border-radius: 20px;
-	background: rgba(255,255,255, 0.9);
-	padding:.5em;
-	h1 {
-	font-weight:bold;
+.row.blue,.row.red,.row.white{
+	max-width: initial;
+	@include eachblock;
+	h1,h3,h2{
+	@include usefont;
 	}
+		h3{
+		font-size:2em;
+		}
 	label {
 	font-weight:bold;
 	}
-
 }
+.row.blue {
+	 background: rgba($main-color, 0.9);  
+}
+.row.white{
+	background: rgba(white, 0.9); 
+	height:300px;
+}
+.row.red {
+	 background: rgba(green, 0.9);  
+}
+.main_signup {
+	margin-top: 100px;
+	
+}
+.box{text-align: center}

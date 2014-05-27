@@ -10,7 +10,7 @@
 .top-bar .name a {
   font-weight: normal;
   color: white;
-  padding: 0 15px; }
+}
 
 // THESE ARE EXAMPLES YOU CAN MODIFY
 // create mixins using Foundation classes
@@ -38,6 +38,7 @@
   @extend .button;
   @extend .radius;
   }
+  
 // apply styles to HTML elements
 // to make views framework-neutral
 main {
