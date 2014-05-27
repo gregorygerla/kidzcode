@@ -9,6 +9,9 @@
 	padding-top:4em;
 	padding-bottom:4em;
 }
+@mixin ptag {
+	font-size:1.1em;
+}
 //META INPUTS
 @mixin border-radius($radius) {
   -webkit-border-radius: $radius;
@@ -56,22 +59,48 @@ main {
 		h3{
 		font-size:2em;
 		}
+		
 	label {
 	font-weight:bold;
 	}
 }
+img{
+	height:100px;
+}
 .row.blue {
 	 background: rgba($main-color, 0.9);  
+
 }
 .row.white{
 	background: rgba(white, 0.9); 
-	height:300px;
+	height:620px;
+	color:black;
+	h1,h2,h3{
+		color:black;
+	}
+	h1{ margin-bottom:1em;
+	}
+	h2,h3,p{
+	margin-top:20px;
+	}
+	p{
+	@include ptag;
+	}
+	
+}
+.image_box {
+	padding:20px;
+}
+.black_font{
+	color:black;
 }
 .row.red {
-	 background: rgba(green, 0.9);  
+	 background: rgba(green, 0.7);  
 }
 .main_signup {
 	margin-top: 100px;
 	
 }
-.box{text-align: center}
+.box{text-align: center;}
+.content{
+}
