@@ -57,6 +57,6 @@ Rails.application.routes.draw do
   namespace :admin do
     resources :students, :only => [:index,:show,:update]
   end
-  root :to => "students#new"
+  root :to => "home#index"
   
 end
