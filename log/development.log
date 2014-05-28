@@ -513,3 +513,2559 @@ Started GET "/assets/write12.svg" for 127.0.0.1 at 2014-05-28 00:11:31 -0500
 
 
 Started GET "/assets/pc6.svg" for 127.0.0.1 at 2014-05-28 00:11:31 -0500
+
+
+Started GET "/" for 127.0.0.1 at 2014-05-28 01:21:52 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (2.9ms)
+Completed 500 Internal Server Error in 28ms
+
+ActionView::Template::Error (wrong number of arguments (2 for 1)):
+    4:     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    5:     <title><%= content_for?(:title) ? yield(:title) : "Kidcode" %></title>
+    6:     <meta name="description" content="<%= content_for?(:description) ? yield(:description) : "Kidcode" %>">
+    7:     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
+    8:     <%# Modernizr is required for Zurb Foundation %>
+    9:     <%= javascript_include_tag 'vendor/modernizr' %>
+   10:     <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  app/views/layouts/application.html.erb:7:in `_app_views_layouts_application_html_erb__1099595975961256059_70276995048640'
+
+
+  Rendered /Users/gregorygerla/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered /Users/gregorygerla/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/gregorygerla/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (12.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-05-28 01:22:09 -0500
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.5ms)
+Completed 500 Internal Server Error in 3ms
+
+ActionView::Template::Error (wrong number of arguments (2 for 1)):
+    4:     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    5:     <title><%= content_for?(:title) ? yield(:title) : "Kidcode" %></title>
+    6:     <meta name="description" content="<%= content_for?(:description) ? yield(:description) : "Kidcode" %>">
+    7:     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
+    8:     <%# Modernizr is required for Zurb Foundation %>
+    9:     <%= javascript_include_tag 'vendor/modernizr' %>
+   10:     <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  app/views/layouts/application.html.erb:7:in `_app_views_layouts_application_html_erb__1099595975961256059_70276995048640'
+
+
+  Rendered /Users/gregorygerla/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.9ms)
+  Rendered /Users/gregorygerla/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/gregorygerla/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (9.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-05-28 01:22:21 -0500
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.5ms)
+Completed 500 Internal Server Error in 3ms
+
+ActionView::Template::Error (wrong number of arguments (2 for 1)):
+    4:     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    5:     <title><%= content_for?(:title) ? yield(:title) : "Kidcode" %></title>
+    6:     <meta name="description" content="<%= content_for?(:description) ? yield(:description) : "Kidcode" %>">
+    7:     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
+    8:     <%# Modernizr is required for Zurb Foundation %>
+    9:     <%= javascript_include_tag 'vendor/modernizr' %>
+   10:     <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  app/views/layouts/application.html.erb:7:in `_app_views_layouts_application_html_erb__1099595975961256059_70276995048640'
+
+
+  Rendered /Users/gregorygerla/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.9ms)
+  Rendered /Users/gregorygerla/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.6ms)
+  Rendered /Users/gregorygerla/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (8.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-05-28 01:23:10 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (1.7ms)
+Completed 500 Internal Server Error in 19ms
+
+ActionView::Template::Error (wrong number of arguments (2 for 1)):
+    4:     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    5:     <title><%= content_for?(:title) ? yield(:title) : "Kidcode" %></title>
+    6:     <meta name="description" content="<%= content_for?(:description) ? yield(:description) : "Kidcode" %>">
+    7:     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
+    8:     <%# Modernizr is required for Zurb Foundation %>
+    9:     <%= javascript_include_tag 'vendor/modernizr' %>
+   10:     <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  app/views/layouts/application.html.erb:7:in `_app_views_layouts_application_html_erb__3555655928636907922_70109308194040'
+
+
+  Rendered /Users/gregorygerla/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.9ms)
+  Rendered /Users/gregorygerla/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/gregorygerla/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (9.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-05-28 01:23:11 -0500
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.5ms)
+Completed 500 Internal Server Error in 3ms
+
+ActionView::Template::Error (wrong number of arguments (2 for 1)):
+    4:     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    5:     <title><%= content_for?(:title) ? yield(:title) : "Kidcode" %></title>
+    6:     <meta name="description" content="<%= content_for?(:description) ? yield(:description) : "Kidcode" %>">
+    7:     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
+    8:     <%# Modernizr is required for Zurb Foundation %>
+    9:     <%= javascript_include_tag 'vendor/modernizr' %>
+   10:     <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  app/views/layouts/application.html.erb:7:in `_app_views_layouts_application_html_erb__3555655928636907922_70109308194040'
+
+
+  Rendered /Users/gregorygerla/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.9ms)
+  Rendered /Users/gregorygerla/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /Users/gregorygerla/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (9.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-05-28 01:24:32 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (1.9ms)
+Completed 500 Internal Server Error in 19ms
+
+ActionView::Template::Error (wrong number of arguments (2 for 1)):
+    4:     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    5:     <title><%= content_for?(:title) ? yield(:title) : "Kidcode" %></title>
+    6:     <meta name="description" content="<%= content_for?(:description) ? yield(:description) : "Kidcode" %>">
+    7:     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
+    8:     <%# Modernizr is required for Zurb Foundation %>
+    9:     <%= javascript_include_tag 'vendor/modernizr' %>
+   10:     <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  app/views/layouts/application.html.erb:7:in `_app_views_layouts_application_html_erb___3638470560735694644_70246206678120'
+
+
+  Rendered /Users/gregorygerla/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered /Users/gregorygerla/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/gregorygerla/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (9.8ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.2ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+
+
+Started GET "/" for 127.0.0.1 at 2014-05-28 01:25:37 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (1.6ms)
+Completed 500 Internal Server Error in 19ms
+
+ActionView::Template::Error (wrong number of arguments (2 for 1)):
+    4:     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    5:     <title><%= content_for?(:title) ? yield(:title) : "Kidcode" %></title>
+    6:     <meta name="description" content="<%= content_for?(:description) ? yield(:description) : "Kidcode" %>">
+    7:     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
+    8:     <%# Modernizr is required for Zurb Foundation %>
+    9:     <%= javascript_include_tag 'vendor/modernizr' %>
+   10:     <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  app/views/layouts/application.html.erb:7:in `_app_views_layouts_application_html_erb___3762409606680401438_70214606824660'
+
+
+  Rendered /Users/gregorygerla/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.9ms)
+  Rendered /Users/gregorygerla/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /Users/gregorygerla/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (9.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-05-28 01:25:40 -0500
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.4ms)
+Completed 500 Internal Server Error in 3ms
+
+ActionView::Template::Error (wrong number of arguments (2 for 1)):
+    4:     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    5:     <title><%= content_for?(:title) ? yield(:title) : "Kidcode" %></title>
+    6:     <meta name="description" content="<%= content_for?(:description) ? yield(:description) : "Kidcode" %>">
+    7:     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
+    8:     <%# Modernizr is required for Zurb Foundation %>
+    9:     <%= javascript_include_tag 'vendor/modernizr' %>
+   10:     <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  app/views/layouts/application.html.erb:7:in `_app_views_layouts_application_html_erb___3762409606680401438_70214606824660'
+
+
+  Rendered /Users/gregorygerla/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.9ms)
+  Rendered /Users/gregorygerla/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/gregorygerla/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (9.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-05-28 01:26:06 -0500
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.4ms)
+Completed 500 Internal Server Error in 3ms
+
+ActionView::Template::Error (wrong number of arguments (2 for 1)):
+    4:     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    5:     <title><%= content_for?(:title) ? yield(:title) : "Kidcode" %></title>
+    6:     <meta name="description" content="<%= content_for?(:description) ? yield(:description) : "Kidcode" %>">
+    7:     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
+    8:     <%# Modernizr is required for Zurb Foundation %>
+    9:     <%= javascript_include_tag 'vendor/modernizr' %>
+   10:     <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  app/views/layouts/application.html.erb:7:in `_app_views_layouts_application_html_erb___3762409606680401438_70214606824660'
+
+
+  Rendered /Users/gregorygerla/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /Users/gregorygerla/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /Users/gregorygerla/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (9.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-05-28 01:26:15 -0500
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.4ms)
+Completed 500 Internal Server Error in 3ms
+
+ActionView::Template::Error (wrong number of arguments (2 for 1)):
+    4:     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    5:     <title><%= content_for?(:title) ? yield(:title) : "Kidcode" %></title>
+    6:     <meta name="description" content="<%= content_for?(:description) ? yield(:description) : "Kidcode" %>">
+    7:     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
+    8:     <%# Modernizr is required for Zurb Foundation %>
+    9:     <%= javascript_include_tag 'vendor/modernizr' %>
+   10:     <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  app/views/layouts/application.html.erb:7:in `_app_views_layouts_application_html_erb___3762409606680401438_70214606824660'
+
+
+  Rendered /Users/gregorygerla/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered /Users/gregorygerla/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.6ms)
+  Rendered /Users/gregorygerla/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (10.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-05-28 01:26:16 -0500
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.4ms)
+Completed 500 Internal Server Error in 3ms
+
+ActionView::Template::Error (wrong number of arguments (2 for 1)):
+    4:     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    5:     <title><%= content_for?(:title) ? yield(:title) : "Kidcode" %></title>
+    6:     <meta name="description" content="<%= content_for?(:description) ? yield(:description) : "Kidcode" %>">
+    7:     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
+    8:     <%# Modernizr is required for Zurb Foundation %>
+    9:     <%= javascript_include_tag 'vendor/modernizr' %>
+   10:     <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  app/views/layouts/application.html.erb:7:in `_app_views_layouts_application_html_erb___3762409606680401438_70214606824660'
+
+
+  Rendered /Users/gregorygerla/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.9ms)
+  Rendered /Users/gregorygerla/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/gregorygerla/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (9.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-05-28 01:26:17 -0500
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.4ms)
+Completed 500 Internal Server Error in 28ms
+
+ActionView::Template::Error (wrong number of arguments (2 for 1)):
+    4:     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    5:     <title><%= content_for?(:title) ? yield(:title) : "Kidcode" %></title>
+    6:     <meta name="description" content="<%= content_for?(:description) ? yield(:description) : "Kidcode" %>">
+    7:     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
+    8:     <%# Modernizr is required for Zurb Foundation %>
+    9:     <%= javascript_include_tag 'vendor/modernizr' %>
+   10:     <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  app/views/layouts/application.html.erb:7:in `_app_views_layouts_application_html_erb___3762409606680401438_70214606824660'
+
+
+  Rendered /Users/gregorygerla/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.9ms)
+  Rendered /Users/gregorygerla/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /Users/gregorygerla/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (8.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-05-28 01:28:24 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (1.7ms)
+Completed 500 Internal Server Error in 19ms
+
+ActionView::Template::Error (wrong number of arguments (2 for 1)):
+    4:     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    5:     <title><%= content_for?(:title) ? yield(:title) : "Kidcode" %></title>
+    6:     <meta name="description" content="<%= content_for?(:description) ? yield(:description) : "Kidcode" %>">
+    7:     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
+    8:     <%# Modernizr is required for Zurb Foundation %>
+    9:     <%= javascript_include_tag 'vendor/modernizr' %>
+   10:     <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  app/views/layouts/application.html.erb:7:in `_app_views_layouts_application_html_erb__3281903335055691063_70123615593600'
+
+
+  Rendered /Users/gregorygerla/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered /Users/gregorygerla/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/gregorygerla/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (9.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-05-28 01:28:27 -0500
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.4ms)
+Completed 500 Internal Server Error in 3ms
+
+ActionView::Template::Error (wrong number of arguments (2 for 1)):
+    4:     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    5:     <title><%= content_for?(:title) ? yield(:title) : "Kidcode" %></title>
+    6:     <meta name="description" content="<%= content_for?(:description) ? yield(:description) : "Kidcode" %>">
+    7:     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
+    8:     <%# Modernizr is required for Zurb Foundation %>
+    9:     <%= javascript_include_tag 'vendor/modernizr' %>
+   10:     <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  app/views/layouts/application.html.erb:7:in `_app_views_layouts_application_html_erb__3281903335055691063_70123615593600'
+
+
+  Rendered /Users/gregorygerla/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.9ms)
+  Rendered /Users/gregorygerla/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.6ms)
+  Rendered /Users/gregorygerla/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (8.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-05-28 01:28:27 -0500
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.5ms)
+Completed 500 Internal Server Error in 3ms
+
+ActionView::Template::Error (wrong number of arguments (2 for 1)):
+    4:     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    5:     <title><%= content_for?(:title) ? yield(:title) : "Kidcode" %></title>
+    6:     <meta name="description" content="<%= content_for?(:description) ? yield(:description) : "Kidcode" %>">
+    7:     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
+    8:     <%# Modernizr is required for Zurb Foundation %>
+    9:     <%= javascript_include_tag 'vendor/modernizr' %>
+   10:     <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  app/views/layouts/application.html.erb:7:in `_app_views_layouts_application_html_erb__3281903335055691063_70123615593600'
+
+
+  Rendered /Users/gregorygerla/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.9ms)
+  Rendered /Users/gregorygerla/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /Users/gregorygerla/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (9.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-05-28 01:28:27 -0500
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.4ms)
+Completed 500 Internal Server Error in 3ms
+
+ActionView::Template::Error (wrong number of arguments (2 for 1)):
+    4:     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    5:     <title><%= content_for?(:title) ? yield(:title) : "Kidcode" %></title>
+    6:     <meta name="description" content="<%= content_for?(:description) ? yield(:description) : "Kidcode" %>">
+    7:     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
+    8:     <%# Modernizr is required for Zurb Foundation %>
+    9:     <%= javascript_include_tag 'vendor/modernizr' %>
+   10:     <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  app/views/layouts/application.html.erb:7:in `_app_views_layouts_application_html_erb__3281903335055691063_70123615593600'
+
+
+  Rendered /Users/gregorygerla/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.9ms)
+  Rendered /Users/gregorygerla/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /Users/gregorygerla/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (8.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-05-28 01:28:28 -0500
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.4ms)
+Completed 500 Internal Server Error in 3ms
+
+ActionView::Template::Error (wrong number of arguments (2 for 1)):
+    4:     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    5:     <title><%= content_for?(:title) ? yield(:title) : "Kidcode" %></title>
+    6:     <meta name="description" content="<%= content_for?(:description) ? yield(:description) : "Kidcode" %>">
+    7:     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
+    8:     <%# Modernizr is required for Zurb Foundation %>
+    9:     <%= javascript_include_tag 'vendor/modernizr' %>
+   10:     <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  app/views/layouts/application.html.erb:7:in `_app_views_layouts_application_html_erb__3281903335055691063_70123615593600'
+
+
+  Rendered /Users/gregorygerla/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.9ms)
+  Rendered /Users/gregorygerla/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /Users/gregorygerla/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (9.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-05-28 01:28:28 -0500
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (24.7ms)
+Completed 500 Internal Server Error in 27ms
+
+ActionView::Template::Error (wrong number of arguments (2 for 1)):
+    4:     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    5:     <title><%= content_for?(:title) ? yield(:title) : "Kidcode" %></title>
+    6:     <meta name="description" content="<%= content_for?(:description) ? yield(:description) : "Kidcode" %>">
+    7:     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
+    8:     <%# Modernizr is required for Zurb Foundation %>
+    9:     <%= javascript_include_tag 'vendor/modernizr' %>
+   10:     <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  app/views/layouts/application.html.erb:7:in `_app_views_layouts_application_html_erb__3281903335055691063_70123615593600'
+
+
+  Rendered /Users/gregorygerla/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /Users/gregorygerla/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /Users/gregorygerla/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (9.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-05-28 01:28:28 -0500
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.5ms)
+Completed 500 Internal Server Error in 4ms
+
+ActionView::Template::Error (wrong number of arguments (2 for 1)):
+    4:     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    5:     <title><%= content_for?(:title) ? yield(:title) : "Kidcode" %></title>
+    6:     <meta name="description" content="<%= content_for?(:description) ? yield(:description) : "Kidcode" %>">
+    7:     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
+    8:     <%# Modernizr is required for Zurb Foundation %>
+    9:     <%= javascript_include_tag 'vendor/modernizr' %>
+   10:     <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  app/views/layouts/application.html.erb:7:in `_app_views_layouts_application_html_erb__3281903335055691063_70123615593600'
+
+
+  Rendered /Users/gregorygerla/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.9ms)
+  Rendered /Users/gregorygerla/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /Users/gregorygerla/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (8.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-05-28 01:28:29 -0500
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.4ms)
+Completed 500 Internal Server Error in 3ms
+
+ActionView::Template::Error (wrong number of arguments (2 for 1)):
+    4:     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    5:     <title><%= content_for?(:title) ? yield(:title) : "Kidcode" %></title>
+    6:     <meta name="description" content="<%= content_for?(:description) ? yield(:description) : "Kidcode" %>">
+    7:     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
+    8:     <%# Modernizr is required for Zurb Foundation %>
+    9:     <%= javascript_include_tag 'vendor/modernizr' %>
+   10:     <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  app/views/layouts/application.html.erb:7:in `_app_views_layouts_application_html_erb__3281903335055691063_70123615593600'
+
+
+  Rendered /Users/gregorygerla/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.9ms)
+  Rendered /Users/gregorygerla/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /Users/gregorygerla/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (9.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-05-28 01:28:29 -0500
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.4ms)
+Completed 500 Internal Server Error in 3ms
+
+ActionView::Template::Error (wrong number of arguments (2 for 1)):
+    4:     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    5:     <title><%= content_for?(:title) ? yield(:title) : "Kidcode" %></title>
+    6:     <meta name="description" content="<%= content_for?(:description) ? yield(:description) : "Kidcode" %>">
+    7:     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
+    8:     <%# Modernizr is required for Zurb Foundation %>
+    9:     <%= javascript_include_tag 'vendor/modernizr' %>
+   10:     <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  app/views/layouts/application.html.erb:7:in `_app_views_layouts_application_html_erb__3281903335055691063_70123615593600'
+
+
+  Rendered /Users/gregorygerla/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.9ms)
+  Rendered /Users/gregorygerla/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/gregorygerla/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (9.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-05-28 01:28:53 -0500
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.4ms)
+Completed 500 Internal Server Error in 3ms
+
+ActionView::Template::Error (wrong number of arguments (2 for 1)):
+    4:     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    5:     <title><%= content_for?(:title) ? yield(:title) : "Kidcode" %></title>
+    6:     <meta name="description" content="<%= content_for?(:description) ? yield(:description) : "Kidcode" %>">
+    7:     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
+    8:     <%# Modernizr is required for Zurb Foundation %>
+    9:     <%= javascript_include_tag 'vendor/modernizr' %>
+   10:     <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  app/views/layouts/application.html.erb:7:in `_app_views_layouts_application_html_erb__3281903335055691063_70123615593600'
+
+
+  Rendered /Users/gregorygerla/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered /Users/gregorygerla/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.6ms)
+  Rendered /Users/gregorygerla/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (9.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-05-28 01:30:51 -0500
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.4ms)
+Completed 500 Internal Server Error in 3ms
+
+ActionView::Template::Error (wrong number of arguments (2 for 1)):
+    4:     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    5:     <title><%= content_for?(:title) ? yield(:title) : "Kidcode" %></title>
+    6:     <meta name="description" content="<%= content_for?(:description) ? yield(:description) : "Kidcode" %>">
+    7:     <%= stylesheet_link_tag 'application', media: 'all' %>
+    8:     <%# Modernizr is required for Zurb Foundation %>
+    9:     <%= javascript_include_tag 'vendor/modernizr' %>
+   10:     <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  app/views/layouts/application.html.erb:7:in `_app_views_layouts_application_html_erb__3281903335055691063_70123614694940'
+
+
+  Rendered /Users/gregorygerla/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.9ms)
+  Rendered /Users/gregorygerla/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /Users/gregorygerla/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (9.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-05-28 01:30:52 -0500
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.4ms)
+Completed 500 Internal Server Error in 3ms
+
+ActionView::Template::Error (wrong number of arguments (2 for 1)):
+    4:     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    5:     <title><%= content_for?(:title) ? yield(:title) : "Kidcode" %></title>
+    6:     <meta name="description" content="<%= content_for?(:description) ? yield(:description) : "Kidcode" %>">
+    7:     <%= stylesheet_link_tag 'application', media: 'all' %>
+    8:     <%# Modernizr is required for Zurb Foundation %>
+    9:     <%= javascript_include_tag 'vendor/modernizr' %>
+   10:     <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  app/views/layouts/application.html.erb:7:in `_app_views_layouts_application_html_erb__3281903335055691063_70123614694940'
+
+
+  Rendered /Users/gregorygerla/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.9ms)
+  Rendered /Users/gregorygerla/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/gregorygerla/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (9.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-05-28 01:30:58 -0500
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.5ms)
+Completed 500 Internal Server Error in 3ms
+
+ActionView::Template::Error (wrong number of arguments (2 for 1)):
+    4:     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    5:     <title><%= content_for?(:title) ? yield(:title) : "Kidcode" %></title>
+    6:     <meta name="description" content="<%= content_for?(:description) ? yield(:description) : "Kidcode" %>">
+    7:     <%= stylesheet_link_tag 'application', media: 'all' %>
+    8:     <%# Modernizr is required for Zurb Foundation %>
+    9:     <%= javascript_include_tag 'vendor/modernizr' %>
+   10:     <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  app/views/layouts/application.html.erb:7:in `_app_views_layouts_application_html_erb__3281903335055691063_70123614694940'
+
+
+  Rendered /Users/gregorygerla/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.9ms)
+  Rendered /Users/gregorygerla/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /Users/gregorygerla/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (8.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-05-28 01:30:59 -0500
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.5ms)
+Completed 500 Internal Server Error in 3ms
+
+ActionView::Template::Error (wrong number of arguments (2 for 1)):
+    4:     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    5:     <title><%= content_for?(:title) ? yield(:title) : "Kidcode" %></title>
+    6:     <meta name="description" content="<%= content_for?(:description) ? yield(:description) : "Kidcode" %>">
+    7:     <%= stylesheet_link_tag 'application', media: 'all' %>
+    8:     <%# Modernizr is required for Zurb Foundation %>
+    9:     <%= javascript_include_tag 'vendor/modernizr' %>
+   10:     <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  app/views/layouts/application.html.erb:7:in `_app_views_layouts_application_html_erb__3281903335055691063_70123614694940'
+
+
+  Rendered /Users/gregorygerla/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.9ms)
+  Rendered /Users/gregorygerla/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.6ms)
+  Rendered /Users/gregorygerla/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (8.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-05-28 01:30:59 -0500
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.4ms)
+Completed 500 Internal Server Error in 3ms
+
+ActionView::Template::Error (wrong number of arguments (2 for 1)):
+    4:     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    5:     <title><%= content_for?(:title) ? yield(:title) : "Kidcode" %></title>
+    6:     <meta name="description" content="<%= content_for?(:description) ? yield(:description) : "Kidcode" %>">
+    7:     <%= stylesheet_link_tag 'application', media: 'all' %>
+    8:     <%# Modernizr is required for Zurb Foundation %>
+    9:     <%= javascript_include_tag 'vendor/modernizr' %>
+   10:     <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  app/views/layouts/application.html.erb:7:in `_app_views_layouts_application_html_erb__3281903335055691063_70123614694940'
+
+
+  Rendered /Users/gregorygerla/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.9ms)
+  Rendered /Users/gregorygerla/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /Users/gregorygerla/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (9.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-05-28 01:30:59 -0500
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.4ms)
+Completed 500 Internal Server Error in 3ms
+
+ActionView::Template::Error (wrong number of arguments (2 for 1)):
+    4:     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    5:     <title><%= content_for?(:title) ? yield(:title) : "Kidcode" %></title>
+    6:     <meta name="description" content="<%= content_for?(:description) ? yield(:description) : "Kidcode" %>">
+    7:     <%= stylesheet_link_tag 'application', media: 'all' %>
+    8:     <%# Modernizr is required for Zurb Foundation %>
+    9:     <%= javascript_include_tag 'vendor/modernizr' %>
+   10:     <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  app/views/layouts/application.html.erb:7:in `_app_views_layouts_application_html_erb__3281903335055691063_70123614694940'
+
+
+  Rendered /Users/gregorygerla/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.8ms)
+  Rendered /Users/gregorygerla/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /Users/gregorygerla/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (9.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-05-28 01:31:00 -0500
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.4ms)
+Completed 500 Internal Server Error in 3ms
+
+ActionView::Template::Error (wrong number of arguments (2 for 1)):
+    4:     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    5:     <title><%= content_for?(:title) ? yield(:title) : "Kidcode" %></title>
+    6:     <meta name="description" content="<%= content_for?(:description) ? yield(:description) : "Kidcode" %>">
+    7:     <%= stylesheet_link_tag 'application', media: 'all' %>
+    8:     <%# Modernizr is required for Zurb Foundation %>
+    9:     <%= javascript_include_tag 'vendor/modernizr' %>
+   10:     <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  app/views/layouts/application.html.erb:7:in `_app_views_layouts_application_html_erb__3281903335055691063_70123614694940'
+
+
+  Rendered /Users/gregorygerla/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.9ms)
+  Rendered /Users/gregorygerla/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.6ms)
+  Rendered /Users/gregorygerla/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (8.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-05-28 01:31:01 -0500
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.4ms)
+Completed 500 Internal Server Error in 3ms
+
+ActionView::Template::Error (wrong number of arguments (2 for 1)):
+    4:     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    5:     <title><%= content_for?(:title) ? yield(:title) : "Kidcode" %></title>
+    6:     <meta name="description" content="<%= content_for?(:description) ? yield(:description) : "Kidcode" %>">
+    7:     <%= stylesheet_link_tag 'application', media: 'all' %>
+    8:     <%# Modernizr is required for Zurb Foundation %>
+    9:     <%= javascript_include_tag 'vendor/modernizr' %>
+   10:     <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  app/views/layouts/application.html.erb:7:in `_app_views_layouts_application_html_erb__3281903335055691063_70123614694940'
+
+
+  Rendered /Users/gregorygerla/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered /Users/gregorygerla/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /Users/gregorygerla/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (9.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-05-28 01:31:15 -0500
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.4ms)
+Completed 500 Internal Server Error in 3ms
+
+ActionView::Template::Error (wrong number of arguments (2 for 1)):
+     5:     <title><%= content_for?(:title) ? yield(:title) : "Kidcode" %></title>
+     6:     <meta name="description" content="<%= content_for?(:description) ? yield(:description) : "Kidcode" %>">
+     7:     <%# Modernizr is required for Zurb Foundation %>
+     8:     <%= javascript_include_tag 'vendor/modernizr' %>
+     9:     <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    10:     <%= csrf_meta_tags %>
+    11:   </head>
+  app/views/layouts/application.html.erb:8:in `_app_views_layouts_application_html_erb__3281903335055691063_70123616299680'
+
+
+  Rendered /Users/gregorygerla/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.8ms)
+  Rendered /Users/gregorygerla/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.6ms)
+  Rendered /Users/gregorygerla/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (8.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-05-28 01:31:46 -0500
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.4ms)
+Completed 500 Internal Server Error in 3ms
+
+ActionView::Template::Error (wrong number of arguments (2 for 1)):
+     5:     <title><%= content_for?(:title) ? yield(:title) : "Kidcode" %></title>
+     6:     <meta name="description" content="<%= content_for?(:description) ? yield(:description) : "Kidcode" %>">
+     7:     <%# Modernizr is required for Zurb Foundation %>
+     8:     <%= javascript_include_tag 'vendor/modernizr' %>
+     9:     <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    10:     <%= csrf_meta_tags %>
+    11:   </head>
+  app/views/layouts/application.html.erb:8:in `_app_views_layouts_application_html_erb__3281903335055691063_70123616299680'
+
+
+  Rendered /Users/gregorygerla/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.9ms)
+  Rendered /Users/gregorygerla/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /Users/gregorygerla/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (9.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-05-28 01:31:47 -0500
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.4ms)
+Completed 500 Internal Server Error in 3ms
+
+ActionView::Template::Error (wrong number of arguments (2 for 1)):
+     5:     <title><%= content_for?(:title) ? yield(:title) : "Kidcode" %></title>
+     6:     <meta name="description" content="<%= content_for?(:description) ? yield(:description) : "Kidcode" %>">
+     7:     <%# Modernizr is required for Zurb Foundation %>
+     8:     <%= javascript_include_tag 'vendor/modernizr' %>
+     9:     <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    10:     <%= csrf_meta_tags %>
+    11:   </head>
+  app/views/layouts/application.html.erb:8:in `_app_views_layouts_application_html_erb__3281903335055691063_70123616299680'
+
+
+  Rendered /Users/gregorygerla/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.9ms)
+  Rendered /Users/gregorygerla/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.6ms)
+  Rendered /Users/gregorygerla/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (8.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-05-28 01:31:47 -0500
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.4ms)
+Completed 500 Internal Server Error in 2ms
+
+ActionView::Template::Error (wrong number of arguments (2 for 1)):
+     5:     <title><%= content_for?(:title) ? yield(:title) : "Kidcode" %></title>
+     6:     <meta name="description" content="<%= content_for?(:description) ? yield(:description) : "Kidcode" %>">
+     7:     <%# Modernizr is required for Zurb Foundation %>
+     8:     <%= javascript_include_tag 'vendor/modernizr' %>
+     9:     <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    10:     <%= csrf_meta_tags %>
+    11:   </head>
+  app/views/layouts/application.html.erb:8:in `_app_views_layouts_application_html_erb__3281903335055691063_70123616299680'
+
+
+  Rendered /Users/gregorygerla/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered /Users/gregorygerla/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /Users/gregorygerla/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (8.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-05-28 01:31:48 -0500
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.4ms)
+Completed 500 Internal Server Error in 3ms
+
+ActionView::Template::Error (wrong number of arguments (2 for 1)):
+     5:     <title><%= content_for?(:title) ? yield(:title) : "Kidcode" %></title>
+     6:     <meta name="description" content="<%= content_for?(:description) ? yield(:description) : "Kidcode" %>">
+     7:     <%# Modernizr is required for Zurb Foundation %>
+     8:     <%= javascript_include_tag 'vendor/modernizr' %>
+     9:     <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    10:     <%= csrf_meta_tags %>
+    11:   </head>
+  app/views/layouts/application.html.erb:8:in `_app_views_layouts_application_html_erb__3281903335055691063_70123616299680'
+
+
+  Rendered /Users/gregorygerla/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /Users/gregorygerla/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /Users/gregorygerla/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (9.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-05-28 01:31:48 -0500
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.6ms)
+Completed 500 Internal Server Error in 3ms
+
+ActionView::Template::Error (wrong number of arguments (2 for 1)):
+     5:     <title><%= content_for?(:title) ? yield(:title) : "Kidcode" %></title>
+     6:     <meta name="description" content="<%= content_for?(:description) ? yield(:description) : "Kidcode" %>">
+     7:     <%# Modernizr is required for Zurb Foundation %>
+     8:     <%= javascript_include_tag 'vendor/modernizr' %>
+     9:     <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    10:     <%= csrf_meta_tags %>
+    11:   </head>
+  app/views/layouts/application.html.erb:8:in `_app_views_layouts_application_html_erb__3281903335055691063_70123616299680'
+
+
+  Rendered /Users/gregorygerla/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.9ms)
+  Rendered /Users/gregorygerla/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /Users/gregorygerla/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (9.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-05-28 01:31:50 -0500
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.4ms)
+Completed 500 Internal Server Error in 3ms
+
+ActionView::Template::Error (wrong number of arguments (2 for 1)):
+     5:     <title><%= content_for?(:title) ? yield(:title) : "Kidcode" %></title>
+     6:     <meta name="description" content="<%= content_for?(:description) ? yield(:description) : "Kidcode" %>">
+     7:     <%# Modernizr is required for Zurb Foundation %>
+     8:     <%= javascript_include_tag 'vendor/modernizr' %>
+     9:     <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    10:     <%= csrf_meta_tags %>
+    11:   </head>
+  app/views/layouts/application.html.erb:8:in `_app_views_layouts_application_html_erb__3281903335055691063_70123616299680'
+
+
+  Rendered /Users/gregorygerla/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered /Users/gregorygerla/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /Users/gregorygerla/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (9.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-05-28 01:31:52 -0500
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.4ms)
+Completed 500 Internal Server Error in 3ms
+
+ActionView::Template::Error (wrong number of arguments (2 for 1)):
+     5:     <title><%= content_for?(:title) ? yield(:title) : "Kidcode" %></title>
+     6:     <meta name="description" content="<%= content_for?(:description) ? yield(:description) : "Kidcode" %>">
+     7:     <%# Modernizr is required for Zurb Foundation %>
+     8:     <%= javascript_include_tag 'vendor/modernizr' %>
+     9:     <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    10:     <%= csrf_meta_tags %>
+    11:   </head>
+  app/views/layouts/application.html.erb:8:in `_app_views_layouts_application_html_erb__3281903335055691063_70123616299680'
+
+
+  Rendered /Users/gregorygerla/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /Users/gregorygerla/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /Users/gregorygerla/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (10.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-05-28 01:31:53 -0500
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.4ms)
+Completed 500 Internal Server Error in 3ms
+
+ActionView::Template::Error (wrong number of arguments (2 for 1)):
+     5:     <title><%= content_for?(:title) ? yield(:title) : "Kidcode" %></title>
+     6:     <meta name="description" content="<%= content_for?(:description) ? yield(:description) : "Kidcode" %>">
+     7:     <%# Modernizr is required for Zurb Foundation %>
+     8:     <%= javascript_include_tag 'vendor/modernizr' %>
+     9:     <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    10:     <%= csrf_meta_tags %>
+    11:   </head>
+  app/views/layouts/application.html.erb:8:in `_app_views_layouts_application_html_erb__3281903335055691063_70123616299680'
+
+
+  Rendered /Users/gregorygerla/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /Users/gregorygerla/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.6ms)
+  Rendered /Users/gregorygerla/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (9.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-05-28 01:31:53 -0500
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.4ms)
+Completed 500 Internal Server Error in 3ms
+
+ActionView::Template::Error (wrong number of arguments (2 for 1)):
+     5:     <title><%= content_for?(:title) ? yield(:title) : "Kidcode" %></title>
+     6:     <meta name="description" content="<%= content_for?(:description) ? yield(:description) : "Kidcode" %>">
+     7:     <%# Modernizr is required for Zurb Foundation %>
+     8:     <%= javascript_include_tag 'vendor/modernizr' %>
+     9:     <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    10:     <%= csrf_meta_tags %>
+    11:   </head>
+  app/views/layouts/application.html.erb:8:in `_app_views_layouts_application_html_erb__3281903335055691063_70123616299680'
+
+
+  Rendered /Users/gregorygerla/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.8ms)
+  Rendered /Users/gregorygerla/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.6ms)
+  Rendered /Users/gregorygerla/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (8.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-05-28 01:31:58 -0500
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.4ms)
+  Rendered layouts/_navigation_links.html.erb (0.4ms)
+  Rendered layouts/_navigation.html.erb (1.4ms)
+  Rendered layouts/_messages.html.erb (0.4ms)
+Completed 200 OK in 9ms (Views: 8.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/female188.svg" for 127.0.0.1 at 2014-05-28 01:31:58 -0500
+
+
+Started GET "/assets/black223.svg" for 127.0.0.1 at 2014-05-28 01:31:58 -0500
+
+
+Started GET "/assets/write12.svg" for 127.0.0.1 at 2014-05-28 01:31:58 -0500
+
+
+Started GET "/assets/pc6.svg" for 127.0.0.1 at 2014-05-28 01:31:58 -0500
+
+
+Started GET "/" for 127.0.0.1 at 2014-05-28 01:31:59 -0500
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.4ms)
+  Rendered layouts/_navigation_links.html.erb (0.1ms)
+  Rendered layouts/_navigation.html.erb (0.5ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+Completed 200 OK in 4ms (Views: 3.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/black223.svg" for 127.0.0.1 at 2014-05-28 01:31:59 -0500
+
+
+Started GET "/assets/female188.svg" for 127.0.0.1 at 2014-05-28 01:31:59 -0500
+
+
+Started GET "/assets/pc6.svg" for 127.0.0.1 at 2014-05-28 01:31:59 -0500
+
+
+Started GET "/assets/write12.svg" for 127.0.0.1 at 2014-05-28 01:31:59 -0500
+
+
+Started GET "/" for 127.0.0.1 at 2014-05-28 01:32:15 -0500
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.4ms)
+Completed 500 Internal Server Error in 3ms
+
+ActionView::Template::Error (wrong number of arguments (2 for 1)):
+    4:     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    5:     <title><%= content_for?(:title) ? yield(:title) : "Kidcode" %></title>
+    6:     <meta name="description" content="<%= content_for?(:description) ? yield(:description) : "Kidcode" %>">
+    7:     <%= stylesheet_link_tag 'application', media: 'all' %>
+    8:     <%# Modernizr is required for Zurb Foundation %>
+    9:     <%= javascript_include_tag 'vendor/modernizr' %>
+   10:     <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  app/views/layouts/application.html.erb:7:in `_app_views_layouts_application_html_erb__3281903335055691063_70123614267160'
+
+
+  Rendered /Users/gregorygerla/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.9ms)
+  Rendered /Users/gregorygerla/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /Users/gregorygerla/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (8.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-05-28 01:32:16 -0500
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.4ms)
+Completed 500 Internal Server Error in 3ms
+
+ActionView::Template::Error (wrong number of arguments (2 for 1)):
+    4:     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    5:     <title><%= content_for?(:title) ? yield(:title) : "Kidcode" %></title>
+    6:     <meta name="description" content="<%= content_for?(:description) ? yield(:description) : "Kidcode" %>">
+    7:     <%= stylesheet_link_tag 'application', media: 'all' %>
+    8:     <%# Modernizr is required for Zurb Foundation %>
+    9:     <%= javascript_include_tag 'vendor/modernizr' %>
+   10:     <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  app/views/layouts/application.html.erb:7:in `_app_views_layouts_application_html_erb__3281903335055691063_70123614267160'
+
+
+  Rendered /Users/gregorygerla/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.9ms)
+  Rendered /Users/gregorygerla/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/gregorygerla/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (9.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-05-28 01:33:23 -0500
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.4ms)
+Completed 500 Internal Server Error in 3ms
+
+ActionView::Template::Error (wrong number of arguments (2 for 1)):
+    4:     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    5:     <title><%= content_for?(:title) ? yield(:title) : "Kidcode" %></title>
+    6:     <meta name="description" content="<%= content_for?(:description) ? yield(:description) : "Kidcode" %>">
+    7:     <%= stylesheet_link_tag 'application', media: 'all' %>
+    8:     <%# Modernizr is required for Zurb Foundation %>
+    9:     <%= javascript_include_tag 'vendor/modernizr' %>
+   10:     <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  app/views/layouts/application.html.erb:7:in `_app_views_layouts_application_html_erb__3281903335055691063_70123614267160'
+
+
+  Rendered /Users/gregorygerla/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.9ms)
+  Rendered /Users/gregorygerla/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /Users/gregorygerla/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (8.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-05-28 01:33:25 -0500
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.7ms)
+Completed 500 Internal Server Error in 3ms
+
+ActionView::Template::Error (wrong number of arguments (2 for 1)):
+    4:     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    5:     <title><%= content_for?(:title) ? yield(:title) : "Kidcode" %></title>
+    6:     <meta name="description" content="<%= content_for?(:description) ? yield(:description) : "Kidcode" %>">
+    7:     <%= stylesheet_link_tag 'application', media: 'all' %>
+    8:     <%# Modernizr is required for Zurb Foundation %>
+    9:     <%= javascript_include_tag 'vendor/modernizr' %>
+   10:     <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  app/views/layouts/application.html.erb:7:in `_app_views_layouts_application_html_erb__3281903335055691063_70123614267160'
+
+
+  Rendered /Users/gregorygerla/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered /Users/gregorygerla/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /Users/gregorygerla/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (9.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-05-28 01:33:25 -0500
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (4.9ms)
+Completed 500 Internal Server Error in 7ms
+
+ActionView::Template::Error (wrong number of arguments (2 for 1)):
+    4:     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    5:     <title><%= content_for?(:title) ? yield(:title) : "Kidcode" %></title>
+    6:     <meta name="description" content="<%= content_for?(:description) ? yield(:description) : "Kidcode" %>">
+    7:     <%= stylesheet_link_tag 'application', media: 'all' %>
+    8:     <%# Modernizr is required for Zurb Foundation %>
+    9:     <%= javascript_include_tag 'vendor/modernizr' %>
+   10:     <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  app/views/layouts/application.html.erb:7:in `_app_views_layouts_application_html_erb__3281903335055691063_70123614267160'
+
+
+  Rendered /Users/gregorygerla/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.9ms)
+  Rendered /Users/gregorygerla/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /Users/gregorygerla/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (8.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-05-28 01:33:25 -0500
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.4ms)
+Completed 500 Internal Server Error in 3ms
+
+ActionView::Template::Error (wrong number of arguments (2 for 1)):
+    4:     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    5:     <title><%= content_for?(:title) ? yield(:title) : "Kidcode" %></title>
+    6:     <meta name="description" content="<%= content_for?(:description) ? yield(:description) : "Kidcode" %>">
+    7:     <%= stylesheet_link_tag 'application', media: 'all' %>
+    8:     <%# Modernizr is required for Zurb Foundation %>
+    9:     <%= javascript_include_tag 'vendor/modernizr' %>
+   10:     <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  app/views/layouts/application.html.erb:7:in `_app_views_layouts_application_html_erb__3281903335055691063_70123614267160'
+
+
+  Rendered /Users/gregorygerla/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.9ms)
+  Rendered /Users/gregorygerla/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.6ms)
+  Rendered /Users/gregorygerla/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (9.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-05-28 01:33:25 -0500
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.3ms)
+Completed 500 Internal Server Error in 3ms
+
+ActionView::Template::Error (wrong number of arguments (2 for 1)):
+    4:     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    5:     <title><%= content_for?(:title) ? yield(:title) : "Kidcode" %></title>
+    6:     <meta name="description" content="<%= content_for?(:description) ? yield(:description) : "Kidcode" %>">
+    7:     <%= stylesheet_link_tag 'application', media: 'all' %>
+    8:     <%# Modernizr is required for Zurb Foundation %>
+    9:     <%= javascript_include_tag 'vendor/modernizr' %>
+   10:     <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  app/views/layouts/application.html.erb:7:in `_app_views_layouts_application_html_erb__3281903335055691063_70123614267160'
+
+
+  Rendered /Users/gregorygerla/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered /Users/gregorygerla/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /Users/gregorygerla/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (9.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-05-28 01:33:26 -0500
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.4ms)
+Completed 500 Internal Server Error in 3ms
+
+ActionView::Template::Error (wrong number of arguments (2 for 1)):
+    4:     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    5:     <title><%= content_for?(:title) ? yield(:title) : "Kidcode" %></title>
+    6:     <meta name="description" content="<%= content_for?(:description) ? yield(:description) : "Kidcode" %>">
+    7:     <%= stylesheet_link_tag 'application', media: 'all' %>
+    8:     <%# Modernizr is required for Zurb Foundation %>
+    9:     <%= javascript_include_tag 'vendor/modernizr' %>
+   10:     <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  app/views/layouts/application.html.erb:7:in `_app_views_layouts_application_html_erb__3281903335055691063_70123614267160'
+
+
+  Rendered /Users/gregorygerla/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /Users/gregorygerla/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /Users/gregorygerla/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (9.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-05-28 01:33:26 -0500
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.4ms)
+Completed 500 Internal Server Error in 3ms
+
+ActionView::Template::Error (wrong number of arguments (2 for 1)):
+    4:     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    5:     <title><%= content_for?(:title) ? yield(:title) : "Kidcode" %></title>
+    6:     <meta name="description" content="<%= content_for?(:description) ? yield(:description) : "Kidcode" %>">
+    7:     <%= stylesheet_link_tag 'application', media: 'all' %>
+    8:     <%# Modernizr is required for Zurb Foundation %>
+    9:     <%= javascript_include_tag 'vendor/modernizr' %>
+   10:     <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  app/views/layouts/application.html.erb:7:in `_app_views_layouts_application_html_erb__3281903335055691063_70123614267160'
+
+
+  Rendered /Users/gregorygerla/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.9ms)
+  Rendered /Users/gregorygerla/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/gregorygerla/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (9.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-05-28 01:33:26 -0500
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.4ms)
+Completed 500 Internal Server Error in 3ms
+
+ActionView::Template::Error (wrong number of arguments (2 for 1)):
+    4:     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    5:     <title><%= content_for?(:title) ? yield(:title) : "Kidcode" %></title>
+    6:     <meta name="description" content="<%= content_for?(:description) ? yield(:description) : "Kidcode" %>">
+    7:     <%= stylesheet_link_tag 'application', media: 'all' %>
+    8:     <%# Modernizr is required for Zurb Foundation %>
+    9:     <%= javascript_include_tag 'vendor/modernizr' %>
+   10:     <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  app/views/layouts/application.html.erb:7:in `_app_views_layouts_application_html_erb__3281903335055691063_70123614267160'
+
+
+  Rendered /Users/gregorygerla/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendered /Users/gregorygerla/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/gregorygerla/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (12.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-05-28 01:33:26 -0500
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.4ms)
+Completed 500 Internal Server Error in 3ms
+
+ActionView::Template::Error (wrong number of arguments (2 for 1)):
+    4:     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    5:     <title><%= content_for?(:title) ? yield(:title) : "Kidcode" %></title>
+    6:     <meta name="description" content="<%= content_for?(:description) ? yield(:description) : "Kidcode" %>">
+    7:     <%= stylesheet_link_tag 'application', media: 'all' %>
+    8:     <%# Modernizr is required for Zurb Foundation %>
+    9:     <%= javascript_include_tag 'vendor/modernizr' %>
+   10:     <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  app/views/layouts/application.html.erb:7:in `_app_views_layouts_application_html_erb__3281903335055691063_70123614267160'
+
+
+  Rendered /Users/gregorygerla/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.9ms)
+  Rendered /Users/gregorygerla/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /Users/gregorygerla/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (9.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-05-28 01:33:26 -0500
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.4ms)
+Completed 500 Internal Server Error in 3ms
+
+ActionView::Template::Error (wrong number of arguments (2 for 1)):
+    4:     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    5:     <title><%= content_for?(:title) ? yield(:title) : "Kidcode" %></title>
+    6:     <meta name="description" content="<%= content_for?(:description) ? yield(:description) : "Kidcode" %>">
+    7:     <%= stylesheet_link_tag 'application', media: 'all' %>
+    8:     <%# Modernizr is required for Zurb Foundation %>
+    9:     <%= javascript_include_tag 'vendor/modernizr' %>
+   10:     <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  app/views/layouts/application.html.erb:7:in `_app_views_layouts_application_html_erb__3281903335055691063_70123614267160'
+
+
+  Rendered /Users/gregorygerla/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered /Users/gregorygerla/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /Users/gregorygerla/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (9.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-05-28 01:33:26 -0500
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.3ms)
+Completed 500 Internal Server Error in 3ms
+
+ActionView::Template::Error (wrong number of arguments (2 for 1)):
+    4:     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    5:     <title><%= content_for?(:title) ? yield(:title) : "Kidcode" %></title>
+    6:     <meta name="description" content="<%= content_for?(:description) ? yield(:description) : "Kidcode" %>">
+    7:     <%= stylesheet_link_tag 'application', media: 'all' %>
+    8:     <%# Modernizr is required for Zurb Foundation %>
+    9:     <%= javascript_include_tag 'vendor/modernizr' %>
+   10:     <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  app/views/layouts/application.html.erb:7:in `_app_views_layouts_application_html_erb__3281903335055691063_70123614267160'
+
+
+  Rendered /Users/gregorygerla/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /Users/gregorygerla/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /Users/gregorygerla/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (9.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-05-28 01:33:27 -0500
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.4ms)
+Completed 500 Internal Server Error in 3ms
+
+ActionView::Template::Error (wrong number of arguments (2 for 1)):
+    4:     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    5:     <title><%= content_for?(:title) ? yield(:title) : "Kidcode" %></title>
+    6:     <meta name="description" content="<%= content_for?(:description) ? yield(:description) : "Kidcode" %>">
+    7:     <%= stylesheet_link_tag 'application', media: 'all' %>
+    8:     <%# Modernizr is required for Zurb Foundation %>
+    9:     <%= javascript_include_tag 'vendor/modernizr' %>
+   10:     <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  app/views/layouts/application.html.erb:7:in `_app_views_layouts_application_html_erb__3281903335055691063_70123614267160'
+
+
+  Rendered /Users/gregorygerla/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered /Users/gregorygerla/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /Users/gregorygerla/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (9.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-05-28 01:33:27 -0500
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.4ms)
+Completed 500 Internal Server Error in 3ms
+
+ActionView::Template::Error (wrong number of arguments (2 for 1)):
+    4:     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    5:     <title><%= content_for?(:title) ? yield(:title) : "Kidcode" %></title>
+    6:     <meta name="description" content="<%= content_for?(:description) ? yield(:description) : "Kidcode" %>">
+    7:     <%= stylesheet_link_tag 'application', media: 'all' %>
+    8:     <%# Modernizr is required for Zurb Foundation %>
+    9:     <%= javascript_include_tag 'vendor/modernizr' %>
+   10:     <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  app/views/layouts/application.html.erb:7:in `_app_views_layouts_application_html_erb__3281903335055691063_70123614267160'
+
+
+  Rendered /Users/gregorygerla/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /Users/gregorygerla/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/gregorygerla/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (9.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-05-28 01:33:27 -0500
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.4ms)
+Completed 500 Internal Server Error in 3ms
+
+ActionView::Template::Error (wrong number of arguments (2 for 1)):
+    4:     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    5:     <title><%= content_for?(:title) ? yield(:title) : "Kidcode" %></title>
+    6:     <meta name="description" content="<%= content_for?(:description) ? yield(:description) : "Kidcode" %>">
+    7:     <%= stylesheet_link_tag 'application', media: 'all' %>
+    8:     <%# Modernizr is required for Zurb Foundation %>
+    9:     <%= javascript_include_tag 'vendor/modernizr' %>
+   10:     <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  app/views/layouts/application.html.erb:7:in `_app_views_layouts_application_html_erb__3281903335055691063_70123614267160'
+
+
+  Rendered /Users/gregorygerla/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.9ms)
+  Rendered /Users/gregorygerla/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.6ms)
+  Rendered /Users/gregorygerla/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (8.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-05-28 01:33:31 -0500
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.4ms)
+Completed 500 Internal Server Error in 3ms
+
+ActionView::Template::Error (wrong number of arguments (2 for 1)):
+    4:     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    5:     <title><%= content_for?(:title) ? yield(:title) : "Kidcode" %></title>
+    6:     <meta name="description" content="<%= content_for?(:description) ? yield(:description) : "Kidcode" %>">
+    7:     <%= stylesheet_link_tag 'application', media: 'all' %>
+    8:     <%# Modernizr is required for Zurb Foundation %>
+    9:     <%= javascript_include_tag 'vendor/modernizr' %>
+   10:     <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  app/views/layouts/application.html.erb:7:in `_app_views_layouts_application_html_erb__3281903335055691063_70123614267160'
+
+
+  Rendered /Users/gregorygerla/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.8ms)
+  Rendered /Users/gregorygerla/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /Users/gregorygerla/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (8.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-05-28 01:33:37 -0500
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.4ms)
+Completed 500 Internal Server Error in 3ms
+
+ActionView::Template::Error (wrong number of arguments (2 for 1)):
+    4:     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    5:     <title><%= content_for?(:title) ? yield(:title) : "Kidcode" %></title>
+    6:     <meta name="description" content="<%= content_for?(:description) ? yield(:description) : "Kidcode" %>">
+    7:     <%= stylesheet_link_tag 'application', media: 'all' %>
+    8:     <%# Modernizr is required for Zurb Foundation %>
+    9:     <%= javascript_include_tag 'vendor/modernizr' %>
+   10:     <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  app/views/layouts/application.html.erb:7:in `_app_views_layouts_application_html_erb__3281903335055691063_70123614267160'
+
+
+  Rendered /Users/gregorygerla/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.9ms)
+  Rendered /Users/gregorygerla/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.6ms)
+  Rendered /Users/gregorygerla/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (9.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-05-28 01:33:38 -0500
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.5ms)
+Completed 500 Internal Server Error in 3ms
+
+ActionView::Template::Error (wrong number of arguments (2 for 1)):
+    4:     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    5:     <title><%= content_for?(:title) ? yield(:title) : "Kidcode" %></title>
+    6:     <meta name="description" content="<%= content_for?(:description) ? yield(:description) : "Kidcode" %>">
+    7:     <%= stylesheet_link_tag 'application', media: 'all' %>
+    8:     <%# Modernizr is required for Zurb Foundation %>
+    9:     <%= javascript_include_tag 'vendor/modernizr' %>
+   10:     <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  app/views/layouts/application.html.erb:7:in `_app_views_layouts_application_html_erb__3281903335055691063_70123614267160'
+
+
+  Rendered /Users/gregorygerla/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered /Users/gregorygerla/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /Users/gregorygerla/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (9.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-05-28 01:33:38 -0500
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.3ms)
+Completed 500 Internal Server Error in 3ms
+
+ActionView::Template::Error (wrong number of arguments (2 for 1)):
+    4:     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    5:     <title><%= content_for?(:title) ? yield(:title) : "Kidcode" %></title>
+    6:     <meta name="description" content="<%= content_for?(:description) ? yield(:description) : "Kidcode" %>">
+    7:     <%= stylesheet_link_tag 'application', media: 'all' %>
+    8:     <%# Modernizr is required for Zurb Foundation %>
+    9:     <%= javascript_include_tag 'vendor/modernizr' %>
+   10:     <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  app/views/layouts/application.html.erb:7:in `_app_views_layouts_application_html_erb__3281903335055691063_70123614267160'
+
+
+  Rendered /Users/gregorygerla/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.8ms)
+  Rendered /Users/gregorygerla/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/gregorygerla/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (9.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-05-28 01:33:38 -0500
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.3ms)
+Completed 500 Internal Server Error in 3ms
+
+ActionView::Template::Error (wrong number of arguments (2 for 1)):
+    4:     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    5:     <title><%= content_for?(:title) ? yield(:title) : "Kidcode" %></title>
+    6:     <meta name="description" content="<%= content_for?(:description) ? yield(:description) : "Kidcode" %>">
+    7:     <%= stylesheet_link_tag 'application', media: 'all' %>
+    8:     <%# Modernizr is required for Zurb Foundation %>
+    9:     <%= javascript_include_tag 'vendor/modernizr' %>
+   10:     <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  app/views/layouts/application.html.erb:7:in `_app_views_layouts_application_html_erb__3281903335055691063_70123614267160'
+
+
+  Rendered /Users/gregorygerla/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.9ms)
+  Rendered /Users/gregorygerla/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.6ms)
+  Rendered /Users/gregorygerla/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (9.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-05-28 01:33:38 -0500
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.5ms)
+Completed 500 Internal Server Error in 3ms
+
+ActionView::Template::Error (wrong number of arguments (2 for 1)):
+    4:     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    5:     <title><%= content_for?(:title) ? yield(:title) : "Kidcode" %></title>
+    6:     <meta name="description" content="<%= content_for?(:description) ? yield(:description) : "Kidcode" %>">
+    7:     <%= stylesheet_link_tag 'application', media: 'all' %>
+    8:     <%# Modernizr is required for Zurb Foundation %>
+    9:     <%= javascript_include_tag 'vendor/modernizr' %>
+   10:     <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  app/views/layouts/application.html.erb:7:in `_app_views_layouts_application_html_erb__3281903335055691063_70123614267160'
+
+
+  Rendered /Users/gregorygerla/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.8ms)
+  Rendered /Users/gregorygerla/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /Users/gregorygerla/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (9.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-05-28 01:33:38 -0500
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.5ms)
+Completed 500 Internal Server Error in 3ms
+
+ActionView::Template::Error (wrong number of arguments (2 for 1)):
+    4:     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    5:     <title><%= content_for?(:title) ? yield(:title) : "Kidcode" %></title>
+    6:     <meta name="description" content="<%= content_for?(:description) ? yield(:description) : "Kidcode" %>">
+    7:     <%= stylesheet_link_tag 'application', media: 'all' %>
+    8:     <%# Modernizr is required for Zurb Foundation %>
+    9:     <%= javascript_include_tag 'vendor/modernizr' %>
+   10:     <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  app/views/layouts/application.html.erb:7:in `_app_views_layouts_application_html_erb__3281903335055691063_70123614267160'
+
+
+  Rendered /Users/gregorygerla/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.4ms)
+  Rendered /Users/gregorygerla/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/gregorygerla/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (14.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-05-28 01:33:39 -0500
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.4ms)
+Completed 500 Internal Server Error in 3ms
+
+ActionView::Template::Error (wrong number of arguments (2 for 1)):
+    4:     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    5:     <title><%= content_for?(:title) ? yield(:title) : "Kidcode" %></title>
+    6:     <meta name="description" content="<%= content_for?(:description) ? yield(:description) : "Kidcode" %>">
+    7:     <%= stylesheet_link_tag 'application', media: 'all' %>
+    8:     <%# Modernizr is required for Zurb Foundation %>
+    9:     <%= javascript_include_tag 'vendor/modernizr' %>
+   10:     <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  app/views/layouts/application.html.erb:7:in `_app_views_layouts_application_html_erb__3281903335055691063_70123614267160'
+
+
+  Rendered /Users/gregorygerla/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.9ms)
+  Rendered /Users/gregorygerla/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/gregorygerla/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (9.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-05-28 01:35:13 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (1.8ms)
+  Rendered layouts/_navigation_links.html.erb (0.3ms)
+  Rendered layouts/_navigation.html.erb (1.2ms)
+  Rendered layouts/_messages.html.erb (0.3ms)
+Completed 200 OK in 1165ms (Views: 1153.9ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/assets/framework_and_overrides.css?body=1" for 127.0.0.1 at 2014-05-28 01:35:14 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-28 01:35:14 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-05-28 01:35:14 -0500
+
+
+Started GET "/assets/overrides.css?body=1" for 127.0.0.1 at 2014-05-28 01:35:14 -0500
+
+
+Started GET "/assets/vendor/modernizr.js?body=1" for 127.0.0.1 at 2014-05-28 01:35:14 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-05-28 01:35:14 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-05-28 01:35:14 -0500
+
+
+Started GET "/assets/foundation/foundation.js?body=1" for 127.0.0.1 at 2014-05-28 01:35:14 -0500
+
+
+Started GET "/assets/foundation/foundation.abide.js?body=1" for 127.0.0.1 at 2014-05-28 01:35:14 -0500
+
+
+Started GET "/assets/foundation/foundation.accordion.js?body=1" for 127.0.0.1 at 2014-05-28 01:35:14 -0500
+
+
+Started GET "/assets/foundation/foundation.alert.js?body=1" for 127.0.0.1 at 2014-05-28 01:35:14 -0500
+
+
+Started GET "/assets/foundation/foundation.clearing.js?body=1" for 127.0.0.1 at 2014-05-28 01:35:14 -0500
+
+
+Started GET "/assets/foundation/foundation.dropdown.js?body=1" for 127.0.0.1 at 2014-05-28 01:35:14 -0500
+
+
+Started GET "/assets/foundation/foundation.interchange.js?body=1" for 127.0.0.1 at 2014-05-28 01:35:14 -0500
+
+
+Started GET "/assets/foundation/foundation.joyride.js?body=1" for 127.0.0.1 at 2014-05-28 01:35:14 -0500
+
+
+Started GET "/assets/foundation/foundation.magellan.js?body=1" for 127.0.0.1 at 2014-05-28 01:35:14 -0500
+
+
+Started GET "/assets/foundation/foundation.offcanvas.js?body=1" for 127.0.0.1 at 2014-05-28 01:35:14 -0500
+
+
+Started GET "/assets/foundation/foundation.orbit.js?body=1" for 127.0.0.1 at 2014-05-28 01:35:14 -0500
+
+
+Started GET "/assets/foundation/foundation.reveal.js?body=1" for 127.0.0.1 at 2014-05-28 01:35:14 -0500
+
+
+Started GET "/assets/foundation/foundation.slider.js?body=1" for 127.0.0.1 at 2014-05-28 01:35:14 -0500
+
+
+Started GET "/assets/foundation/foundation.tab.js?body=1" for 127.0.0.1 at 2014-05-28 01:35:14 -0500
+
+
+Started GET "/assets/foundation/foundation.tooltip.js?body=1" for 127.0.0.1 at 2014-05-28 01:35:14 -0500
+
+
+Started GET "/assets/foundation/foundation.topbar.js?body=1" for 127.0.0.1 at 2014-05-28 01:35:14 -0500
+
+
+Started GET "/assets/foundation/foundation.equalizer.js?body=1" for 127.0.0.1 at 2014-05-28 01:35:14 -0500
+
+
+Started GET "/assets/foundation.js?body=1" for 127.0.0.1 at 2014-05-28 01:35:14 -0500
+
+
+Started GET "/assets/initialize.js?body=1" for 127.0.0.1 at 2014-05-28 01:35:14 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-28 01:35:14 -0500
+
+
+Started GET "/assets/black223.svg" for 127.0.0.1 at 2014-05-28 01:35:14 -0500
+
+
+Started GET "/assets/female188.svg" for 127.0.0.1 at 2014-05-28 01:35:14 -0500
+
+
+Started GET "/assets/write12.svg" for 127.0.0.1 at 2014-05-28 01:35:14 -0500
+
+
+Started GET "/assets/pc6.svg" for 127.0.0.1 at 2014-05-28 01:35:14 -0500
+
+
+Started GET "/" for 127.0.0.1 at 2014-05-28 01:36:18 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (1.7ms)
+  Rendered layouts/_navigation_links.html.erb (0.3ms)
+  Rendered layouts/_navigation.html.erb (1.2ms)
+  Rendered layouts/_messages.html.erb (0.4ms)
+Completed 200 OK in 125ms (Views: 114.2ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/assets/framework_and_overrides.css?body=1" for 127.0.0.1 at 2014-05-28 01:36:19 -0500
+
+
+Started GET "/assets/vendor/modernizr.js?body=1" for 127.0.0.1 at 2014-05-28 01:36:19 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-28 01:36:19 -0500
+
+
+Started GET "/assets/overrides.css?body=1" for 127.0.0.1 at 2014-05-28 01:36:19 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-05-28 01:36:19 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-05-28 01:36:19 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-05-28 01:36:19 -0500
+
+
+Started GET "/assets/foundation/foundation.js?body=1" for 127.0.0.1 at 2014-05-28 01:36:19 -0500
+
+
+Started GET "/assets/foundation/foundation.abide.js?body=1" for 127.0.0.1 at 2014-05-28 01:36:19 -0500
+
+
+Started GET "/assets/foundation/foundation.accordion.js?body=1" for 127.0.0.1 at 2014-05-28 01:36:19 -0500
+
+
+Started GET "/assets/foundation/foundation.alert.js?body=1" for 127.0.0.1 at 2014-05-28 01:36:19 -0500
+
+
+Started GET "/assets/foundation/foundation.clearing.js?body=1" for 127.0.0.1 at 2014-05-28 01:36:19 -0500
+
+
+Started GET "/assets/foundation/foundation.dropdown.js?body=1" for 127.0.0.1 at 2014-05-28 01:36:19 -0500
+
+
+Started GET "/assets/foundation/foundation.interchange.js?body=1" for 127.0.0.1 at 2014-05-28 01:36:19 -0500
+
+
+Started GET "/assets/foundation/foundation.joyride.js?body=1" for 127.0.0.1 at 2014-05-28 01:36:19 -0500
+
+
+Started GET "/assets/foundation/foundation.magellan.js?body=1" for 127.0.0.1 at 2014-05-28 01:36:19 -0500
+
+
+Started GET "/assets/foundation/foundation.offcanvas.js?body=1" for 127.0.0.1 at 2014-05-28 01:36:19 -0500
+
+
+Started GET "/assets/foundation/foundation.orbit.js?body=1" for 127.0.0.1 at 2014-05-28 01:36:19 -0500
+
+
+Started GET "/assets/foundation/foundation.reveal.js?body=1" for 127.0.0.1 at 2014-05-28 01:36:19 -0500
+
+
+Started GET "/assets/foundation/foundation.slider.js?body=1" for 127.0.0.1 at 2014-05-28 01:36:19 -0500
+
+
+Started GET "/assets/foundation/foundation.tab.js?body=1" for 127.0.0.1 at 2014-05-28 01:36:19 -0500
+
+
+Started GET "/assets/foundation/foundation.tooltip.js?body=1" for 127.0.0.1 at 2014-05-28 01:36:19 -0500
+
+
+Started GET "/assets/foundation/foundation.topbar.js?body=1" for 127.0.0.1 at 2014-05-28 01:36:19 -0500
+
+
+Started GET "/assets/foundation/foundation.equalizer.js?body=1" for 127.0.0.1 at 2014-05-28 01:36:19 -0500
+
+
+Started GET "/assets/foundation.js?body=1" for 127.0.0.1 at 2014-05-28 01:36:19 -0500
+
+
+Started GET "/assets/initialize.js?body=1" for 127.0.0.1 at 2014-05-28 01:36:19 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-28 01:36:19 -0500
+
+
+Started GET "/assets/black223.svg" for 127.0.0.1 at 2014-05-28 01:36:19 -0500
+
+
+Started GET "/assets/female188.svg" for 127.0.0.1 at 2014-05-28 01:36:19 -0500
+
+
+Started GET "/assets/write12.svg" for 127.0.0.1 at 2014-05-28 01:36:19 -0500
+
+
+Started GET "/assets/pc6.svg" for 127.0.0.1 at 2014-05-28 01:36:19 -0500
+
+
+Started GET "/" for 127.0.0.1 at 2014-05-28 01:36:20 -0500
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.4ms)
+  Rendered layouts/_navigation_links.html.erb (0.1ms)
+  Rendered layouts/_navigation.html.erb (0.6ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+Completed 200 OK in 10ms (Views: 9.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/framework_and_overrides.css?body=1" for 127.0.0.1 at 2014-05-28 01:36:20 -0500
+
+
+Started GET "/assets/overrides.css?body=1" for 127.0.0.1 at 2014-05-28 01:36:20 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-05-28 01:36:20 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-05-28 01:36:20 -0500
+
+
+Started GET "/assets/vendor/modernizr.js?body=1" for 127.0.0.1 at 2014-05-28 01:36:20 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-28 01:36:20 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-05-28 01:36:20 -0500
+
+
+Started GET "/assets/foundation/foundation.js?body=1" for 127.0.0.1 at 2014-05-28 01:36:20 -0500
+
+
+Started GET "/assets/foundation/foundation.abide.js?body=1" for 127.0.0.1 at 2014-05-28 01:36:20 -0500
+
+
+Started GET "/assets/foundation/foundation.accordion.js?body=1" for 127.0.0.1 at 2014-05-28 01:36:20 -0500
+
+
+Started GET "/assets/foundation/foundation.alert.js?body=1" for 127.0.0.1 at 2014-05-28 01:36:20 -0500
+
+
+Started GET "/assets/foundation/foundation.clearing.js?body=1" for 127.0.0.1 at 2014-05-28 01:36:20 -0500
+
+
+Started GET "/assets/foundation/foundation.dropdown.js?body=1" for 127.0.0.1 at 2014-05-28 01:36:20 -0500
+
+
+Started GET "/assets/foundation/foundation.interchange.js?body=1" for 127.0.0.1 at 2014-05-28 01:36:20 -0500
+
+
+Started GET "/assets/foundation/foundation.joyride.js?body=1" for 127.0.0.1 at 2014-05-28 01:36:20 -0500
+
+
+Started GET "/assets/foundation/foundation.magellan.js?body=1" for 127.0.0.1 at 2014-05-28 01:36:20 -0500
+
+
+Started GET "/assets/foundation/foundation.offcanvas.js?body=1" for 127.0.0.1 at 2014-05-28 01:36:20 -0500
+
+
+Started GET "/assets/foundation/foundation.orbit.js?body=1" for 127.0.0.1 at 2014-05-28 01:36:20 -0500
+
+
+Started GET "/assets/foundation/foundation.reveal.js?body=1" for 127.0.0.1 at 2014-05-28 01:36:20 -0500
+
+
+Started GET "/assets/foundation/foundation.slider.js?body=1" for 127.0.0.1 at 2014-05-28 01:36:20 -0500
+
+
+Started GET "/assets/foundation/foundation.tab.js?body=1" for 127.0.0.1 at 2014-05-28 01:36:20 -0500
+
+
+Started GET "/assets/foundation/foundation.tooltip.js?body=1" for 127.0.0.1 at 2014-05-28 01:36:20 -0500
+
+
+Started GET "/assets/foundation/foundation.topbar.js?body=1" for 127.0.0.1 at 2014-05-28 01:36:20 -0500
+
+
+Started GET "/assets/foundation/foundation.equalizer.js?body=1" for 127.0.0.1 at 2014-05-28 01:36:20 -0500
+
+
+Started GET "/assets/foundation.js?body=1" for 127.0.0.1 at 2014-05-28 01:36:20 -0500
+
+
+Started GET "/assets/initialize.js?body=1" for 127.0.0.1 at 2014-05-28 01:36:20 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-28 01:36:20 -0500
+
+
+Started GET "/assets/black223.svg" for 127.0.0.1 at 2014-05-28 01:36:20 -0500
+
+
+Started GET "/assets/female188.svg" for 127.0.0.1 at 2014-05-28 01:36:20 -0500
+
+
+Started GET "/assets/write12.svg" for 127.0.0.1 at 2014-05-28 01:36:20 -0500
+
+
+Started GET "/assets/pc6.svg" for 127.0.0.1 at 2014-05-28 01:36:20 -0500
+
+
+Started GET "/" for 127.0.0.1 at 2014-05-28 01:36:21 -0500
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.4ms)
+  Rendered layouts/_navigation_links.html.erb (0.1ms)
+  Rendered layouts/_navigation.html.erb (0.6ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+Completed 200 OK in 12ms (Views: 10.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/framework_and_overrides.css?body=1" for 127.0.0.1 at 2014-05-28 01:36:21 -0500
+
+
+Started GET "/assets/overrides.css?body=1" for 127.0.0.1 at 2014-05-28 01:36:21 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-28 01:36:21 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-05-28 01:36:21 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-05-28 01:36:21 -0500
+
+
+Started GET "/assets/vendor/modernizr.js?body=1" for 127.0.0.1 at 2014-05-28 01:36:21 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-05-28 01:36:21 -0500
+
+
+Started GET "/assets/foundation/foundation.js?body=1" for 127.0.0.1 at 2014-05-28 01:36:21 -0500
+
+
+Started GET "/assets/foundation/foundation.abide.js?body=1" for 127.0.0.1 at 2014-05-28 01:36:21 -0500
+
+
+Started GET "/assets/foundation/foundation.accordion.js?body=1" for 127.0.0.1 at 2014-05-28 01:36:21 -0500
+
+
+Started GET "/assets/foundation/foundation.alert.js?body=1" for 127.0.0.1 at 2014-05-28 01:36:21 -0500
+
+
+Started GET "/assets/foundation/foundation.clearing.js?body=1" for 127.0.0.1 at 2014-05-28 01:36:21 -0500
+
+
+Started GET "/assets/foundation/foundation.dropdown.js?body=1" for 127.0.0.1 at 2014-05-28 01:36:21 -0500
+
+
+Started GET "/assets/foundation/foundation.interchange.js?body=1" for 127.0.0.1 at 2014-05-28 01:36:21 -0500
+
+
+Started GET "/assets/foundation/foundation.joyride.js?body=1" for 127.0.0.1 at 2014-05-28 01:36:21 -0500
+
+
+Started GET "/assets/foundation/foundation.magellan.js?body=1" for 127.0.0.1 at 2014-05-28 01:36:21 -0500
+
+
+Started GET "/assets/foundation/foundation.offcanvas.js?body=1" for 127.0.0.1 at 2014-05-28 01:36:21 -0500
+
+
+Started GET "/assets/foundation/foundation.orbit.js?body=1" for 127.0.0.1 at 2014-05-28 01:36:21 -0500
+
+
+Started GET "/assets/foundation/foundation.reveal.js?body=1" for 127.0.0.1 at 2014-05-28 01:36:21 -0500
+
+
+Started GET "/assets/foundation/foundation.slider.js?body=1" for 127.0.0.1 at 2014-05-28 01:36:21 -0500
+
+
+Started GET "/assets/foundation/foundation.tab.js?body=1" for 127.0.0.1 at 2014-05-28 01:36:21 -0500
+
+
+Started GET "/assets/foundation/foundation.tooltip.js?body=1" for 127.0.0.1 at 2014-05-28 01:36:21 -0500
+
+
+Started GET "/assets/foundation/foundation.topbar.js?body=1" for 127.0.0.1 at 2014-05-28 01:36:21 -0500
+
+
+Started GET "/assets/foundation/foundation.equalizer.js?body=1" for 127.0.0.1 at 2014-05-28 01:36:21 -0500
+
+
+Started GET "/assets/foundation.js?body=1" for 127.0.0.1 at 2014-05-28 01:36:21 -0500
+
+
+Started GET "/assets/initialize.js?body=1" for 127.0.0.1 at 2014-05-28 01:36:21 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-28 01:36:21 -0500
+
+
+Started GET "/assets/black223.svg" for 127.0.0.1 at 2014-05-28 01:36:21 -0500
+
+
+Started GET "/assets/female188.svg" for 127.0.0.1 at 2014-05-28 01:36:21 -0500
+
+
+Started GET "/assets/write12.svg" for 127.0.0.1 at 2014-05-28 01:36:21 -0500
+
+
+Started GET "/assets/pc6.svg" for 127.0.0.1 at 2014-05-28 01:36:21 -0500
+
+
+Started GET "/" for 127.0.0.1 at 2014-05-28 01:37:52 -0500
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.3ms)
+Completed 500 Internal Server Error in 21ms
+
+ActionView::Template::Error (Invalid CSS after "	max-width": expected ";", was ": initial;"
+  (in /Users/gregorygerla/Desktop/projects/kidzcode/app/assets/stylesheets/overrides.css.scss.erb:60)):
+    4:     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    5:     <title><%= content_for?(:title) ? yield(:title) : "Kidcode" %></title>
+    6:     <meta name="description" content="<%= content_for?(:description) ? yield(:description) : "Kidcode" %>">
+    7:     <%= stylesheet_link_tag 'application', media: 'all' %>
+    8:     <%# Modernizr is required for Zurb Foundation %>
+    9:     <%= javascript_include_tag 'vendor/modernizr' %>
+   10:     <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  app/assets/stylesheets/overrides.css.scss.erb:60
+  app/views/layouts/application.html.erb:7:in `_app_views_layouts_application_html_erb__971742614774616483_70342511798980'
+
+
+  Rendered /Users/gregorygerla/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered /Users/gregorygerla/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /Users/gregorygerla/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (9.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-05-28 01:37:54 -0500
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.5ms)
+Completed 500 Internal Server Error in 20ms
+
+ActionView::Template::Error (Invalid CSS after "	max-width": expected ";", was ": initial;"
+  (in /Users/gregorygerla/Desktop/projects/kidzcode/app/assets/stylesheets/overrides.css.scss.erb:60)):
+    4:     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    5:     <title><%= content_for?(:title) ? yield(:title) : "Kidcode" %></title>
+    6:     <meta name="description" content="<%= content_for?(:description) ? yield(:description) : "Kidcode" %>">
+    7:     <%= stylesheet_link_tag 'application', media: 'all' %>
+    8:     <%# Modernizr is required for Zurb Foundation %>
+    9:     <%= javascript_include_tag 'vendor/modernizr' %>
+   10:     <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  app/assets/stylesheets/overrides.css.scss.erb:60
+  app/views/layouts/application.html.erb:7:in `_app_views_layouts_application_html_erb__971742614774616483_70342511798980'
+
+
+  Rendered /Users/gregorygerla/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /Users/gregorygerla/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/gregorygerla/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (10.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-05-28 01:37:54 -0500
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.4ms)
+Completed 500 Internal Server Error in 19ms
+
+ActionView::Template::Error (Invalid CSS after "	max-width": expected ";", was ": initial;"
+  (in /Users/gregorygerla/Desktop/projects/kidzcode/app/assets/stylesheets/overrides.css.scss.erb:60)):
+    4:     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    5:     <title><%= content_for?(:title) ? yield(:title) : "Kidcode" %></title>
+    6:     <meta name="description" content="<%= content_for?(:description) ? yield(:description) : "Kidcode" %>">
+    7:     <%= stylesheet_link_tag 'application', media: 'all' %>
+    8:     <%# Modernizr is required for Zurb Foundation %>
+    9:     <%= javascript_include_tag 'vendor/modernizr' %>
+   10:     <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  app/assets/stylesheets/overrides.css.scss.erb:60
+  app/views/layouts/application.html.erb:7:in `_app_views_layouts_application_html_erb__971742614774616483_70342511798980'
+
+
+  Rendered /Users/gregorygerla/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+  Rendered /Users/gregorygerla/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /Users/gregorygerla/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (9.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-05-28 01:37:54 -0500
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.5ms)
+Completed 500 Internal Server Error in 24ms
+
+ActionView::Template::Error (Invalid CSS after "	max-width": expected ";", was ": initial;"
+  (in /Users/gregorygerla/Desktop/projects/kidzcode/app/assets/stylesheets/overrides.css.scss.erb:60)):
+    4:     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    5:     <title><%= content_for?(:title) ? yield(:title) : "Kidcode" %></title>
+    6:     <meta name="description" content="<%= content_for?(:description) ? yield(:description) : "Kidcode" %>">
+    7:     <%= stylesheet_link_tag 'application', media: 'all' %>
+    8:     <%# Modernizr is required for Zurb Foundation %>
+    9:     <%= javascript_include_tag 'vendor/modernizr' %>
+   10:     <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  app/assets/stylesheets/overrides.css.scss.erb:60
+  app/views/layouts/application.html.erb:7:in `_app_views_layouts_application_html_erb__971742614774616483_70342511798980'
+
+
+  Rendered /Users/gregorygerla/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.9ms)
+  Rendered /Users/gregorygerla/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /Users/gregorygerla/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (8.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-05-28 01:37:54 -0500
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.3ms)
+Completed 500 Internal Server Error in 18ms
+
+ActionView::Template::Error (Invalid CSS after "	max-width": expected ";", was ": initial;"
+  (in /Users/gregorygerla/Desktop/projects/kidzcode/app/assets/stylesheets/overrides.css.scss.erb:60)):
+    4:     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    5:     <title><%= content_for?(:title) ? yield(:title) : "Kidcode" %></title>
+    6:     <meta name="description" content="<%= content_for?(:description) ? yield(:description) : "Kidcode" %>">
+    7:     <%= stylesheet_link_tag 'application', media: 'all' %>
+    8:     <%# Modernizr is required for Zurb Foundation %>
+    9:     <%= javascript_include_tag 'vendor/modernizr' %>
+   10:     <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  app/assets/stylesheets/overrides.css.scss.erb:60
+  app/views/layouts/application.html.erb:7:in `_app_views_layouts_application_html_erb__971742614774616483_70342511798980'
+
+
+  Rendered /Users/gregorygerla/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered /Users/gregorygerla/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /Users/gregorygerla/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (8.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-05-28 01:38:03 -0500
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.4ms)
+Completed 500 Internal Server Error in 17ms
+
+ActionView::Template::Error (Invalid CSS after "	max-width": expected ";", was ": initial;"
+  (in /Users/gregorygerla/Desktop/projects/kidzcode/app/assets/stylesheets/overrides.css.scss.erb:60)):
+    4:     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    5:     <title><%= content_for?(:title) ? yield(:title) : "Kidcode" %></title>
+    6:     <meta name="description" content="<%= content_for?(:description) ? yield(:description) : "Kidcode" %>">
+    7:     <%= stylesheet_link_tag 'application', media: 'all' %>
+    8:     <%# Modernizr is required for Zurb Foundation %>
+    9:     <%= javascript_include_tag 'vendor/modernizr' %>
+   10:     <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  app/assets/stylesheets/overrides.css.scss.erb:60
+  app/views/layouts/application.html.erb:7:in `_app_views_layouts_application_html_erb__971742614774616483_70342511798980'
+
+
+  Rendered /Users/gregorygerla/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /Users/gregorygerla/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/gregorygerla/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (9.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-05-28 01:38:04 -0500
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.4ms)
+Completed 500 Internal Server Error in 18ms
+
+ActionView::Template::Error (Invalid CSS after "	max-width": expected ";", was ": initial;"
+  (in /Users/gregorygerla/Desktop/projects/kidzcode/app/assets/stylesheets/overrides.css.scss.erb:60)):
+    4:     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    5:     <title><%= content_for?(:title) ? yield(:title) : "Kidcode" %></title>
+    6:     <meta name="description" content="<%= content_for?(:description) ? yield(:description) : "Kidcode" %>">
+    7:     <%= stylesheet_link_tag 'application', media: 'all' %>
+    8:     <%# Modernizr is required for Zurb Foundation %>
+    9:     <%= javascript_include_tag 'vendor/modernizr' %>
+   10:     <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  app/assets/stylesheets/overrides.css.scss.erb:60
+  app/views/layouts/application.html.erb:7:in `_app_views_layouts_application_html_erb__971742614774616483_70342511798980'
+
+
+  Rendered /Users/gregorygerla/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendered /Users/gregorygerla/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /Users/gregorygerla/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (10.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-05-28 01:38:15 -0500
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.4ms)
+Completed 500 Internal Server Error in 41ms
+
+ActionView::Template::Error (Invalid CSS after "	max-width": expected ";", was ": initial;"
+  (in /Users/gregorygerla/Desktop/projects/kidzcode/app/assets/stylesheets/overrides.css.scss.erb:60)):
+    4:     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    5:     <title><%= content_for?(:title) ? yield(:title) : "Kidcode" %></title>
+    6:     <meta name="description" content="<%= content_for?(:description) ? yield(:description) : "Kidcode" %>">
+    7:     <%= stylesheet_link_tag 'application', media: 'all' %>
+    8:     <%# Modernizr is required for Zurb Foundation %>
+    9:     <%= javascript_include_tag 'vendor/modernizr' %>
+   10:     <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  app/assets/stylesheets/overrides.css.scss.erb:60
+  app/views/layouts/application.html.erb:7:in `_app_views_layouts_application_html_erb__971742614774616483_70342511798980'
+
+
+  Rendered /Users/gregorygerla/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /Users/gregorygerla/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /Users/gregorygerla/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (9.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-05-28 01:38:16 -0500
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.4ms)
+Completed 500 Internal Server Error in 18ms
+
+ActionView::Template::Error (Invalid CSS after "	max-width": expected ";", was ": initial;"
+  (in /Users/gregorygerla/Desktop/projects/kidzcode/app/assets/stylesheets/overrides.css.scss.erb:60)):
+    4:     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    5:     <title><%= content_for?(:title) ? yield(:title) : "Kidcode" %></title>
+    6:     <meta name="description" content="<%= content_for?(:description) ? yield(:description) : "Kidcode" %>">
+    7:     <%= stylesheet_link_tag 'application', media: 'all' %>
+    8:     <%# Modernizr is required for Zurb Foundation %>
+    9:     <%= javascript_include_tag 'vendor/modernizr' %>
+   10:     <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  app/assets/stylesheets/overrides.css.scss.erb:60
+  app/views/layouts/application.html.erb:7:in `_app_views_layouts_application_html_erb__971742614774616483_70342511798980'
+
+
+  Rendered /Users/gregorygerla/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /Users/gregorygerla/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /Users/gregorygerla/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (9.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-05-28 01:38:16 -0500
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.4ms)
+Completed 500 Internal Server Error in 18ms
+
+ActionView::Template::Error (Invalid CSS after "	max-width": expected ";", was ": initial;"
+  (in /Users/gregorygerla/Desktop/projects/kidzcode/app/assets/stylesheets/overrides.css.scss.erb:60)):
+    4:     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    5:     <title><%= content_for?(:title) ? yield(:title) : "Kidcode" %></title>
+    6:     <meta name="description" content="<%= content_for?(:description) ? yield(:description) : "Kidcode" %>">
+    7:     <%= stylesheet_link_tag 'application', media: 'all' %>
+    8:     <%# Modernizr is required for Zurb Foundation %>
+    9:     <%= javascript_include_tag 'vendor/modernizr' %>
+   10:     <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  app/assets/stylesheets/overrides.css.scss.erb:60
+  app/views/layouts/application.html.erb:7:in `_app_views_layouts_application_html_erb__971742614774616483_70342511798980'
+
+
+  Rendered /Users/gregorygerla/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /Users/gregorygerla/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /Users/gregorygerla/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (9.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-05-28 01:38:16 -0500
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.4ms)
+Completed 500 Internal Server Error in 18ms
+
+ActionView::Template::Error (Invalid CSS after "	max-width": expected ";", was ": initial;"
+  (in /Users/gregorygerla/Desktop/projects/kidzcode/app/assets/stylesheets/overrides.css.scss.erb:60)):
+    4:     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    5:     <title><%= content_for?(:title) ? yield(:title) : "Kidcode" %></title>
+    6:     <meta name="description" content="<%= content_for?(:description) ? yield(:description) : "Kidcode" %>">
+    7:     <%= stylesheet_link_tag 'application', media: 'all' %>
+    8:     <%# Modernizr is required for Zurb Foundation %>
+    9:     <%= javascript_include_tag 'vendor/modernizr' %>
+   10:     <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  app/assets/stylesheets/overrides.css.scss.erb:60
+  app/views/layouts/application.html.erb:7:in `_app_views_layouts_application_html_erb__971742614774616483_70342511798980'
+
+
+  Rendered /Users/gregorygerla/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /Users/gregorygerla/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /Users/gregorygerla/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (9.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-05-28 01:38:18 -0500
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.4ms)
+Completed 500 Internal Server Error in 24ms
+
+ActionView::Template::Error (Invalid CSS after "	max-width": expected ";", was ": initial;"
+  (in /Users/gregorygerla/Desktop/projects/kidzcode/app/assets/stylesheets/overrides.css.scss.erb:60)):
+    4:     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    5:     <title><%= content_for?(:title) ? yield(:title) : "Kidcode" %></title>
+    6:     <meta name="description" content="<%= content_for?(:description) ? yield(:description) : "Kidcode" %>">
+    7:     <%= stylesheet_link_tag 'application', media: 'all' %>
+    8:     <%# Modernizr is required for Zurb Foundation %>
+    9:     <%= javascript_include_tag 'vendor/modernizr' %>
+   10:     <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  app/assets/stylesheets/overrides.css.scss.erb:60
+  app/views/layouts/application.html.erb:7:in `_app_views_layouts_application_html_erb__971742614774616483_70342511798980'
+
+
+  Rendered /Users/gregorygerla/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendered /Users/gregorygerla/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.6ms)
+  Rendered /Users/gregorygerla/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (9.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-05-28 01:38:18 -0500
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.5ms)
+Completed 500 Internal Server Error in 18ms
+
+ActionView::Template::Error (Invalid CSS after "	max-width": expected ";", was ": initial;"
+  (in /Users/gregorygerla/Desktop/projects/kidzcode/app/assets/stylesheets/overrides.css.scss.erb:60)):
+    4:     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    5:     <title><%= content_for?(:title) ? yield(:title) : "Kidcode" %></title>
+    6:     <meta name="description" content="<%= content_for?(:description) ? yield(:description) : "Kidcode" %>">
+    7:     <%= stylesheet_link_tag 'application', media: 'all' %>
+    8:     <%# Modernizr is required for Zurb Foundation %>
+    9:     <%= javascript_include_tag 'vendor/modernizr' %>
+   10:     <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  app/assets/stylesheets/overrides.css.scss.erb:60
+  app/views/layouts/application.html.erb:7:in `_app_views_layouts_application_html_erb__971742614774616483_70342511798980'
+
+
+  Rendered /Users/gregorygerla/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+  Rendered /Users/gregorygerla/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /Users/gregorygerla/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (9.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-05-28 01:38:18 -0500
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.4ms)
+Completed 500 Internal Server Error in 18ms
+
+ActionView::Template::Error (Invalid CSS after "	max-width": expected ";", was ": initial;"
+  (in /Users/gregorygerla/Desktop/projects/kidzcode/app/assets/stylesheets/overrides.css.scss.erb:60)):
+    4:     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    5:     <title><%= content_for?(:title) ? yield(:title) : "Kidcode" %></title>
+    6:     <meta name="description" content="<%= content_for?(:description) ? yield(:description) : "Kidcode" %>">
+    7:     <%= stylesheet_link_tag 'application', media: 'all' %>
+    8:     <%# Modernizr is required for Zurb Foundation %>
+    9:     <%= javascript_include_tag 'vendor/modernizr' %>
+   10:     <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  app/assets/stylesheets/overrides.css.scss.erb:60
+  app/views/layouts/application.html.erb:7:in `_app_views_layouts_application_html_erb__971742614774616483_70342511798980'
+
+
+  Rendered /Users/gregorygerla/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /Users/gregorygerla/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /Users/gregorygerla/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (9.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-05-28 01:38:18 -0500
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.4ms)
+Completed 500 Internal Server Error in 17ms
+
+ActionView::Template::Error (Invalid CSS after "	max-width": expected ";", was ": initial;"
+  (in /Users/gregorygerla/Desktop/projects/kidzcode/app/assets/stylesheets/overrides.css.scss.erb:60)):
+    4:     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    5:     <title><%= content_for?(:title) ? yield(:title) : "Kidcode" %></title>
+    6:     <meta name="description" content="<%= content_for?(:description) ? yield(:description) : "Kidcode" %>">
+    7:     <%= stylesheet_link_tag 'application', media: 'all' %>
+    8:     <%# Modernizr is required for Zurb Foundation %>
+    9:     <%= javascript_include_tag 'vendor/modernizr' %>
+   10:     <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  app/assets/stylesheets/overrides.css.scss.erb:60
+  app/views/layouts/application.html.erb:7:in `_app_views_layouts_application_html_erb__971742614774616483_70342511798980'
+
+
+  Rendered /Users/gregorygerla/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /Users/gregorygerla/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /Users/gregorygerla/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (9.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-05-28 01:38:25 -0500
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.4ms)
+  Rendered layouts/_navigation_links.html.erb (0.1ms)
+  Rendered layouts/_navigation.html.erb (0.7ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+Completed 200 OK in 995ms (Views: 993.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/framework_and_overrides.css?body=1" for 127.0.0.1 at 2014-05-28 01:38:26 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-28 01:38:26 -0500
+
+
+Started GET "/assets/overrides.css?body=1" for 127.0.0.1 at 2014-05-28 01:38:26 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-05-28 01:38:26 -0500
+
+
+Started GET "/assets/vendor/modernizr.js?body=1" for 127.0.0.1 at 2014-05-28 01:38:26 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-05-28 01:38:26 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-05-28 01:38:26 -0500
+
+
+Started GET "/assets/foundation/foundation.js?body=1" for 127.0.0.1 at 2014-05-28 01:38:26 -0500
+
+
+Started GET "/assets/foundation/foundation.accordion.js?body=1" for 127.0.0.1 at 2014-05-28 01:38:26 -0500
+
+
+Started GET "/assets/foundation/foundation.abide.js?body=1" for 127.0.0.1 at 2014-05-28 01:38:26 -0500
+
+
+Started GET "/assets/foundation/foundation.alert.js?body=1" for 127.0.0.1 at 2014-05-28 01:38:26 -0500
+
+
+Started GET "/assets/foundation/foundation.clearing.js?body=1" for 127.0.0.1 at 2014-05-28 01:38:26 -0500
+
+
+Started GET "/assets/foundation/foundation.dropdown.js?body=1" for 127.0.0.1 at 2014-05-28 01:38:26 -0500
+
+
+Started GET "/assets/foundation/foundation.interchange.js?body=1" for 127.0.0.1 at 2014-05-28 01:38:26 -0500
+
+
+Started GET "/assets/foundation/foundation.joyride.js?body=1" for 127.0.0.1 at 2014-05-28 01:38:26 -0500
+
+
+Started GET "/assets/foundation/foundation.magellan.js?body=1" for 127.0.0.1 at 2014-05-28 01:38:26 -0500
+
+
+Started GET "/assets/foundation/foundation.offcanvas.js?body=1" for 127.0.0.1 at 2014-05-28 01:38:26 -0500
+
+
+Started GET "/assets/foundation/foundation.orbit.js?body=1" for 127.0.0.1 at 2014-05-28 01:38:26 -0500
+
+
+Started GET "/assets/foundation/foundation.reveal.js?body=1" for 127.0.0.1 at 2014-05-28 01:38:26 -0500
+
+
+Started GET "/assets/foundation/foundation.slider.js?body=1" for 127.0.0.1 at 2014-05-28 01:38:26 -0500
+
+
+Started GET "/assets/foundation/foundation.tab.js?body=1" for 127.0.0.1 at 2014-05-28 01:38:26 -0500
+
+
+Started GET "/assets/foundation/foundation.tooltip.js?body=1" for 127.0.0.1 at 2014-05-28 01:38:26 -0500
+
+
+Started GET "/assets/foundation/foundation.topbar.js?body=1" for 127.0.0.1 at 2014-05-28 01:38:26 -0500
+
+
+Started GET "/assets/foundation/foundation.equalizer.js?body=1" for 127.0.0.1 at 2014-05-28 01:38:26 -0500
+
+
+Started GET "/assets/foundation.js?body=1" for 127.0.0.1 at 2014-05-28 01:38:26 -0500
+
+
+Started GET "/assets/initialize.js?body=1" for 127.0.0.1 at 2014-05-28 01:38:26 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-28 01:38:26 -0500
+
+
+Started GET "/assets/black223.svg" for 127.0.0.1 at 2014-05-28 01:38:26 -0500
+
+
+Started GET "/assets/female188.svg" for 127.0.0.1 at 2014-05-28 01:38:26 -0500
+
+
+Started GET "/assets/write12.svg" for 127.0.0.1 at 2014-05-28 01:38:26 -0500
+
+
+Started GET "/assets/pc6.svg" for 127.0.0.1 at 2014-05-28 01:38:26 -0500
+
+
+Started GET "/" for 127.0.0.1 at 2014-05-28 01:38:45 -0500
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.4ms)
+  Rendered layouts/_navigation_links.html.erb (0.1ms)
+  Rendered layouts/_navigation.html.erb (1.0ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+Completed 200 OK in 958ms (Views: 956.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/framework_and_overrides.css?body=1" for 127.0.0.1 at 2014-05-28 01:38:46 -0500
+
+
+Started GET "/assets/overrides.css?body=1" for 127.0.0.1 at 2014-05-28 01:38:46 -0500
+
+
+Started GET "/assets/vendor/modernizr.js?body=1" for 127.0.0.1 at 2014-05-28 01:38:46 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-05-28 01:38:46 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-05-28 01:38:46 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-28 01:38:46 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-05-28 01:38:46 -0500
+
+
+Started GET "/assets/foundation/foundation.abide.js?body=1" for 127.0.0.1 at 2014-05-28 01:38:46 -0500
+
+
+Started GET "/assets/foundation/foundation.js?body=1" for 127.0.0.1 at 2014-05-28 01:38:46 -0500
+
+
+Started GET "/assets/foundation/foundation.accordion.js?body=1" for 127.0.0.1 at 2014-05-28 01:38:46 -0500
+
+
+Started GET "/assets/foundation/foundation.alert.js?body=1" for 127.0.0.1 at 2014-05-28 01:38:46 -0500
+
+
+Started GET "/assets/foundation/foundation.clearing.js?body=1" for 127.0.0.1 at 2014-05-28 01:38:46 -0500
+
+
+Started GET "/assets/foundation/foundation.dropdown.js?body=1" for 127.0.0.1 at 2014-05-28 01:38:46 -0500
+
+
+Started GET "/assets/foundation/foundation.interchange.js?body=1" for 127.0.0.1 at 2014-05-28 01:38:46 -0500
+
+
+Started GET "/assets/foundation/foundation.joyride.js?body=1" for 127.0.0.1 at 2014-05-28 01:38:46 -0500
+
+
+Started GET "/assets/foundation/foundation.magellan.js?body=1" for 127.0.0.1 at 2014-05-28 01:38:46 -0500
+
+
+Started GET "/assets/foundation/foundation.offcanvas.js?body=1" for 127.0.0.1 at 2014-05-28 01:38:46 -0500
+
+
+Started GET "/assets/foundation/foundation.orbit.js?body=1" for 127.0.0.1 at 2014-05-28 01:38:46 -0500
+
+
+Started GET "/assets/foundation/foundation.reveal.js?body=1" for 127.0.0.1 at 2014-05-28 01:38:46 -0500
+
+
+Started GET "/assets/foundation/foundation.slider.js?body=1" for 127.0.0.1 at 2014-05-28 01:38:46 -0500
+
+
+Started GET "/assets/foundation/foundation.tab.js?body=1" for 127.0.0.1 at 2014-05-28 01:38:46 -0500
+
+
+Started GET "/assets/foundation/foundation.tooltip.js?body=1" for 127.0.0.1 at 2014-05-28 01:38:46 -0500
+
+
+Started GET "/assets/foundation/foundation.topbar.js?body=1" for 127.0.0.1 at 2014-05-28 01:38:46 -0500
+
+
+Started GET "/assets/foundation/foundation.equalizer.js?body=1" for 127.0.0.1 at 2014-05-28 01:38:46 -0500
+
+
+Started GET "/assets/foundation.js?body=1" for 127.0.0.1 at 2014-05-28 01:38:46 -0500
+
+
+Started GET "/assets/initialize.js?body=1" for 127.0.0.1 at 2014-05-28 01:38:46 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-28 01:38:46 -0500
+
+
+Started GET "/assets/black223.svg" for 127.0.0.1 at 2014-05-28 01:38:46 -0500
+
+
+Started GET "/assets/female188.svg" for 127.0.0.1 at 2014-05-28 01:38:46 -0500
+
+
+Started GET "/assets/write12.svg" for 127.0.0.1 at 2014-05-28 01:38:46 -0500
+
+
+Started GET "/assets/pc6.svg" for 127.0.0.1 at 2014-05-28 01:38:46 -0500
+
+
+Started GET "/" for 127.0.0.1 at 2014-05-28 01:38:47 -0500
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_navigation_links.html.erb (0.1ms)
+  Rendered layouts/_navigation.html.erb (0.7ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+Completed 200 OK in 10ms (Views: 9.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/framework_and_overrides.css?body=1" for 127.0.0.1 at 2014-05-28 01:38:48 -0500
+
+
+Started GET "/assets/overrides.css?body=1" for 127.0.0.1 at 2014-05-28 01:38:48 -0500
+
+
+Started GET "/assets/vendor/modernizr.js?body=1" for 127.0.0.1 at 2014-05-28 01:38:48 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-05-28 01:38:48 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-28 01:38:48 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-05-28 01:38:48 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-05-28 01:38:48 -0500
+
+
+Started GET "/assets/foundation/foundation.js?body=1" for 127.0.0.1 at 2014-05-28 01:38:48 -0500
+
+
+Started GET "/assets/foundation/foundation.abide.js?body=1" for 127.0.0.1 at 2014-05-28 01:38:48 -0500
+
+
+Started GET "/assets/foundation/foundation.accordion.js?body=1" for 127.0.0.1 at 2014-05-28 01:38:48 -0500
+
+
+Started GET "/assets/foundation/foundation.alert.js?body=1" for 127.0.0.1 at 2014-05-28 01:38:48 -0500
+
+
+Started GET "/assets/foundation/foundation.clearing.js?body=1" for 127.0.0.1 at 2014-05-28 01:38:48 -0500
+
+
+Started GET "/assets/foundation/foundation.dropdown.js?body=1" for 127.0.0.1 at 2014-05-28 01:38:48 -0500
+
+
+Started GET "/assets/foundation/foundation.interchange.js?body=1" for 127.0.0.1 at 2014-05-28 01:38:48 -0500
+
+
+Started GET "/assets/foundation/foundation.joyride.js?body=1" for 127.0.0.1 at 2014-05-28 01:38:48 -0500
+
+
+Started GET "/assets/foundation/foundation.magellan.js?body=1" for 127.0.0.1 at 2014-05-28 01:38:48 -0500
+
+
+Started GET "/assets/foundation/foundation.offcanvas.js?body=1" for 127.0.0.1 at 2014-05-28 01:38:48 -0500
+
+
+Started GET "/assets/foundation/foundation.orbit.js?body=1" for 127.0.0.1 at 2014-05-28 01:38:48 -0500
+
+
+Started GET "/assets/foundation/foundation.reveal.js?body=1" for 127.0.0.1 at 2014-05-28 01:38:48 -0500
+
+
+Started GET "/assets/foundation/foundation.slider.js?body=1" for 127.0.0.1 at 2014-05-28 01:38:48 -0500
+
+
+Started GET "/assets/foundation/foundation.tab.js?body=1" for 127.0.0.1 at 2014-05-28 01:38:48 -0500
+
+
+Started GET "/assets/foundation/foundation.tooltip.js?body=1" for 127.0.0.1 at 2014-05-28 01:38:48 -0500
+
+
+Started GET "/assets/foundation/foundation.topbar.js?body=1" for 127.0.0.1 at 2014-05-28 01:38:48 -0500
+
+
+Started GET "/assets/foundation/foundation.equalizer.js?body=1" for 127.0.0.1 at 2014-05-28 01:38:48 -0500
+
+
+Started GET "/assets/foundation.js?body=1" for 127.0.0.1 at 2014-05-28 01:38:48 -0500
+
+
+Started GET "/assets/initialize.js?body=1" for 127.0.0.1 at 2014-05-28 01:38:48 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-28 01:38:48 -0500
+
+
+Started GET "/assets/black223.svg" for 127.0.0.1 at 2014-05-28 01:38:48 -0500
+
+
+Started GET "/assets/female188.svg" for 127.0.0.1 at 2014-05-28 01:38:48 -0500
+
+
+Started GET "/assets/write12.svg" for 127.0.0.1 at 2014-05-28 01:38:48 -0500
+
+
+Started GET "/assets/pc6.svg" for 127.0.0.1 at 2014-05-28 01:38:48 -0500
+
+
+Started GET "/" for 127.0.0.1 at 2014-05-28 01:43:16 -0500
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.7ms)
+  Rendered layouts/_navigation_links.html.erb (0.2ms)
+  Rendered layouts/_navigation.html.erb (0.8ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+Completed 200 OK in 969ms (Views: 968.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/framework_and_overrides.css?body=1" for 127.0.0.1 at 2014-05-28 01:43:17 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-05-28 01:43:17 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-05-28 01:43:17 -0500
+
+
+Started GET "/assets/overrides.css?body=1" for 127.0.0.1 at 2014-05-28 01:43:17 -0500
+
+
+Started GET "/assets/vendor/modernizr.js?body=1" for 127.0.0.1 at 2014-05-28 01:43:17 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-28 01:43:17 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-05-28 01:43:17 -0500
+
+
+Started GET "/assets/foundation/foundation.js?body=1" for 127.0.0.1 at 2014-05-28 01:43:17 -0500
+
+
+Started GET "/assets/foundation/foundation.abide.js?body=1" for 127.0.0.1 at 2014-05-28 01:43:17 -0500
+
+
+Started GET "/assets/foundation/foundation.accordion.js?body=1" for 127.0.0.1 at 2014-05-28 01:43:17 -0500
+
+
+Started GET "/assets/foundation/foundation.alert.js?body=1" for 127.0.0.1 at 2014-05-28 01:43:17 -0500
+
+
+Started GET "/assets/foundation/foundation.clearing.js?body=1" for 127.0.0.1 at 2014-05-28 01:43:17 -0500
+
+
+Started GET "/assets/foundation/foundation.dropdown.js?body=1" for 127.0.0.1 at 2014-05-28 01:43:17 -0500
+
+
+Started GET "/assets/foundation/foundation.interchange.js?body=1" for 127.0.0.1 at 2014-05-28 01:43:17 -0500
+
+
+Started GET "/assets/foundation/foundation.joyride.js?body=1" for 127.0.0.1 at 2014-05-28 01:43:17 -0500
+
+
+Started GET "/assets/foundation/foundation.magellan.js?body=1" for 127.0.0.1 at 2014-05-28 01:43:17 -0500
+
+
+Started GET "/assets/foundation/foundation.offcanvas.js?body=1" for 127.0.0.1 at 2014-05-28 01:43:17 -0500
+
+
+Started GET "/assets/foundation/foundation.orbit.js?body=1" for 127.0.0.1 at 2014-05-28 01:43:17 -0500
+
+
+Started GET "/assets/foundation/foundation.reveal.js?body=1" for 127.0.0.1 at 2014-05-28 01:43:17 -0500
+
+
+Started GET "/assets/foundation/foundation.slider.js?body=1" for 127.0.0.1 at 2014-05-28 01:43:17 -0500
+
+
+Started GET "/assets/foundation/foundation.tab.js?body=1" for 127.0.0.1 at 2014-05-28 01:43:17 -0500
+
+
+Started GET "/assets/foundation/foundation.tooltip.js?body=1" for 127.0.0.1 at 2014-05-28 01:43:17 -0500
+
+
+Started GET "/assets/foundation/foundation.topbar.js?body=1" for 127.0.0.1 at 2014-05-28 01:43:17 -0500
+
+
+Started GET "/assets/foundation/foundation.equalizer.js?body=1" for 127.0.0.1 at 2014-05-28 01:43:17 -0500
+
+
+Started GET "/assets/foundation.js?body=1" for 127.0.0.1 at 2014-05-28 01:43:17 -0500
+
+
+Started GET "/assets/initialize.js?body=1" for 127.0.0.1 at 2014-05-28 01:43:17 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-28 01:43:17 -0500
+
+
+Started GET "/assets/black223.svg" for 127.0.0.1 at 2014-05-28 01:43:17 -0500
+
+
+Started GET "/assets/female188.svg" for 127.0.0.1 at 2014-05-28 01:43:17 -0500
+
+
+Started GET "/assets/write12.svg" for 127.0.0.1 at 2014-05-28 01:43:17 -0500
+
+
+Started GET "/assets/pc6.svg" for 127.0.0.1 at 2014-05-28 01:43:17 -0500
