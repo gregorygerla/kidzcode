@@ -53,10 +53,10 @@ Rails.application.routes.draw do
   #     # (app/controllers/admin/products_controller.rb)
   #     resources :products
   #   end
-  resources :students, :only => [:new,:create,:show]
+  resources :students, :only => [:new,:create,:show,:info]
   namespace :admin do
     resources :students, :only => [:index,:show,:update]
   end
   root :to => "home#index"
-  
+  resources :user_steps
 end

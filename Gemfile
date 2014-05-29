@@ -30,7 +30,8 @@ gem 'capybara'
   gem 'database_cleaner'
   gem 'shoulda-matchers'
   gem 'faker'
-
+gem 'simple_form'
+gem 'wicked'
 # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
 gem 'spring',        group: :development
 

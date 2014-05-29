@@ -1,13 +1,17 @@
 <div class="small-6 large-centered columns">
 	<div class="main_signup">
 		<h3>Please create an account so we can better serve your child</h3>	
-		<%= form_for @student do |student| %>
+		<%= simple_form_for @student do |student| %>
 		<%= student.label :email, "Best Email" %>
 		<%= student.email_field :email %>
+		<%= student.error :email %>
 		<%= student.label :password %>
 		<%= student.password_field :password %>
+		<%= student.error :password %>
 		<%= student.label :password_confirmation %>
 		<%= student.password_field :password_confirmation %>
+		<%= student.error :password_confirmation %>
+		<%= student.error :password_field %>
 		<%= student.submit %>
 		<% end %>
 	</div>

@@ -8,14 +8,21 @@ class StudentsController < ApplicationController
 		p "WTF"
 		p params[:student]
 		p "*" * 50
-		@student = Student.create(app_params)
-		redirect_to student_path(@student)
+		@student = Student.new(app_params)
+		if @student.save
+			session[:student] = @student.id
+			redirect_to 'user_steps_path'
+		else
+			render 'new'
+		end		
 	end
 
 	# def index
 	# 	@students = Student.all
 	# end
+	def info
 
+	end
 	def show
 		p "fuckkkkks"
 	end
