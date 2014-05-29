@@ -698,3 +698,339 @@
   [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
   [1m[35m (0.1ms)[0m  BEGIN
   [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mStudent Exists (0.5ms)[0m  [1mSELECT  1 AS one FROM "students"  WHERE "students"."email" IS NULL LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mStudent Exists (0.2ms)[0m  SELECT  1 AS one FROM "students"  WHERE "students"."email" IS NULL LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mStudent Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "students"  WHERE "students"."email" IS NULL LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mStudent Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "students"  WHERE "students"."email" IS NULL LIMIT 1[0m
+  [1m[35m (5.6ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mStudent Exists (0.2ms)[0m  SELECT  1 AS one FROM "students"  WHERE "students"."email" IS NULL LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mStudent Exists (0.1ms)[0m  SELECT  1 AS one FROM "students"  WHERE "students"."email" IS NULL LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mStudent Exists (0.4ms)[0m  [1mSELECT  1 AS one FROM "students"  WHERE "students"."email" IS NULL LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mStudent Exists (0.2ms)[0m  SELECT  1 AS one FROM "students"  WHERE "students"."email" IS NULL LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mStudent Exists (3.2ms)[0m  SELECT  1 AS one FROM "students"  WHERE "students"."email" = 'greg@greg.com' LIMIT 1
+  [1m[36mSQL (3.8ms)[0m  [1mINSERT INTO "students" ("created_at", "email", "first_name", "password_digest", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["created_at", "2014-05-29 19:02:00.935674"], ["email", "greg@greg.com"], ["first_name", "greg"], ["password_digest", "$2a$04$DtrFbgBOuUxwnEOwVUNLMO2USASlminkw6dguJZZN6gePgq7R6yhu"], ["updated_at", "2014-05-29 19:02:00.935674"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mStudent Exists (0.9ms)[0m  [1mSELECT  1 AS one FROM "students"  WHERE ("students"."email" = 'greg@greg.com' AND "students"."id" != 30) LIMIT 1[0m
+  [1m[35m (0.3ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mStudent Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "students"  WHERE "students"."email" = 'greg@greg.com' LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "students" ("created_at", "email", "first_name", "password_digest", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["created_at", "2014-05-29 19:02:00.949657"], ["email", "greg@greg.com"], ["first_name", "greg"], ["password_digest", "$2a$04$gfMsdXGQ2hndo7MRF/8kSOLZOA80JqnIgUsnRttc7MZSRGlMrdDUe"], ["updated_at", "2014-05-29 19:02:00.949657"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mStudent Exists (0.2ms)[0m  SELECT  1 AS one FROM "students"  WHERE "students"."email" IS NULL LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mStudent Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "students"  WHERE "students"."email" IS NULL LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mStudent Exists (0.4ms)[0m  [1mSELECT  1 AS one FROM "students"  WHERE "students"."email" IS NULL LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mStudent Exists (0.3ms)[0m  SELECT  1 AS one FROM "students"  WHERE "students"."email" = 'greg@greg.com' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mStudent Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "students"  WHERE "students"."email" = 'greg@greg.com' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mStudent Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "students"  WHERE "students"."email" = 'greg@greg.com' LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "students" ("created_at", "email", "first_name", "password_digest", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["created_at", "2014-05-29 19:03:18.004005"], ["email", "greg@greg.com"], ["first_name", "greg"], ["password_digest", "$2a$04$C7CDS9u7EjjxTmLThCuljOJ67NLwjJLx2cOekVzRqrboeh5DPL5qy"], ["updated_at", "2014-05-29 19:03:18.004005"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mStudent Exists (0.2ms)[0m  SELECT  1 AS one FROM "students"  WHERE ("students"."email" = 'greg@greg.com' AND "students"."id" != 32) LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mStudent Exists (0.1ms)[0m  SELECT  1 AS one FROM "students"  WHERE "students"."email" = 'greg@greg.com' LIMIT 1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "students" ("created_at", "email", "first_name", "password_digest", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["created_at", "2014-05-29 19:03:18.011119"], ["email", "greg@greg.com"], ["first_name", "greg"], ["password_digest", "$2a$04$pmTnc9DAkH1c9pkckXyHJus6W93tWLgsJhYp8S/0z/vy4idrddGbq"], ["updated_at", "2014-05-29 19:03:18.011119"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mStudent Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "students"  WHERE "students"."email" = 'greg@greg.com' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mStudent Exists (0.5ms)[0m  [1mSELECT  1 AS one FROM "students"  WHERE "students"."email" IS NULL LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mStudent Exists (0.4ms)[0m  SELECT  1 AS one FROM "students"  WHERE "students"."email" = 'greg@greg.com' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mStudent Exists (0.2ms)[0m  SELECT  1 AS one FROM "students"  WHERE "students"."email" = 'greg@greg.com' LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "students" ("created_at", "email", "first_name", "password_digest", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["created_at", "2014-05-29 19:05:58.696644"], ["email", "greg@greg.com"], ["first_name", "greg"], ["password_digest", "$2a$04$uOqmDzftMpyIZ/OjyFA9QOeT0.Dwo4sDsZIypB1tMZRcLY60ulKU6"], ["updated_at", "2014-05-29 19:05:58.696644"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mStudent Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "students"  WHERE "students"."email" = 'greg@greg.com' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mStudent Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "students"  WHERE "students"."email" = 'greg@greg.com' LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "students" ("created_at", "email", "first_name", "password_digest", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["created_at", "2014-05-29 19:05:58.705420"], ["email", "greg@greg.com"], ["first_name", "greg"], ["password_digest", "$2a$04$v/twQGBwz8HB9hzyBm99veqZqKl33AUi1fdQdRlW8Y09Y5oGgmLwS"], ["updated_at", "2014-05-29 19:05:58.705420"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mStudent Exists (0.2ms)[0m  SELECT  1 AS one FROM "students"  WHERE ("students"."email" = 'greg@greg.com' AND "students"."id" != 35) LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mStudent Exists (0.2ms)[0m  SELECT  1 AS one FROM "students"  WHERE "students"."email" = 'greg@greg.com' LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "students" ("created_at", "email", "first_name", "password_digest", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["created_at", "2014-05-29 19:05:58.710542"], ["email", "greg@greg.com"], ["first_name", "greg"], ["password_digest", "$2a$04$E5a.idTXVVbEUKXywJbxle3hTPrydRaFMUYePxanilU8O4.FDswLy"], ["updated_at", "2014-05-29 19:05:58.710542"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mStudent Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "students"  WHERE "students"."email" = 'greg@greg.com' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mStudent Exists (0.2ms)[0m  SELECT  1 AS one FROM "students"  WHERE "students"."email" = 'greg@greg.com' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mStudent Exists (0.4ms)[0m  [1mSELECT  1 AS one FROM "students"  WHERE "students"."email" IS NULL LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mStudent Exists (0.4ms)[0m  [1mSELECT  1 AS one FROM "students"  WHERE "students"."email" = 'greg@greg.com' LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "students" ("created_at", "email", "first_name", "password_digest", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["created_at", "2014-05-29 19:06:09.029782"], ["email", "greg@greg.com"], ["first_name", "greg"], ["password_digest", "$2a$04$TGc0w6qmen8MMZhig7riM.qw756m9iUNgEtsHnnAJbQT2VyGq9JsG"], ["updated_at", "2014-05-29 19:06:09.029782"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mStudent Exists (0.2ms)[0m  SELECT  1 AS one FROM "students"  WHERE ("students"."email" = 'greg@greg.com' AND "students"."id" != 37) LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mStudent Exists (0.2ms)[0m  SELECT  1 AS one FROM "students"  WHERE "students"."email" = 'greg@greg.com' LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "students" ("created_at", "email", "first_name", "password_digest", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["created_at", "2014-05-29 19:06:09.036523"], ["email", "greg@greg.com"], ["first_name", "greg"], ["password_digest", "$2a$04$KBFDr0Eff305961Fl5Dwt.awCmmG84uKf2DqTEUh2rs7SV8Cd4xXO"], ["updated_at", "2014-05-29 19:06:09.036523"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mStudent Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "students"  WHERE "students"."email" = 'greg@greg.com' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mStudent Exists (0.2ms)[0m  SELECT  1 AS one FROM "students"  WHERE "students"."email" = 'greg@greg.com' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mStudent Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "students"  WHERE "students"."email" = 'greg@greg.com' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mStudent Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "students"  WHERE "students"."email" = 'greg@greg.com' LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "students" ("created_at", "email", "first_name", "password_digest", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["created_at", "2014-05-29 19:06:09.053096"], ["email", "greg@greg.com"], ["first_name", "greg"], ["password_digest", "$2a$04$eKRhon8SLWyq2Gha6q.BVOGa3TtaXB1VegD1rXgsZ8x/SGRDXfjUi"], ["updated_at", "2014-05-29 19:06:09.053096"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mStudent Exists (0.1ms)[0m  SELECT  1 AS one FROM "students"  WHERE "students"."email" = 'gregory@greg.com' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mStudent Exists (0.4ms)[0m  [1mSELECT  1 AS one FROM "students"  WHERE "students"."email" IS NULL LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mStudent Exists (0.4ms)[0m  SELECT  1 AS one FROM "students"  WHERE "students"."email" = 'greg@greg.com' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mStudent Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "students"  WHERE "students"."email" = 'greg@greg.com' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mStudent Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "students"  WHERE "students"."email" = 'greg@greg.com' LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "students" ("created_at", "email", "first_name", "password_digest", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["created_at", "2014-05-29 19:06:27.969008"], ["email", "greg@greg.com"], ["first_name", "greg"], ["password_digest", "$2a$04$qorz.QQZi9kPUqKkBtLQVuSMpkMdP46DMXD/J8HLPT6v.tgHrZrMe"], ["updated_at", "2014-05-29 19:06:27.969008"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mStudent Exists (0.2ms)[0m  SELECT  1 AS one FROM "students"  WHERE ("students"."email" = 'greg@greg.com' AND "students"."id" != 40) LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mStudent Exists (0.2ms)[0m  SELECT  1 AS one FROM "students"  WHERE "students"."email" = 'greg@greg.com' LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "students" ("created_at", "email", "first_name", "password_digest", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["created_at", "2014-05-29 19:06:27.975036"], ["email", "greg@greg.com"], ["first_name", "greg"], ["password_digest", "$2a$04$BhB3tGXXpLLaPjR9A0vsGe8pjWCUJJb/nuMY2ntaFkM4NWKafB.U2"], ["updated_at", "2014-05-29 19:06:27.975036"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mStudent Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "students"  WHERE "students"."email" = 'greg@greg.com' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mStudent Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "students"  WHERE "students"."email" = 'greg@greg.com' LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "students" ("created_at", "email", "first_name", "password_digest", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["created_at", "2014-05-29 19:06:27.982579"], ["email", "greg@greg.com"], ["first_name", "greg"], ["password_digest", "$2a$04$A09aTuS.MDMf.8mvLlbMguQLXa4BGDTdQN5Qcv/Yk2okhblt/yt3G"], ["updated_at", "2014-05-29 19:06:27.982579"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mStudent Exists (0.2ms)[0m  SELECT  1 AS one FROM "students"  WHERE "students"."email" = 'gregory@greg.com' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mStudent Exists (0.4ms)[0m  [1mSELECT  1 AS one FROM "students"  WHERE "students"."email" IS NULL LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mStudent Exists (0.4ms)[0m  [1mSELECT  1 AS one FROM "students"  WHERE "students"."email" = 'greg@greg.com' LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "students" ("created_at", "email", "first_name", "password_digest", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["created_at", "2014-05-29 19:06:41.829476"], ["email", "greg@greg.com"], ["first_name", "greg"], ["password_digest", "$2a$04$88OE6wHNHP772fsdUF.p7.VnG8b3/I7tRqN/39w5RjCpavJn2vde."], ["updated_at", "2014-05-29 19:06:41.829476"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mStudent Exists (0.2ms)[0m  SELECT  1 AS one FROM "students"  WHERE ("students"."email" = 'greg@greg.com' AND "students"."id" != 43) LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mStudent Exists (0.2ms)[0m  SELECT  1 AS one FROM "students"  WHERE "students"."email" = 'greg@greg.com' LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "students" ("created_at", "email", "first_name", "password_digest", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["created_at", "2014-05-29 19:06:41.835319"], ["email", "greg@greg.com"], ["first_name", "greg"], ["password_digest", "$2a$04$PDyMlHvcuRq.uCOeMoqIRuRqLECuA7r9hC8/pqjEb1vjf8nEN3Q1a"], ["updated_at", "2014-05-29 19:06:41.835319"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mStudent Exists (0.2ms)[0m  SELECT  1 AS one FROM "students"  WHERE "students"."email" = 'greg@greg.com' LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "students" ("created_at", "email", "first_name", "password_digest", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["created_at", "2014-05-29 19:06:41.839464"], ["email", "greg@greg.com"], ["first_name", "greg"], ["password_digest", "$2a$04$LW08hdWPRaFVaogSL/BhP.ZrbmPdofQ4aBOhxf.FjG6L8oQE4VSom"], ["updated_at", "2014-05-29 19:06:41.839464"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mStudent Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "students"  WHERE "students"."email" = 'gregory@greg.com' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mStudent Exists (0.2ms)[0m  SELECT  1 AS one FROM "students"  WHERE "students"."email" = 'greg@greg.com' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mStudent Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "students"  WHERE "students"."email" = 'greg@greg.com' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mStudent Exists (0.2ms)[0m  SELECT  1 AS one FROM "students"  WHERE "students"."email" = 'greg@greg.com' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mStudent Exists (0.4ms)[0m  [1mSELECT  1 AS one FROM "students"  WHERE "students"."email" IS NULL LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mStudent Exists (0.4ms)[0m  SELECT  1 AS one FROM "students"  WHERE "students"."email" = 'greg@greg.com' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mStudent Exists (0.2ms)[0m  SELECT  1 AS one FROM "students"  WHERE "students"."email" = 'greg@greg.com' LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "students" ("created_at", "email", "first_name", "password_digest", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["created_at", "2014-05-29 19:06:53.170198"], ["email", "greg@greg.com"], ["first_name", "greg"], ["password_digest", "$2a$04$ijoT7FsVmv67jaPZ0bZQCOgIOgW883G97Jr6PQdIXyp54OEYj7Pni"], ["updated_at", "2014-05-29 19:06:53.170198"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mStudent Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "students"  WHERE ("students"."email" = 'greg@greg.com' AND "students"."id" != 46) LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mStudent Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "students"  WHERE "students"."email" = 'greg@greg.com' LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "students" ("created_at", "email", "first_name", "password_digest", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["created_at", "2014-05-29 19:06:53.176027"], ["email", "greg@greg.com"], ["first_name", "greg"], ["password_digest", "$2a$04$Gtz7L.GGTatqCwY91HkvTexlWk3/tizCHgS1ogxa3WIfDdCJIwW6i"], ["updated_at", "2014-05-29 19:06:53.176027"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mStudent Exists (0.2ms)[0m  SELECT  1 AS one FROM "students"  WHERE "students"."email" = 'greg@greg.com' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mStudent Exists (0.2ms)[0m  SELECT  1 AS one FROM "students"  WHERE "students"."email" = 'greg@greg.com' LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "students" ("created_at", "email", "first_name", "password_digest", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["created_at", "2014-05-29 19:06:53.184832"], ["email", "greg@greg.com"], ["first_name", "greg"], ["password_digest", "$2a$04$9StBw67HR.WP.Y5z5mCh0uIDonW3wAMYbHA/lzl.CAFIIgCdl0hEW"], ["updated_at", "2014-05-29 19:06:53.184832"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mStudent Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "students"  WHERE "students"."email" = 'greg@greg.com' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mStudent Exists (0.2ms)[0m  SELECT  1 AS one FROM "students"  WHERE "students"."email" = 'greg@greg.com' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m

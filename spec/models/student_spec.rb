@@ -16,19 +16,26 @@ describe Student do
   		its(:first_name) {should be == "greg"}
   	end
   	describe "matching password success" do
-  		let!(:new_student){Student.new(password: "greg", password_confirmation: "greg" )}
+  		let!(:new_student){Student.new(password: "greg", password_confirmation: "greg",email: "greg@greg.com" )}
   	  		subject { new_student }
   		it {should be_valid }
   	end
   	describe "mismatched password fail" do
-  		let!(:new_student){Student.new(password: "gregg", password_confirmation: "greg" )}
+  		let!(:new_student){Student.new(password: "gregg", password_confirmation: "greg",email:"greg@greg.com" )}
   	  		subject { new_student }
   		it {should_not be_valid }
   	end
   	describe "no entered password fail" do
-  		let!(:new_student){Student.new(password: "", password_confirmation: "" )}
+  		let!(:new_student){Student.new(password: "", password_confirmation: "",email:"greg@greg.com" )}
   	  		subject { new_student }
   		it {should_not be_valid }
+  	end
+  	describe "duplicate email not valid" do
+  		let!(:new_student){FactoryGirl.create :student}
+  		let!(:other_student){Student.new(password: "me", password_confirmation: "me",email:"greg@greg.com" )}
+  		subject {other_student}
+  		it {should_not be_valid}
+
   	end
   	
 	# it "should respond to last name" do
