@@ -17,23 +17,27 @@ ActiveRecord::Schema.define(version: 20140528165355) do
   enable_extension "plpgsql"
 
   create_table "languages", force: true do |t|
+    t.string "name"
+  end
+
+  create_table "skills", force: true do |t|
+    t.integer "student_id"
+    t.integer "language_id"
+    t.integer "skill_level"
   end
 
   create_table "students", force: true do |t|
-    t.string  "first_name"
-    t.string  "last_name"
-    t.integer "age"
-    t.integer "skill_level",     default: 0
-    t.string  "email"
-    t.string  "phone_number"
-    t.string  "username"
-    t.string  "password_digest"
-  end
-
-  create_table "students_languages", force: true do |t|
-    t.integer "students_id"
-    t.integer "languages_id"
-    t.integer "skill_level"
+    t.string   "first_name"
+    t.string   "last_name"
+    t.string   "email"
+    t.string   "phone_number"
+    t.integer  "age"
+    t.string   "username"
+    t.string   "string"
+    t.string   "password_digest"
+    t.integer  "overall_skill_level", default: 0
+    t.datetime "created_at"
+    t.datetime "updated_at"
   end
 
 end
