@@ -7,11 +7,13 @@ class StudentsController < ApplicationController
 	def create
 		p "WTF"
 		p params[:student]
+		p app_params
 		p "*" * 50
 		@student = Student.new(app_params)
 		if @student.save
+			p "working?"
 			session[:student] = @student.id
-			redirect_to 'user_steps_path'
+			redirect_to user_steps_path
 		else
 			render 'new'
 		end		

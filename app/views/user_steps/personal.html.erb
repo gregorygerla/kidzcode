@@ -1,1 +1,6 @@
-personal.html.erb
+<%= simple_form_for @student, url: wizard_path do |student| %>
+	<%= student.label :first_name, "First Name" %>
+		<%= student.text_field :first_name %>
+		<%= student.submit %>
+
+<% end %>
