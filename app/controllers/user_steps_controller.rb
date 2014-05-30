@@ -3,7 +3,7 @@ class UserStepsController < ApplicationController
 	steps :personal, :social
 
 	def show
-		@student = Student.find 1
+		@student = Student.find current_user
 		render_wizard
 	end
 	def update

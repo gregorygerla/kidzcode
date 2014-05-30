@@ -1,13 +1,15 @@
 class CreateStudents < ActiveRecord::Migration
   def change
     create_table :students do |t|
-    	t.string :first_name
-  		t.string :last_name
-  		t.string :email
+    	t.string :email
+      t.string :password_digest
+      t.string :parent_first_name
+  		t.string :parent_last_name
+  	  t.string :child_first_name
+      t.string :child_last_name
   		t.string :phone_number
   		t.integer :age
   		t.string :username
-  		t.string :password_digest
   		t.integer :overall_skill_level, :default => 0
   		t.timestamps 
 

@@ -1,6 +1,6 @@
 <div class="small-12 large-6 large-centered columns">
 	<div class="main_signup">
-		<h3>Please create an account so we can better serve your child</h3>	
+		<h3>Parent Sign up Form</h3>	
 		<%= simple_form_for @student do |student| %>
 		<%= student.label :email, "Best Email" %>
 		<%= student.email_field :email %>
@@ -12,7 +12,8 @@
 		<%= student.password_field :password_confirmation %>
 		<%= student.error :password_confirmation, class: 'error' %>
 		<%= student.error :password_field, class: 'error' %>
-		<%= student.submit %>
+		<br>
+		<%= student.submit 'Create Account',class: 'button' %>
 		<% end %>
 	</div>
 </div>

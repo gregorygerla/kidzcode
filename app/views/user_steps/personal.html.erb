@@ -1,6 +1,41 @@
 <%= simple_form_for @student, url: wizard_path do |student| %>
-	<%= student.label :first_name, "First Name" %>
-		<%= student.text_field :first_name %>
+	<%= student.label :parent_first_name, "What is your(parent/guardian) First Name" %>
+	<%= student.text_field :parent_first_name %>
+	<%= student.error :parent_first_name, class: 'error' %>
+
+	<%= student.label :parent_last_name, "What is your(parent/guardian) Last Name" %>
+	<%= student.text_field :parent_last_name %>
+	<%= student.error :parent_last_name, class: 'error' %>
+
+	<%= student.label :child_first_name, "Your child's First Name" %>
+	<%= student.text_field :child_first_name %>
+	<%= student.error :child_first_name, class: 'error' %>
+
+	<%= student.label :child_last_name, "Your child's Last Name" %>
+	<%= student.text_field :child_last_name %>
+	<%= student.error :child_last_name, class: 'error' %>
+
+	<%= student.label :phone_number, "Phone Number" %>
+	<%= student.text_field :phone_number %>
+	<%= student.error :phone_number, class: 'error' %>
+
+	<%= student.label :phone_number, "First Name" %>
+	<%= student.text_field :phone_number %>
+	<%= student.error :phone_number, class: 'error' %>
+
+	<%= student.label :email, "email" %>
+	<%= student.text_field :email %>
+	<%= student.error :email, class: 'error' %>
+
 		<%= student.submit %>
 
 <% end %>
+
+
+
+t.string :parent_first_name
+  		t.string :parent_last_name
+  	  t.string :child_first_name
+      t.string :child_last_name
+  		t.string :phone_number
+  		t.integer :age
