@@ -2,6 +2,8 @@
 class Student < ActiveRecord::Base 
 	has_many :skills
 	has_many :languages, through: :skills
+	accepts_nested_attributes_for :skills
+
 	has_secure_password
 	validates :email, :presence => { :message => "Email cannot be blank" }
 	validates :email, :uniqueness =>  { :message => "Email already exists" }

@@ -1,3 +1,18 @@
+$(function() {
+    $( ".greg" ).datepicker(
+    {
+      changeMonth: true,
+      changeYear: true,
+    }
+    );
+    $( "#anim" ).change(function() {
+      $( ".greg" ).datepicker( "option", "showAnim", $( this ).val() );
+    });
+    for (i = new Date().getFullYear(); i > 1900; i--)
+	{
+    $('.greg').append($('<option />').val(i).html(i));
+	}
+ });
 
 ApplicationView = function() {
 
@@ -25,7 +40,7 @@ ApplicationView.prototype = {
 
 
 $(document).ready(function(){
-
+	
 applicationView = new ApplicationView
 applicationController = new ApplicationController(applicationView)
 

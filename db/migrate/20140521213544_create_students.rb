@@ -8,7 +8,7 @@ class CreateStudents < ActiveRecord::Migration
   	  t.string :child_first_name
       t.string :child_last_name
   		t.string :phone_number
-  		t.integer :age
+  		t.date :age
   		t.string :username
   		t.integer :overall_skill_level, :default => 0
   		t.timestamps 

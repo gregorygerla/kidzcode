@@ -1,10 +1,7 @@
 class StudentsController < ApplicationController
-	  require "#{Rails.root}/lib/Util.rb"
-   	 include Util
+   	 
 
 	def new
-		Util.current
-
 		@student = Student.new
 	end
 
@@ -21,9 +18,10 @@ class StudentsController < ApplicationController
 	end
 
 	def show
-		p "fuckkkkks"
 	end
+	def login
 
+	end
 private
 	def app_params
 		params.require(:student).permit(:first_name,:last_name, :age,:skill_level,:email,:password,:password_confirmation)

@@ -32,6 +32,8 @@ gem 'capybara'
   gem 'faker'
 gem 'simple_form'
 gem 'wicked'
+gem 'foundation-datetimepicker-rails'
+gem 'jquery-ui-rails'
 # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
 gem 'spring',        group: :development
 

@@ -54,6 +54,7 @@ Rails.application.routes.draw do
   #     resources :products
   #   end
   resources :students, :only => [:new,:create,:show,:info]
+  get 'students/login', to: 'students#login'
   namespace :admin do
     resources :students, :only => [:index,:show,:update]
   end
