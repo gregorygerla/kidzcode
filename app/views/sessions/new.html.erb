@@ -1,0 +1,10 @@
+<div class="small-12 large-6 large-centered columns">
+	<%= simple_form_for :session,url: sessions_path do |t| %>
+	<h3>Login Form</h3>
+<%= t.label :email %>
+				<%= t.text_field :email %>
+				<%= t.label :password %>
+		<%= t.password_field :password %>
+		<%= t.submit %>
+	<% end %>
+</div>

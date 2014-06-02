@@ -1034,3 +1034,646 @@
   [1m[36m (0.1ms)[0m  [1mBEGIN[0m
   [1m[35mStudent Exists (0.2ms)[0m  SELECT  1 AS one FROM "students"  WHERE "students"."email" = 'greg@greg.com' LIMIT 1
   [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[36mSQL (28.2ms)[0m  [1mCREATE EXTENSION IF NOT EXISTS "plpgsql"[0m
+  [1m[35m (60.3ms)[0m  CREATE TABLE "languages" ("id" serial primary key, "name" character varying(255)) 
+  [1m[36m (2.0ms)[0m  [1mCREATE TABLE "skills" ("id" serial primary key, "student_id" integer, "language_id" integer, "skill_level" integer) [0m
+  [1m[35m (28.2ms)[0m  CREATE TABLE "students" ("id" serial primary key, "email" character varying(255), "password_digest" character varying(255), "parent_first_name" character varying(255), "parent_last_name" character varying(255), "child_first_name" character varying(255), "child_last_name" character varying(255), "phone_number" character varying(255), "age" date, "username" character varying(255), "overall_skill_level" integer DEFAULT 0, "created_at" timestamp, "updated_at" timestamp) 
+  [1m[36m (0.9ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" character varying(255) NOT NULL) [0m
+  [1m[35m (1.7ms)[0m  CREATE UNIQUE INDEX  "unique_schema_migrations" ON "schema_migrations"  ("version")
+  [1m[36m (0.7ms)[0m  [1mSELECT version FROM "schema_migrations"[0m
+  [1m[35m (1.0ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20140528165355')
+  [1m[36m (1.2ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20140521213544')[0m
+  [1m[35m (0.4ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20140528165308')
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+Started GET "/students/new" for 127.0.0.1 at 2014-06-01 22:53:45 -0500
+Processing by StudentsController#new as HTML
+  Rendered students/new.html.erb within layouts/application (313.6ms)
+  Rendered layouts/_navigation_links.html.erb (0.5ms)
+  Rendered layouts/_navigation.html.erb (1.7ms)
+  Rendered layouts/_messages.html.erb (0.3ms)
+Completed 200 OK in 362ms (Views: 331.3ms | ActiveRecord: 1.7ms)
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+Started GET "/students/new" for 127.0.0.1 at 2014-06-01 22:53:55 -0500
+Processing by StudentsController#new as HTML
+  Rendered students/new.html.erb within layouts/application (229.3ms)
+  Rendered layouts/_navigation_links.html.erb (0.5ms)
+  Rendered layouts/_navigation.html.erb (1.3ms)
+  Rendered layouts/_messages.html.erb (0.4ms)
+Completed 200 OK in 259ms (Views: 240.1ms | ActiveRecord: 1.2ms)
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+Started GET "/students/new" for 127.0.0.1 at 2014-06-01 22:54:39 -0500
+Processing by StudentsController#new as HTML
+  Rendered students/new.html.erb within layouts/application (237.3ms)
+  Rendered layouts/_navigation_links.html.erb (0.5ms)
+  Rendered layouts/_navigation.html.erb (1.2ms)
+  Rendered layouts/_messages.html.erb (0.3ms)
+Completed 200 OK in 270ms (Views: 250.1ms | ActiveRecord: 1.8ms)
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+Started GET "/students/new" for 127.0.0.1 at 2014-06-01 22:55:05 -0500
+Processing by StudentsController#new as HTML
+  Rendered students/new.html.erb within layouts/application (227.6ms)
+  Rendered layouts/_navigation_links.html.erb (0.5ms)
+  Rendered layouts/_navigation.html.erb (1.2ms)
+  Rendered layouts/_messages.html.erb (0.4ms)
+Completed 200 OK in 257ms (Views: 238.0ms | ActiveRecord: 1.2ms)
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+Started GET "/students/new" for 127.0.0.1 at 2014-06-01 22:55:27 -0500
+Processing by StudentsController#new as HTML
+  Rendered students/new.html.erb within layouts/application (244.0ms)
+  Rendered layouts/_navigation_links.html.erb (0.6ms)
+  Rendered layouts/_navigation.html.erb (1.5ms)
+  Rendered layouts/_messages.html.erb (0.4ms)
+Completed 200 OK in 274ms (Views: 255.0ms | ActiveRecord: 1.2ms)
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+Started GET "/students/new" for 127.0.0.1 at 2014-06-01 22:55:49 -0500
+Processing by StudentsController#new as HTML
+  Rendered students/new.html.erb within layouts/application (239.1ms)
+  Rendered layouts/_navigation_links.html.erb (0.4ms)
+  Rendered layouts/_navigation.html.erb (1.2ms)
+  Rendered layouts/_messages.html.erb (0.3ms)
+Completed 200 OK in 268ms (Views: 249.3ms | ActiveRecord: 1.2ms)
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+Started GET "/students/new" for 127.0.0.1 at 2014-06-01 22:56:00 -0500
+Processing by StudentsController#new as HTML
+  Rendered students/new.html.erb within layouts/application (231.0ms)
+  Rendered layouts/_navigation_links.html.erb (0.5ms)
+  Rendered layouts/_navigation.html.erb (1.3ms)
+  Rendered layouts/_messages.html.erb (0.4ms)
+Completed 200 OK in 260ms (Views: 241.3ms | ActiveRecord: 1.2ms)
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+Started GET "/students/new" for 127.0.0.1 at 2014-06-01 22:56:47 -0500
+Processing by StudentsController#new as HTML
+  Rendered students/new.html.erb within layouts/application (228.3ms)
+  Rendered layouts/_navigation_links.html.erb (0.5ms)
+  Rendered layouts/_navigation.html.erb (1.2ms)
+  Rendered layouts/_messages.html.erb (0.4ms)
+Completed 200 OK in 257ms (Views: 238.6ms | ActiveRecord: 1.3ms)
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+Started GET "/students/new" for 127.0.0.1 at 2014-06-01 22:57:46 -0500
+Processing by StudentsController#new as HTML
+  Rendered students/new.html.erb within layouts/application (240.0ms)
+  Rendered layouts/_navigation_links.html.erb (0.5ms)
+  Rendered layouts/_navigation.html.erb (1.4ms)
+  Rendered layouts/_messages.html.erb (0.4ms)
+Completed 200 OK in 271ms (Views: 250.9ms | ActiveRecord: 1.3ms)
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+Started GET "/students/new" for 127.0.0.1 at 2014-06-01 22:58:16 -0500
+Processing by StudentsController#new as HTML
+  Rendered students/new.html.erb within layouts/application (224.3ms)
+  Rendered layouts/_navigation_links.html.erb (0.5ms)
+  Rendered layouts/_navigation.html.erb (1.3ms)
+  Rendered layouts/_messages.html.erb (0.4ms)
+Completed 200 OK in 253ms (Views: 234.4ms | ActiveRecord: 1.3ms)
+Started POST "/students" for 127.0.0.1 at 2014-06-01 22:58:16 -0500
+Processing by StudentsController#create as HTML
+  Parameters: {"utf8"=>"✓", "student"=>{"email"=>"greg@ggggg.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Continue"}
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mStudent Exists (20.6ms)[0m  SELECT  1 AS one FROM "students"  WHERE "students"."email" = 'greg@ggggg.com' LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  Rendered students/new.html.erb within layouts/application (4.0ms)
+  Rendered layouts/_navigation_links.html.erb (0.2ms)
+  Rendered layouts/_navigation.html.erb (0.5ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+Completed 200 OK in 46ms (Views: 5.8ms | ActiveRecord: 20.9ms)
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+Started GET "/students/new" for 127.0.0.1 at 2014-06-01 22:58:35 -0500
+Processing by StudentsController#new as HTML
+  Rendered students/new.html.erb within layouts/application (234.5ms)
+  Rendered layouts/_navigation_links.html.erb (0.5ms)
+  Rendered layouts/_navigation.html.erb (1.3ms)
+  Rendered layouts/_messages.html.erb (0.4ms)
+Completed 200 OK in 264ms (Views: 244.8ms | ActiveRecord: 1.2ms)
+Started POST "/students" for 127.0.0.1 at 2014-06-01 22:58:35 -0500
+Processing by StudentsController#create as HTML
+  Parameters: {"utf8"=>"✓", "student"=>{"email"=>"greg@ggggg.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Continue"}
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mStudent Exists (0.6ms)[0m  SELECT  1 AS one FROM "students"  WHERE "students"."email" = 'greg@ggggg.com' LIMIT 1
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "students" ("created_at", "email", "password_digest", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", "2014-06-02 03:58:35.478014"], ["email", "greg@ggggg.com"], ["password_digest", "$2a$04$8yKqqg9BQRc0InF5mAobheALGu0Aj/iyeoGOEJTw7rN/.ZtD2/T12"], ["updated_at", "2014-06-02 03:58:35.478014"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://www.example.com/user_steps
+Completed 302 Found in 15ms (ActiveRecord: 1.5ms)
+Started GET "/user_steps" for 127.0.0.1 at 2014-06-01 22:58:35 -0500
+Processing by UserStepsController#index as HTML
+Redirected to http://www.example.com/user_steps/personal
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+Started GET "/user_steps/personal" for 127.0.0.1 at 2014-06-01 22:58:35 -0500
+Processing by UserStepsController#show as HTML
+  Parameters: {"id"=>"personal"}
+  [1m[36mStudent Load (0.4ms)[0m  [1mSELECT  "students".* FROM "students"  WHERE "students"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "students".* FROM "students"  WHERE "students"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered user_steps/personal.html.erb within layouts/application (2.9ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "students".* FROM "students"  WHERE "students"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered layouts/_navigation_links.html.erb (10.1ms)
+  Rendered layouts/_navigation.html.erb (10.4ms)
+Completed 500 Internal Server Error in 25ms
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+Started GET "/students/new" for 127.0.0.1 at 2014-06-01 23:00:31 -0500
+Processing by StudentsController#new as HTML
+  Rendered students/new.html.erb within layouts/application (236.5ms)
+  Rendered layouts/_navigation_links.html.erb (0.6ms)
+  Rendered layouts/_navigation.html.erb (1.9ms)
+  Rendered layouts/_messages.html.erb (0.4ms)
+Completed 200 OK in 280ms (Views: 256.1ms | ActiveRecord: 3.2ms)
+Started GET "/assets/application.css" for 127.0.0.1 at 2014-06-01 23:00:31 -0500
+Started GET "/assets/vendor/modernizr.js" for 127.0.0.1 at 2014-06-01 23:00:31 -0500
+Started GET "/assets/application.js" for 127.0.0.1 at 2014-06-01 23:00:31 -0500
+Started GET "/students/new" for 127.0.0.1 at 2014-06-01 23:00:48 -0500
+Processing by StudentsController#new as HTML
+  Rendered students/new.html.erb within layouts/application (2.4ms)
+  Rendered layouts/_navigation_links.html.erb (0.2ms)
+  Rendered layouts/_navigation.html.erb (0.7ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+Completed 200 OK in 94ms (Views: 93.6ms | ActiveRecord: 0.0ms)
+Started GET "/assets/application.css" for 127.0.0.1 at 2014-06-01 23:00:49 -0500
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+Started GET "/students/new" for 127.0.0.1 at 2014-06-01 23:02:13 -0500
+Processing by StudentsController#new as HTML
+  Rendered students/new.html.erb within layouts/application (238.5ms)
+  Rendered layouts/_navigation_links.html.erb (0.6ms)
+  Rendered layouts/_navigation.html.erb (1.7ms)
+  Rendered layouts/_messages.html.erb (0.4ms)
+Completed 200 OK in 287ms (Views: 260.6ms | ActiveRecord: 3.3ms)
+Started GET "/assets/application.css" for 127.0.0.1 at 2014-06-01 23:02:14 -0500
+Started GET "/assets/vendor/modernizr.js" for 127.0.0.1 at 2014-06-01 23:02:14 -0500
+Started GET "/assets/application.js" for 127.0.0.1 at 2014-06-01 23:02:14 -0500
+Started POST "/students" for 127.0.0.1 at 2014-06-01 23:02:14 -0500
+Processing by StudentsController#create as HTML
+  Parameters: {"utf8"=>"✓", "student"=>{"email"=>"greg@ggggg.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Continue"}
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mStudent Exists (0.5ms)[0m  SELECT  1 AS one FROM "students"  WHERE "students"."email" = 'greg@ggggg.com' LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "students" ("created_at", "email", "password_digest", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", "2014-06-02 04:02:14.758293"], ["email", "greg@ggggg.com"], ["password_digest", "$2a$04$Tc14xUomiyZnOiEdh4yuQ.D9iuTzUPFhNdXyhmMvC03SmZt7z6LVW"], ["updated_at", "2014-06-02 04:02:14.758293"]]
+  [1m[35m (6.1ms)[0m  COMMIT
+Redirected to http://127.0.0.1:61349/user_steps
+Completed 302 Found in 23ms (ActiveRecord: 7.2ms)
+Started GET "/user_steps" for 127.0.0.1 at 2014-06-01 23:02:14 -0500
+Processing by UserStepsController#index as HTML
+Redirected to http://127.0.0.1:61349/user_steps/personal
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+Started GET "/user_steps/personal" for 127.0.0.1 at 2014-06-01 23:02:14 -0500
+Processing by UserStepsController#show as HTML
+  Parameters: {"id"=>"personal"}
+  [1m[36mStudent Load (0.5ms)[0m  [1mSELECT  "students".* FROM "students"  WHERE "students"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "students".* FROM "students"  WHERE "students"."id" = $1 LIMIT 1  [["id", 2]]
+  Rendered user_steps/personal.html.erb within layouts/application (2.6ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "students".* FROM "students"  WHERE "students"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  Rendered layouts/_navigation_links.html.erb (12.2ms)
+  Rendered layouts/_navigation.html.erb (12.4ms)
+Completed 500 Internal Server Error in 27ms
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+Started GET "/students/new" for 127.0.0.1 at 2014-06-01 23:02:38 -0500
+Processing by StudentsController#new as HTML
+  Rendered students/new.html.erb within layouts/application (238.7ms)
+  Rendered layouts/_navigation_links.html.erb (0.6ms)
+  Rendered layouts/_navigation.html.erb (1.8ms)
+  Rendered layouts/_messages.html.erb (0.5ms)
+Completed 200 OK in 284ms (Views: 259.2ms | ActiveRecord: 2.8ms)
+Started GET "/assets/application.css" for 127.0.0.1 at 2014-06-01 23:02:38 -0500
+Started GET "/assets/vendor/modernizr.js" for 127.0.0.1 at 2014-06-01 23:02:38 -0500
+Started GET "/assets/application.js" for 127.0.0.1 at 2014-06-01 23:02:38 -0500
+Started POST "/students" for 127.0.0.1 at 2014-06-01 23:02:39 -0500
+Processing by StudentsController#create as HTML
+  Parameters: {"utf8"=>"✓", "student"=>{"email"=>"greg@ggggg.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Continue"}
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mStudent Exists (0.5ms)[0m  SELECT  1 AS one FROM "students"  WHERE "students"."email" = 'greg@ggggg.com' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  Rendered students/new.html.erb within layouts/application (2.1ms)
+  Rendered layouts/_navigation_links.html.erb (0.1ms)
+  Rendered layouts/_navigation.html.erb (0.3ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+Completed 200 OK in 17ms (Views: 3.3ms | ActiveRecord: 0.7ms)
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+Started GET "/students/new" for 127.0.0.1 at 2014-06-01 23:03:18 -0500
+Processing by StudentsController#new as HTML
+  Rendered students/new.html.erb within layouts/application (228.3ms)
+  Rendered layouts/_navigation_links.html.erb (0.5ms)
+  Rendered layouts/_navigation.html.erb (1.4ms)
+  Rendered layouts/_messages.html.erb (0.4ms)
+Completed 200 OK in 273ms (Views: 247.6ms | ActiveRecord: 3.2ms)
+Started GET "/assets/application.css" for 127.0.0.1 at 2014-06-01 23:03:18 -0500
+Started GET "/assets/vendor/modernizr.js" for 127.0.0.1 at 2014-06-01 23:03:18 -0500
+Started GET "/assets/application.js" for 127.0.0.1 at 2014-06-01 23:03:18 -0500
+Started POST "/students" for 127.0.0.1 at 2014-06-01 23:03:19 -0500
+Processing by StudentsController#create as HTML
+  Parameters: {"utf8"=>"✓", "student"=>{"email"=>"greg@ggggg.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Continue"}
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mStudent Exists (0.6ms)[0m  SELECT  1 AS one FROM "students"  WHERE "students"."email" = 'greg@ggggg.com' LIMIT 1
+  [1m[36mSQL (5.3ms)[0m  [1mINSERT INTO "students" ("created_at", "email", "password_digest", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", "2014-06-02 04:03:19.062836"], ["email", "greg@ggggg.com"], ["password_digest", "$2a$04$vEED/5t6jCSj9naiiV0pqeiqIFukg3mi9xsBQktNvHAom4FJyGweC"], ["updated_at", "2014-06-02 04:03:19.062836"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+Redirected to http://127.0.0.1:61522/user_steps
+Completed 302 Found in 24ms (ActiveRecord: 6.5ms)
+Started GET "/user_steps" for 127.0.0.1 at 2014-06-01 23:03:19 -0500
+Processing by UserStepsController#index as HTML
+Redirected to http://127.0.0.1:61522/user_steps/personal
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+Started GET "/user_steps/personal" for 127.0.0.1 at 2014-06-01 23:03:19 -0500
+Processing by UserStepsController#show as HTML
+  Parameters: {"id"=>"personal"}
+  [1m[36mStudent Load (0.5ms)[0m  [1mSELECT  "students".* FROM "students"  WHERE "students"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "students".* FROM "students"  WHERE "students"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered user_steps/personal.html.erb within layouts/application (3.0ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "students".* FROM "students"  WHERE "students"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered layouts/_navigation_links.html.erb (11.0ms)
+  Rendered layouts/_navigation.html.erb (11.2ms)
+Completed 500 Internal Server Error in 26ms
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+Started GET "/students/new" for 127.0.0.1 at 2014-06-01 23:03:27 -0500
+Processing by StudentsController#new as HTML
+  Rendered students/new.html.erb within layouts/application (233.0ms)
+  Rendered layouts/_navigation_links.html.erb (0.7ms)
+  Rendered layouts/_navigation.html.erb (1.7ms)
+  Rendered layouts/_messages.html.erb (0.4ms)
+Completed 200 OK in 278ms (Views: 252.8ms | ActiveRecord: 3.4ms)
+Started GET "/assets/application.css" for 127.0.0.1 at 2014-06-01 23:03:27 -0500
+Started GET "/assets/vendor/modernizr.js" for 127.0.0.1 at 2014-06-01 23:03:27 -0500
+Started GET "/assets/application.js" for 127.0.0.1 at 2014-06-01 23:03:27 -0500
+Started POST "/students" for 127.0.0.1 at 2014-06-01 23:03:28 -0500
+Processing by StudentsController#create as HTML
+  Parameters: {"utf8"=>"✓", "student"=>{"email"=>"greg@ggggg.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Continue"}
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mStudent Exists (0.5ms)[0m  SELECT  1 AS one FROM "students"  WHERE "students"."email" = 'greg@ggggg.com' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  Rendered students/new.html.erb within layouts/application (2.6ms)
+  Rendered layouts/_navigation_links.html.erb (0.1ms)
+  Rendered layouts/_navigation.html.erb (0.3ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+Completed 200 OK in 17ms (Views: 4.1ms | ActiveRecord: 0.7ms)
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+Started GET "/students/new" for 127.0.0.1 at 2014-06-01 23:03:36 -0500
+Processing by StudentsController#new as HTML
+  Rendered students/new.html.erb within layouts/application (235.3ms)
+  Rendered layouts/_navigation_links.html.erb (0.6ms)
+  Rendered layouts/_navigation.html.erb (1.4ms)
+  Rendered layouts/_messages.html.erb (0.4ms)
+Completed 200 OK in 280ms (Views: 256.0ms | ActiveRecord: 3.3ms)
+Started GET "/assets/application.css" for 127.0.0.1 at 2014-06-01 23:03:36 -0500
+Started GET "/assets/vendor/modernizr.js" for 127.0.0.1 at 2014-06-01 23:03:36 -0500
+Started GET "/assets/application.js" for 127.0.0.1 at 2014-06-01 23:03:36 -0500
+Started POST "/students" for 127.0.0.1 at 2014-06-01 23:03:36 -0500
+Processing by StudentsController#create as HTML
+  Parameters: {"utf8"=>"✓", "student"=>{"email"=>"greg@ggggg.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Continue"}
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mStudent Exists (0.6ms)[0m  SELECT  1 AS one FROM "students"  WHERE "students"."email" = 'greg@ggggg.com' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  Rendered students/new.html.erb within layouts/application (2.2ms)
+  Rendered layouts/_navigation_links.html.erb (0.1ms)
+  Rendered layouts/_navigation.html.erb (0.3ms)
+  Rendered layouts/_messages.html.erb (0.0ms)
+Completed 200 OK in 17ms (Views: 3.3ms | ActiveRecord: 0.8ms)
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+Started GET "/students/new" for 127.0.0.1 at 2014-06-01 23:03:50 -0500
+Processing by StudentsController#new as HTML
+  Rendered students/new.html.erb within layouts/application (233.6ms)
+  Rendered layouts/_navigation_links.html.erb (0.5ms)
+  Rendered layouts/_navigation.html.erb (1.4ms)
+  Rendered layouts/_messages.html.erb (0.5ms)
+Completed 200 OK in 277ms (Views: 252.5ms | ActiveRecord: 3.0ms)
+Started GET "/assets/application.css" for 127.0.0.1 at 2014-06-01 23:03:50 -0500
+Started GET "/assets/vendor/modernizr.js" for 127.0.0.1 at 2014-06-01 23:03:50 -0500
+Started GET "/assets/application.js" for 127.0.0.1 at 2014-06-01 23:03:50 -0500
+Started POST "/students" for 127.0.0.1 at 2014-06-01 23:03:50 -0500
+Processing by StudentsController#create as HTML
+  Parameters: {"utf8"=>"✓", "student"=>{"email"=>"greg@ooo.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Continue"}
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mStudent Exists (0.5ms)[0m  SELECT  1 AS one FROM "students"  WHERE "students"."email" = 'greg@ooo.com' LIMIT 1
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "students" ("created_at", "email", "password_digest", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", "2014-06-02 04:03:50.815671"], ["email", "greg@ooo.com"], ["password_digest", "$2a$04$Z71/qo7tVeZ6/tRa80hdqOGUc3aMw5sL0n06ur5YVbX0Ehv5HW1r6"], ["updated_at", "2014-06-02 04:03:50.815671"]]
+  [1m[35m (6.1ms)[0m  COMMIT
+Redirected to http://127.0.0.1:61808/user_steps
+Completed 302 Found in 24ms (ActiveRecord: 7.5ms)
+Started GET "/user_steps" for 127.0.0.1 at 2014-06-01 23:03:50 -0500
+Processing by UserStepsController#index as HTML
+Redirected to http://127.0.0.1:61808/user_steps/personal
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+Started GET "/user_steps/personal" for 127.0.0.1 at 2014-06-01 23:03:50 -0500
+Processing by UserStepsController#show as HTML
+  Parameters: {"id"=>"personal"}
+  [1m[36mStudent Load (0.5ms)[0m  [1mSELECT  "students".* FROM "students"  WHERE "students"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "students".* FROM "students"  WHERE "students"."id" = $1 LIMIT 1  [["id", 2]]
+  Rendered user_steps/personal.html.erb within layouts/application (3.2ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "students".* FROM "students"  WHERE "students"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  Rendered layouts/_navigation_links.html.erb (11.2ms)
+  Rendered layouts/_navigation.html.erb (11.5ms)
+Completed 500 Internal Server Error in 27ms
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+Started GET "/students/new" for 127.0.0.1 at 2014-06-01 23:03:57 -0500
+Processing by StudentsController#new as HTML
+  Rendered students/new.html.erb within layouts/application (235.7ms)
+  Rendered layouts/_navigation_links.html.erb (0.5ms)
+  Rendered layouts/_navigation.html.erb (1.5ms)
+  Rendered layouts/_messages.html.erb (0.4ms)
+Completed 200 OK in 280ms (Views: 254.9ms | ActiveRecord: 3.9ms)
+Started GET "/assets/application.css" for 127.0.0.1 at 2014-06-01 23:03:57 -0500
+Started GET "/assets/application.js" for 127.0.0.1 at 2014-06-01 23:03:57 -0500
+Started GET "/assets/vendor/modernizr.js" for 127.0.0.1 at 2014-06-01 23:03:57 -0500
+Started POST "/students" for 127.0.0.1 at 2014-06-01 23:03:57 -0500
+Processing by StudentsController#create as HTML
+  Parameters: {"utf8"=>"✓", "student"=>{"email"=>"greg@ooo.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Continue"}
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mStudent Exists (0.5ms)[0m  SELECT  1 AS one FROM "students"  WHERE "students"."email" = 'greg@ooo.com' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  Rendered students/new.html.erb within layouts/application (2.2ms)
+  Rendered layouts/_navigation_links.html.erb (0.1ms)
+  Rendered layouts/_navigation.html.erb (0.3ms)
+  Rendered layouts/_messages.html.erb (0.0ms)
+Completed 200 OK in 16ms (Views: 3.3ms | ActiveRecord: 0.7ms)
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mStudent Exists (0.4ms)[0m  [1mSELECT  1 AS one FROM "students"  WHERE "students"."email" IS NULL LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mStudent Exists (0.4ms)[0m  SELECT  1 AS one FROM "students"  WHERE "students"."email" = 'greg@greg.com' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mStudent Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "students"  WHERE "students"."email" = 'greg@greg.com' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mStudent Exists (0.2ms)[0m  SELECT  1 AS one FROM "students"  WHERE "students"."email" = 'greg@greg.com' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+Started GET "/students/new" for 127.0.0.1 at 2014-06-01 23:14:48 -0500
+Processing by StudentsController#new as HTML
+  Rendered students/new.html.erb within layouts/application (233.6ms)
+  Rendered layouts/_navigation_links.html.erb (0.5ms)
+  Rendered layouts/_navigation.html.erb (1.5ms)
+  Rendered layouts/_messages.html.erb (0.4ms)
+Completed 200 OK in 277ms (Views: 252.2ms | ActiveRecord: 3.0ms)
+Started GET "/assets/application.css" for 127.0.0.1 at 2014-06-01 23:14:48 -0500
+Started GET "/assets/application.js" for 127.0.0.1 at 2014-06-01 23:14:48 -0500
+Started GET "/assets/vendor/modernizr.js" for 127.0.0.1 at 2014-06-01 23:14:48 -0500
+Started POST "/students" for 127.0.0.1 at 2014-06-01 23:14:49 -0500
+Processing by StudentsController#create as HTML
+  Parameters: {"utf8"=>"✓", "student"=>{"email"=>"greg@ooo.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Continue"}
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mStudent Exists (0.5ms)[0m  SELECT  1 AS one FROM "students"  WHERE "students"."email" = 'greg@ooo.com' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  Rendered students/new.html.erb within layouts/application (2.3ms)
+  Rendered layouts/_navigation_links.html.erb (0.1ms)
+  Rendered layouts/_navigation.html.erb (0.3ms)
+  Rendered layouts/_messages.html.erb (0.0ms)
+Completed 200 OK in 18ms (Views: 3.5ms | ActiveRecord: 0.8ms)
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+Started GET "/students/new" for 127.0.0.1 at 2014-06-01 23:19:51 -0500
+Processing by StudentsController#new as HTML
+  Rendered students/new.html.erb within layouts/application (232.0ms)
+  Rendered layouts/_navigation_links.html.erb (0.6ms)
+  Rendered layouts/_navigation.html.erb (1.5ms)
+  Rendered layouts/_messages.html.erb (0.4ms)
+Completed 200 OK in 276ms (Views: 251.6ms | ActiveRecord: 2.8ms)
+Started GET "/assets/application.css" for 127.0.0.1 at 2014-06-01 23:19:51 -0500
+Started GET "/assets/application.js" for 127.0.0.1 at 2014-06-01 23:19:51 -0500
+Started GET "/assets/vendor/modernizr.js" for 127.0.0.1 at 2014-06-01 23:19:51 -0500
+Started POST "/students" for 127.0.0.1 at 2014-06-01 23:19:52 -0500
+Processing by StudentsController#create as HTML
+  Parameters: {"utf8"=>"✓", "student"=>{"email"=>"gregoo@ooo.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Continue"}
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mStudent Exists (0.5ms)[0m  SELECT  1 AS one FROM "students"  WHERE "students"."email" = 'gregoo@ooo.com' LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "students" ("created_at", "email", "password_digest", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", "2014-06-02 04:19:52.077203"], ["email", "gregoo@ooo.com"], ["password_digest", "$2a$04$lubRTj0tfOz3SLcx4dhVv./BwmXVtjh37XY1qrrTPE/Hxc9SDObUW"], ["updated_at", "2014-06-02 04:19:52.077203"]]
+  [1m[35m (5.0ms)[0m  COMMIT
+Redirected to http://127.0.0.1:62602/user_steps
+Completed 302 Found in 25ms (ActiveRecord: 6.0ms)
+Started GET "/user_steps" for 127.0.0.1 at 2014-06-01 23:19:52 -0500
+Processing by UserStepsController#index as HTML
+Redirected to http://127.0.0.1:62602/user_steps/personal
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+Started GET "/user_steps/personal" for 127.0.0.1 at 2014-06-01 23:19:52 -0500
+Processing by UserStepsController#show as HTML
+  Parameters: {"id"=>"personal"}
+  [1m[36mStudent Load (0.5ms)[0m  [1mSELECT  "students".* FROM "students"  WHERE "students"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "students".* FROM "students"  WHERE "students"."id" = $1 LIMIT 1  [["id", 3]]
+  Rendered user_steps/personal.html.erb within layouts/application (3.5ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "students".* FROM "students"  WHERE "students"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  Rendered layouts/_navigation_links.html.erb (11.2ms)
+  Rendered layouts/_navigation.html.erb (11.4ms)
+Completed 500 Internal Server Error in 26ms
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+Started GET "/students/new" for 127.0.0.1 at 2014-06-01 23:20:51 -0500
+Processing by StudentsController#new as HTML
+  Rendered students/new.html.erb within layouts/application (246.8ms)
+  Rendered layouts/_navigation_links.html.erb (0.5ms)
+  Rendered layouts/_navigation.html.erb (1.7ms)
+  Rendered layouts/_messages.html.erb (0.4ms)
+Completed 200 OK in 290ms (Views: 265.7ms | ActiveRecord: 2.8ms)
+Started GET "/assets/application.css" for 127.0.0.1 at 2014-06-01 23:20:52 -0500
+Started GET "/assets/application.js" for 127.0.0.1 at 2014-06-01 23:20:52 -0500
+Started GET "/assets/vendor/modernizr.js" for 127.0.0.1 at 2014-06-01 23:20:52 -0500
+Started POST "/students" for 127.0.0.1 at 2014-06-01 23:20:52 -0500
+Processing by StudentsController#create as HTML
+  Parameters: {"utf8"=>"✓", "student"=>{"email"=>"gregoo@ooo.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Continue"}
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mStudent Exists (1.0ms)[0m  SELECT  1 AS one FROM "students"  WHERE "students"."email" = 'gregoo@ooo.com' LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  Rendered students/new.html.erb within layouts/application (2.7ms)
+  Rendered layouts/_navigation_links.html.erb (0.1ms)
+  Rendered layouts/_navigation.html.erb (0.4ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+Completed 200 OK in 18ms (Views: 4.1ms | ActiveRecord: 1.3ms)
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+Started GET "/students/new" for 127.0.0.1 at 2014-06-01 23:21:08 -0500
+Processing by StudentsController#new as HTML
+  Rendered students/new.html.erb within layouts/application (239.2ms)
+  Rendered layouts/_navigation_links.html.erb (0.7ms)
+  Rendered layouts/_navigation.html.erb (2.0ms)
+  Rendered layouts/_messages.html.erb (0.4ms)
+Completed 200 OK in 282ms (Views: 258.3ms | ActiveRecord: 2.9ms)
+Started GET "/assets/application.css" for 127.0.0.1 at 2014-06-01 23:21:08 -0500
+Started GET "/assets/vendor/modernizr.js" for 127.0.0.1 at 2014-06-01 23:21:08 -0500
+Started GET "/assets/application.js" for 127.0.0.1 at 2014-06-01 23:21:08 -0500
+Started POST "/students" for 127.0.0.1 at 2014-06-01 23:21:09 -0500
+Processing by StudentsController#create as HTML
+  Parameters: {"utf8"=>"✓", "student"=>{"email"=>"g@ooo.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Continue"}
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mStudent Exists (0.5ms)[0m  SELECT  1 AS one FROM "students"  WHERE "students"."email" = 'g@ooo.com' LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "students" ("created_at", "email", "password_digest", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", "2014-06-02 04:21:09.443262"], ["email", "g@ooo.com"], ["password_digest", "$2a$04$vlbM6hOjcohDwpBPcbiO4Ob5e9FmJoTJg/aJdPj8CIK78QTJ4BvfS"], ["updated_at", "2014-06-02 04:21:09.443262"]]
+  [1m[35m (6.2ms)[0m  COMMIT
+Redirected to http://127.0.0.1:62799/user_steps
+Completed 302 Found in 24ms (ActiveRecord: 7.8ms)
+Started GET "/user_steps" for 127.0.0.1 at 2014-06-01 23:21:09 -0500
+Processing by UserStepsController#index as HTML
+Redirected to http://127.0.0.1:62799/user_steps/personal
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+Started GET "/user_steps/personal" for 127.0.0.1 at 2014-06-01 23:21:09 -0500
+Processing by UserStepsController#show as HTML
+  Parameters: {"id"=>"personal"}
+  [1m[36mStudent Load (0.4ms)[0m  [1mSELECT  "students".* FROM "students"  WHERE "students"."id" = $1 LIMIT 1[0m  [["id", 4]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "students".* FROM "students"  WHERE "students"."id" = $1 LIMIT 1  [["id", 4]]
+  Rendered user_steps/personal.html.erb within layouts/application (3.0ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "students".* FROM "students"  WHERE "students"."id" = $1 LIMIT 1[0m  [["id", 4]]
+  Rendered layouts/_navigation_links.html.erb (0.6ms)
+  Rendered layouts/_navigation.html.erb (0.8ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+Completed 200 OK in 15ms (Views: 6.1ms | ActiveRecord: 3.1ms)
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+Started GET "/students/new" for 127.0.0.1 at 2014-06-01 23:23:16 -0500
+Processing by StudentsController#new as HTML
+  Rendered students/new.html.erb within layouts/application (228.4ms)
+  Rendered layouts/_navigation_links.html.erb (0.5ms)
+  Rendered layouts/_navigation.html.erb (1.4ms)
+  Rendered layouts/_messages.html.erb (0.4ms)
+Completed 200 OK in 260ms (Views: 239.4ms | ActiveRecord: 1.3ms)
+Started POST "/students" for 127.0.0.1 at 2014-06-01 23:23:16 -0500
+Processing by StudentsController#create as HTML
+  Parameters: {"utf8"=>"✓", "student"=>{"email"=>"g@ooo.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Continue"}
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mStudent Exists (0.7ms)[0m  SELECT  1 AS one FROM "students"  WHERE "students"."email" = 'g@ooo.com' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  Rendered students/new.html.erb within layouts/application (2.7ms)
+  Rendered layouts/_navigation_links.html.erb (0.1ms)
+  Rendered layouts/_navigation.html.erb (0.3ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+Completed 200 OK in 17ms (Views: 3.9ms | ActiveRecord: 0.9ms)
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (1.4ms)[0m  ALTER TABLE "languages" DISABLE TRIGGER ALL;ALTER TABLE "skills" DISABLE TRIGGER ALL;ALTER TABLE "students" DISABLE TRIGGER ALL;ALTER TABLE "schema_migrations" DISABLE TRIGGER ALL
+  [1m[36m (2.9ms)[0m  [1mselect table_name from information_schema.views where table_schema = 'db/test'[0m
+  [1m[35m (7.2ms)[0m  TRUNCATE TABLE "languages", "skills", "students" RESTART IDENTITY CASCADE;
+  [1m[36m (0.2ms)[0m  [1mALTER TABLE "schema_migrations" ENABLE TRIGGER ALL;ALTER TABLE "languages" ENABLE TRIGGER ALL;ALTER TABLE "skills" ENABLE TRIGGER ALL;ALTER TABLE "students" ENABLE TRIGGER ALL[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (6.4ms)[0m  [1mINSERT INTO "languages" ("name") VALUES ($1) RETURNING "id"[0m  [["name", "Ruby"]]
+  [1m[35m (5.9ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+Started GET "/students/new" for 127.0.0.1 at 2014-06-01 23:27:23 -0500
+Processing by StudentsController#new as HTML
+  Rendered students/new.html.erb within layouts/application (231.2ms)
+  Rendered layouts/_navigation_links.html.erb (0.4ms)
+  Rendered layouts/_navigation.html.erb (1.3ms)
+  Rendered layouts/_messages.html.erb (0.3ms)
+Completed 200 OK in 260ms (Views: 241.7ms | ActiveRecord: 1.2ms)
+Started POST "/students" for 127.0.0.1 at 2014-06-01 23:27:23 -0500
+Processing by StudentsController#create as HTML
+  Parameters: {"utf8"=>"✓", "student"=>{"email"=>"g@ooo.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Continue"}
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36mStudent Exists (0.4ms)[0m  [1mSELECT  1 AS one FROM "students"  WHERE "students"."email" = 'g@ooo.com' LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "students" ("created_at", "email", "password_digest", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", "2014-06-02 04:27:23.980743"], ["email", "g@ooo.com"], ["password_digest", "$2a$04$suZbenGLIUhr2PS/lznv1eso9auYo0ldU/mhgl91wjdjGovgi8iAi"], ["updated_at", "2014-06-02 04:27:23.980743"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://www.example.com/user_steps
+Completed 302 Found in 14ms (ActiveRecord: 1.1ms)
+Started GET "/user_steps" for 127.0.0.1 at 2014-06-01 23:27:23 -0500
+Processing by UserStepsController#index as HTML
+Redirected to http://www.example.com/user_steps/personal
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+Started GET "/user_steps/personal" for 127.0.0.1 at 2014-06-01 23:27:23 -0500
+Processing by UserStepsController#show as HTML
+  Parameters: {"id"=>"personal"}
+  [1m[35mStudent Load (0.3ms)[0m  SELECT  "students".* FROM "students"  WHERE "students"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "students".* FROM "students"  WHERE "students"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered user_steps/personal.html.erb within layouts/application (2.9ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "students".* FROM "students"  WHERE "students"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered layouts/_navigation_links.html.erb (0.5ms)
+  Rendered layouts/_navigation.html.erb (0.7ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+Completed 200 OK in 13ms (Views: 5.7ms | ActiveRecord: 1.3ms)
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.3ms)[0m  ALTER TABLE "schema_migrations" DISABLE TRIGGER ALL;ALTER TABLE "languages" DISABLE TRIGGER ALL;ALTER TABLE "skills" DISABLE TRIGGER ALL;ALTER TABLE "students" DISABLE TRIGGER ALL
+  [1m[36m (0.9ms)[0m  [1mselect table_name from information_schema.views where table_schema = 'db/test'[0m
+  [1m[35m (5.0ms)[0m  TRUNCATE TABLE "languages", "skills", "students" RESTART IDENTITY CASCADE;
+  [1m[36m (0.2ms)[0m  [1mALTER TABLE "schema_migrations" ENABLE TRIGGER ALL;ALTER TABLE "languages" ENABLE TRIGGER ALL;ALTER TABLE "skills" ENABLE TRIGGER ALL;ALTER TABLE "students" ENABLE TRIGGER ALL[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "languages" ("name") VALUES ($1) RETURNING "id"[0m  [["name", "Ruby"]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36m (0.0ms)[0m  [1mBEGIN[0m
+Started GET "/students/new" for 127.0.0.1 at 2014-06-01 23:27:29 -0500
+Processing by StudentsController#new as HTML
+  Rendered students/new.html.erb within layouts/application (226.2ms)
+  Rendered layouts/_navigation_links.html.erb (0.5ms)
+  Rendered layouts/_navigation.html.erb (1.4ms)
+  Rendered layouts/_messages.html.erb (0.4ms)
+Completed 200 OK in 255ms (Views: 237.0ms | ActiveRecord: 1.1ms)
+Started POST "/students" for 127.0.0.1 at 2014-06-01 23:27:29 -0500
+Processing by StudentsController#create as HTML
+  Parameters: {"utf8"=>"✓", "student"=>{"email"=>"g@ooo.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Continue"}
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mStudent Exists (0.4ms)[0m  [1mSELECT  1 AS one FROM "students"  WHERE "students"."email" = 'g@ooo.com' LIMIT 1[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "students" ("created_at", "email", "password_digest", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", "2014-06-02 04:27:29.311755"], ["email", "g@ooo.com"], ["password_digest", "$2a$04$WyF02dltdkaCt1EPtJk1E.X..N47q6CeAjF17VMfIFuqhRNNofopO"], ["updated_at", "2014-06-02 04:27:29.311755"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://www.example.com/user_steps
+Completed 302 Found in 14ms (ActiveRecord: 1.1ms)
+Started GET "/user_steps" for 127.0.0.1 at 2014-06-01 23:27:29 -0500
+Processing by UserStepsController#index as HTML
+Redirected to http://www.example.com/user_steps/personal
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+Started GET "/user_steps/personal" for 127.0.0.1 at 2014-06-01 23:27:29 -0500
+Processing by UserStepsController#show as HTML
+  Parameters: {"id"=>"personal"}
+  [1m[35mStudent Load (0.3ms)[0m  SELECT  "students".* FROM "students"  WHERE "students"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "students".* FROM "students"  WHERE "students"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered user_steps/personal.html.erb within layouts/application (2.7ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "students".* FROM "students"  WHERE "students"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered layouts/_navigation_links.html.erb (0.6ms)
+  Rendered layouts/_navigation.html.erb (0.8ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+Completed 200 OK in 12ms (Views: 5.5ms | ActiveRecord: 1.3ms)
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m

@@ -3,9 +3,6 @@ class UserStepsController < ApplicationController
 	steps :personal
 
 	def show
-				p "this is the current user in show"
-				p current_user
-
 		@student = Student.find current_user
 		@skill = Skill.new
 		render_wizard
