@@ -1,0 +1,12 @@
+<div class="small-12 large-6 large-centered columns">
+<h3>Parent Sign up Form</h3>
+		<h6>Step 3: Student Code Experience</h6>
+		<hr>
+<%= simple_form_for @student, url: wizard_path do |student| %>
+	  <%=   student.collection_radio_buttons :overall_skill_level, [[0, 'No programming Experience'],[1, 'Has shown interest, but never coded'] ,[false, 'No']], :first, :last %>
+
+
+	<br>
+		<%= student.submit 'Continue',class: 'button' %>
+<% end %>
+</div>

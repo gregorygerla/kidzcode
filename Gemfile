@@ -20,24 +20,26 @@ gem 'jquery-rails', "~> 2.3.0"
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
 gem 'turbolinks'
 gem 'factory_girl_rails'
-
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 2.0'
 # bundle exec rake doc:rails generates the API under doc/api.
 gem 'sdoc', '~> 0.4.0',          group: :doc
 gem 'capybara'
   gem 'selenium-webdriver'
-  gem 'database_cleaner'
   gem 'shoulda-matchers'
   gem 'faker'
-
-# Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
+gem 'simple_form'
+gem 'wicked'
+gem 'foundation-datetimepicker-rails'
+gem 'jquery-ui-rails'
+gem 'database_cleaner'
+gem 'activeadmin', github: 'gregbell/active_admin'
 gem 'spring',        group: :development
 
   gem 'rails_layout', group: :development
     gem 'rspec-rails', '~> 3.0.0.beta'
 gem 'rspec-its'
-
+gem 'devise'
 # Use ActiveModel has_secure_password
 gem 'bcrypt-ruby', '3.1.2'
 

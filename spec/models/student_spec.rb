@@ -4,16 +4,16 @@ describe Student do
   it { should respond_to(:password_digest) }
   it { should respond_to(:password) }
   it { should respond_to(:password_confirmation) }
-  its(:first_name) {should be_nil}
-  it { should respond_to(:first_name) }
-  it {should respond_to(:last_name)}
+  its(:child_first_name) {should be_nil}
+  it { should respond_to(:child_first_name) }
+  it {should respond_to(:child_last_name)}
  
   it { should_not be_valid }
   	describe "a new user" do
   		let!(:new_student){FactoryGirl.create :student}
   		subject{new_student}
   		it { should be_valid }
-  		its(:first_name) {should be == "greg"}
+  		its(:child_first_name) {should be == "greg"}
   	end
   	describe "matching password success" do
   		let!(:new_student){Student.new(password: "greg", password_confirmation: "greg",email: "greg@greg.com" )}

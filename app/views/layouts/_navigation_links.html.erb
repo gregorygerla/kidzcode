@@ -1,2 +1,8 @@
 <%# add navigation links to this file %>
-    <li class="name"><%= link_to 'Join', new_student_path %></li>
+<% if current_user %>
+	<li class="name">Logged in as<%= email%></li>
+	<li class="name"><%= link_to 'Logout', session_path("current"),method:"delete" %></li>
+<% else %> 
+<li class="name"><%= link_to 'Join', new_student_path %></li>
+    <li class="name"><%= link_to "Parent's Portal", login_path %></li>
+<% end %>

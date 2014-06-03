@@ -1,0 +1,35 @@
+<div class="small-12 large-6 large-centered columns">
+<h3>Parent Sign up Form</h3>
+		<h6>Step 2: Personal Info</h6>
+		<hr>
+<%= simple_form_for @student, url: wizard_path do |student| %>
+		<%= student.label :age, "Child's Birthdate" %>
+	<%= student.text_field :age, class: "greg", value: "31.01.2000" %>
+	<%= student.error :age, class: 'error' %>
+	<%= student.label :parent_first_name, "What is your First Name" %>
+	<%= student.text_field :parent_first_name,required: true %>
+	<%= student.error :parent_first_name, class: 'error' %>
+
+	<%= student.label :parent_last_name, "What is your Last Name" %>
+	<%= student.text_field :parent_last_name,:required => true %>
+	<%= student.error :parent_last_name, class: 'error' %>
+
+	<%= student.label :child_first_name, "Child's First Name" %>
+	<%= student.text_field :child_first_name,:required => true %>
+	<%= student.error :child_first_name, class: 'error' %>
+
+	<%= student.label :child_last_name, "Child's Last Name" %>
+	<%= student.text_field :child_last_name,:required => true %>
+	<%= student.error :child_last_name, class: 'error' %>
+
+	<%= student.label :phone_number, "Phone Number" %>
+	<%= student.text_field :phone_number,:required => true %>
+	<%= student.error :phone_number, class: 'error' %>
+
+		<br>
+		<%= student.submit 'Continue',class: 'button' %>
+
+<% end %>
+</div>
+
+

@@ -1,4 +1,6 @@
-@import "foundation";
+
+@import 'foundation';
+@import 'foundation-datetimepicker';
 @mixin usefont {
 	color:white;
 	font-size:6em;line-height: 1;
@@ -32,7 +34,37 @@ $light-blue-link: #85c3dd;
 body{
 	margin:none;
 }
-
+input[type="text"],
+input[type="password"],
+input[type="date"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="month"],
+input[type="week"],
+input[type="email"],
+input[type="number"],
+input[type="search"],
+input[type="tel"],
+input[type="time"],
+input[type="url"],
+textarea {
+  -webkit-appearance: none;
+  background-color: white;
+  font-family: inherit;
+  border: 1px solid #cccccc;
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+  color: rgba(0, 0, 0, 0.75);
+  display: block;
+  font-size: 0.875rem;
+  margin: 0 0 0 0;
+  padding: 0.5rem;
+  height: 2.3125rem;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  transition: box-shadow 0.45s, border-color 0.45s ease-in-out;
+}
 .unique {
 
 	background-image: image-url("llcgirl.jpg");
@@ -74,6 +106,10 @@ main {
 img{
 	height:100px;
 }
+label,input {
+	margin-top:1rem;
+}
+small {color:white;display:block;background-color:red;}
 .row.blue {
 	 background: rgba($main-color, 0.9);  
 
