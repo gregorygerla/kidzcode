@@ -1677,3 +1677,604 @@ Processing by UserStepsController#show as HTML
   Rendered layouts/_messages.html.erb (0.1ms)
 Completed 200 OK in 12ms (Views: 5.5ms | ActiveRecord: 1.3ms)
   [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.9ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.7ms)[0m  ALTER TABLE "schema_migrations" DISABLE TRIGGER ALL;ALTER TABLE "languages" DISABLE TRIGGER ALL;ALTER TABLE "skills" DISABLE TRIGGER ALL;ALTER TABLE "students" DISABLE TRIGGER ALL
+  [1m[36m (1.4ms)[0m  [1mselect table_name from information_schema.views where table_schema = 'db/test'[0m
+  [1m[35m (19.0ms)[0m  TRUNCATE TABLE "languages", "skills", "students" RESTART IDENTITY CASCADE;
+  [1m[36m (0.2ms)[0m  [1mALTER TABLE "schema_migrations" ENABLE TRIGGER ALL;ALTER TABLE "languages" ENABLE TRIGGER ALL;ALTER TABLE "skills" ENABLE TRIGGER ALL;ALTER TABLE "students" ENABLE TRIGGER ALL[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (6.6ms)[0m  [1mINSERT INTO "languages" ("name") VALUES ($1) RETURNING "id"[0m  [["name", "Ruby"]]
+  [1m[35m (5.9ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+Started GET "/students/new" for 127.0.0.1 at 2014-06-02 21:16:49 -0500
+Processing by StudentsController#new as HTML
+  Rendered students/new.html.erb within layouts/application (278.7ms)
+  Rendered layouts/_navigation_links.html.erb (0.4ms)
+  Rendered layouts/_navigation.html.erb (1.5ms)
+  Rendered layouts/_messages.html.erb (0.3ms)
+Completed 200 OK in 309ms (Views: 290.4ms | ActiveRecord: 1.1ms)
+Started POST "/students" for 127.0.0.1 at 2014-06-02 21:16:49 -0500
+Processing by StudentsController#create as HTML
+  Parameters: {"utf8"=>"✓", "student"=>{"email"=>"g@ooo.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Continue"}
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mStudent Exists (0.4ms)[0m  [1mSELECT  1 AS one FROM "students"  WHERE "students"."email" = 'g@ooo.com' LIMIT 1[0m
+  [1m[35mSQL (6.3ms)[0m  INSERT INTO "students" ("created_at", "email", "password_digest", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", "2014-06-03 02:16:49.643315"], ["email", "g@ooo.com"], ["password_digest", "$2a$04$jcwePwnt6N2InT40FXvL2O2dgdMn.QKrR7TDrbsLmnqIIuWnQRnC6"], ["updated_at", "2014-06-03 02:16:49.643315"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://www.example.com/user_steps
+Completed 302 Found in 20ms (ActiveRecord: 7.0ms)
+Started GET "/user_steps" for 127.0.0.1 at 2014-06-02 21:16:49 -0500
+Processing by UserStepsController#index as HTML
+Redirected to http://www.example.com/user_steps/personal
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+Started GET "/user_steps/personal" for 127.0.0.1 at 2014-06-02 21:16:49 -0500
+Processing by UserStepsController#show as HTML
+  Parameters: {"id"=>"personal"}
+  [1m[35mStudent Load (0.3ms)[0m  SELECT  "students".* FROM "students"  WHERE "students"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "students".* FROM "students"  WHERE "students"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered user_steps/personal.html.erb within layouts/application (2.7ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "students".* FROM "students"  WHERE "students"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered layouts/_navigation_links.html.erb (0.6ms)
+  Rendered layouts/_navigation.html.erb (0.7ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+Completed 200 OK in 15ms (Views: 6.6ms | ActiveRecord: 1.5ms)
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+Started GET "/students/new" for 127.0.0.1 at 2014-06-02 21:16:49 -0500
+Processing by StudentsController#new as HTML
+  Rendered students/new.html.erb within layouts/application (2.7ms)
+  Rendered layouts/_navigation_links.html.erb (0.1ms)
+  Rendered layouts/_navigation.html.erb (0.3ms)
+  Rendered layouts/_messages.html.erb (0.0ms)
+Completed 200 OK in 4ms (Views: 3.8ms | ActiveRecord: 0.0ms)
+Started POST "/students" for 127.0.0.1 at 2014-06-02 21:16:49 -0500
+Processing by StudentsController#create as HTML
+  Parameters: {"utf8"=>"✓", "student"=>{"email"=>"g@ooo.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Continue"}
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mStudent Exists (0.3ms)[0m  SELECT  1 AS one FROM "students"  WHERE "students"."email" = 'g@ooo.com' LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "students" ("created_at", "email", "password_digest", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", "2014-06-03 02:16:49.701149"], ["email", "g@ooo.com"], ["password_digest", "$2a$04$U95Eq/BiUBVjYalVh.O0qugZvwK6yAXF3NxnwbmxxfZFX5wA3haWO"], ["updated_at", "2014-06-03 02:16:49.701149"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://www.example.com/user_steps
+Completed 302 Found in 4ms (ActiveRecord: 0.7ms)
+Started GET "/user_steps" for 127.0.0.1 at 2014-06-02 21:16:49 -0500
+Processing by UserStepsController#index as HTML
+Redirected to http://www.example.com/user_steps/personal
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+Started GET "/user_steps/personal" for 127.0.0.1 at 2014-06-02 21:16:49 -0500
+Processing by UserStepsController#show as HTML
+  Parameters: {"id"=>"personal"}
+  [1m[36mStudent Load (0.5ms)[0m  [1mSELECT  "students".* FROM "students"  WHERE "students"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "students".* FROM "students"  WHERE "students"."id" = $1 LIMIT 1  [["id", 2]]
+  Rendered user_steps/personal.html.erb within layouts/application (2.0ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "students".* FROM "students"  WHERE "students"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  Rendered layouts/_navigation_links.html.erb (0.6ms)
+  Rendered layouts/_navigation.html.erb (0.8ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+Completed 200 OK in 7ms (Views: 4.2ms | ActiveRecord: 0.5ms)
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.3ms)[0m  ALTER TABLE "schema_migrations" DISABLE TRIGGER ALL;ALTER TABLE "languages" DISABLE TRIGGER ALL;ALTER TABLE "skills" DISABLE TRIGGER ALL;ALTER TABLE "students" DISABLE TRIGGER ALL
+  [1m[36m (0.9ms)[0m  [1mselect table_name from information_schema.views where table_schema = 'db/test'[0m
+  [1m[35m (6.7ms)[0m  TRUNCATE TABLE "languages", "skills", "students" RESTART IDENTITY CASCADE;
+  [1m[36m (0.2ms)[0m  [1mALTER TABLE "schema_migrations" ENABLE TRIGGER ALL;ALTER TABLE "languages" ENABLE TRIGGER ALL;ALTER TABLE "skills" ENABLE TRIGGER ALL;ALTER TABLE "students" ENABLE TRIGGER ALL[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "languages" ("name") VALUES ($1) RETURNING "id"[0m  [["name", "Ruby"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+Started GET "/students/new" for 127.0.0.1 at 2014-06-02 21:17:02 -0500
+Processing by StudentsController#new as HTML
+  Rendered students/new.html.erb within layouts/application (291.8ms)
+  Rendered layouts/_navigation_links.html.erb (0.4ms)
+  Rendered layouts/_navigation.html.erb (1.3ms)
+  Rendered layouts/_messages.html.erb (0.3ms)
+Completed 200 OK in 325ms (Views: 305.7ms | ActiveRecord: 2.1ms)
+Started POST "/students" for 127.0.0.1 at 2014-06-02 21:17:02 -0500
+Processing by StudentsController#create as HTML
+  Parameters: {"utf8"=>"✓", "student"=>{"email"=>"g@ooo.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Continue"}
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mStudent Exists (0.4ms)[0m  [1mSELECT  1 AS one FROM "students"  WHERE "students"."email" = 'g@ooo.com' LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "students" ("created_at", "email", "password_digest", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", "2014-06-03 02:17:02.679447"], ["email", "g@ooo.com"], ["password_digest", "$2a$04$6DUgYAUA3CtHT5r0ZLwpqe9Va34RHTOFOsXJDLxwAkDWhrats1gr2"], ["updated_at", "2014-06-03 02:17:02.679447"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://www.example.com/user_steps
+Completed 302 Found in 11ms (ActiveRecord: 1.0ms)
+Started GET "/user_steps" for 127.0.0.1 at 2014-06-02 21:17:02 -0500
+Processing by UserStepsController#index as HTML
+Redirected to http://www.example.com/user_steps/personal
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+Started GET "/user_steps/personal" for 127.0.0.1 at 2014-06-02 21:17:02 -0500
+Processing by UserStepsController#show as HTML
+  Parameters: {"id"=>"personal"}
+  [1m[35mStudent Load (0.4ms)[0m  SELECT  "students".* FROM "students"  WHERE "students"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "students".* FROM "students"  WHERE "students"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered user_steps/personal.html.erb within layouts/application (2.6ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "students".* FROM "students"  WHERE "students"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered layouts/_navigation_links.html.erb (0.4ms)
+  Rendered layouts/_navigation.html.erb (0.6ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+Completed 200 OK in 13ms (Views: 5.8ms | ActiveRecord: 1.4ms)
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+Started GET "/students/new" for 127.0.0.1 at 2014-06-02 21:17:05 -0500
+Processing by StudentsController#new as HTML
+  Rendered students/new.html.erb within layouts/application (4.7ms)
+  Rendered layouts/_navigation_links.html.erb (0.1ms)
+  Rendered layouts/_navigation.html.erb (0.4ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+Completed 200 OK in 7ms (Views: 6.5ms | ActiveRecord: 0.0ms)
+Started GET "/assets/application.css" for 127.0.0.1 at 2014-06-02 21:17:05 -0500
+Started GET "/assets/vendor/modernizr.js" for 127.0.0.1 at 2014-06-02 21:17:05 -0500
+Started GET "/assets/application.js" for 127.0.0.1 at 2014-06-02 21:17:05 -0500
+Started POST "/students" for 127.0.0.1 at 2014-06-02 21:17:06 -0500
+Processing by StudentsController#create as HTML
+  Parameters: {"utf8"=>"✓", "student"=>{"email"=>"g@ooo.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Continue"}
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mStudent Exists (0.6ms)[0m  [1mSELECT  1 AS one FROM "students"  WHERE "students"."email" = 'g@ooo.com' LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "students" ("created_at", "email", "password_digest", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", "2014-06-03 02:17:06.036409"], ["email", "g@ooo.com"], ["password_digest", "$2a$04$malYBO2XPkIulJ6DHjWChOtmYT6h6W6PeynYvOomomPwSma91Fohy"], ["updated_at", "2014-06-03 02:17:06.036409"]]
+  [1m[36m (6.1ms)[0m  [1mCOMMIT[0m
+Redirected to http://127.0.0.1:54880/user_steps
+Completed 302 Found in 16ms (ActiveRecord: 9.8ms)
+Started GET "/user_steps" for 127.0.0.1 at 2014-06-02 21:17:06 -0500
+Processing by UserStepsController#index as HTML
+Redirected to http://127.0.0.1:54880/user_steps/personal
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+Started GET "/user_steps/personal" for 127.0.0.1 at 2014-06-02 21:17:06 -0500
+Processing by UserStepsController#show as HTML
+  Parameters: {"id"=>"personal"}
+  [1m[35mStudent Load (0.4ms)[0m  SELECT  "students".* FROM "students"  WHERE "students"."id" = $1 LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "students".* FROM "students"  WHERE "students"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  Rendered user_steps/personal.html.erb within layouts/application (1.9ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "students".* FROM "students"  WHERE "students"."id" = $1 LIMIT 1  [["id", 2]]
+  Rendered layouts/_navigation_links.html.erb (0.5ms)
+  Rendered layouts/_navigation.html.erb (0.8ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+Completed 200 OK in 6ms (Views: 3.7ms | ActiveRecord: 0.6ms)
+  [1m[36m (0.3ms)[0m  [1mALTER TABLE "schema_migrations" DISABLE TRIGGER ALL;ALTER TABLE "languages" DISABLE TRIGGER ALL;ALTER TABLE "skills" DISABLE TRIGGER ALL;ALTER TABLE "students" DISABLE TRIGGER ALL[0m
+  [1m[35m (0.8ms)[0m  select table_name from information_schema.views where table_schema = 'db/test'
+  [1m[36m (27.9ms)[0m  [1mTRUNCATE TABLE "languages", "skills", "students" RESTART IDENTITY CASCADE;[0m
+  [1m[35m (0.3ms)[0m  ALTER TABLE "schema_migrations" ENABLE TRIGGER ALL;ALTER TABLE "languages" ENABLE TRIGGER ALL;ALTER TABLE "skills" ENABLE TRIGGER ALL;ALTER TABLE "students" ENABLE TRIGGER ALL
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.3ms)[0m  ALTER TABLE "schema_migrations" DISABLE TRIGGER ALL;ALTER TABLE "languages" DISABLE TRIGGER ALL;ALTER TABLE "skills" DISABLE TRIGGER ALL;ALTER TABLE "students" DISABLE TRIGGER ALL
+  [1m[36m (0.9ms)[0m  [1mselect table_name from information_schema.views where table_schema = 'db/test'[0m
+  [1m[35m (7.0ms)[0m  TRUNCATE TABLE "languages", "skills", "students" RESTART IDENTITY CASCADE;
+  [1m[36m (0.3ms)[0m  [1mALTER TABLE "schema_migrations" ENABLE TRIGGER ALL;ALTER TABLE "languages" ENABLE TRIGGER ALL;ALTER TABLE "skills" ENABLE TRIGGER ALL;ALTER TABLE "students" ENABLE TRIGGER ALL[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "languages" ("name") VALUES ($1) RETURNING "id"[0m  [["name", "Ruby"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+Started GET "/students/new" for 127.0.0.1 at 2014-06-02 21:17:50 -0500
+Processing by StudentsController#new as HTML
+  Rendered students/new.html.erb within layouts/application (278.4ms)
+  Rendered layouts/_navigation_links.html.erb (0.4ms)
+  Rendered layouts/_navigation.html.erb (1.3ms)
+  Rendered layouts/_messages.html.erb (0.4ms)
+Completed 200 OK in 308ms (Views: 289.9ms | ActiveRecord: 1.2ms)
+Started POST "/students" for 127.0.0.1 at 2014-06-02 21:17:50 -0500
+Processing by StudentsController#create as HTML
+  Parameters: {"utf8"=>"✓", "student"=>{"email"=>"g@ooo.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Continue"}
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mStudent Exists (0.4ms)[0m  [1mSELECT  1 AS one FROM "students"  WHERE "students"."email" = 'g@ooo.com' LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "students" ("created_at", "email", "password_digest", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", "2014-06-03 02:17:50.458041"], ["email", "g@ooo.com"], ["password_digest", "$2a$04$kKbEY0Oulo4JbI4mKHQysuhYfg1US.pA1MnySp9rKEloP0vX8YiCy"], ["updated_at", "2014-06-03 02:17:50.458041"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://www.example.com/user_steps
+Completed 302 Found in 11ms (ActiveRecord: 1.0ms)
+Started GET "/user_steps" for 127.0.0.1 at 2014-06-02 21:17:50 -0500
+Processing by UserStepsController#index as HTML
+Redirected to http://www.example.com/user_steps/personal
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+Started GET "/user_steps/personal" for 127.0.0.1 at 2014-06-02 21:17:50 -0500
+Processing by UserStepsController#show as HTML
+  Parameters: {"id"=>"personal"}
+  [1m[35mStudent Load (0.3ms)[0m  SELECT  "students".* FROM "students"  WHERE "students"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "students".* FROM "students"  WHERE "students"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered user_steps/personal.html.erb within layouts/application (2.6ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "students".* FROM "students"  WHERE "students"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered layouts/_navigation_links.html.erb (0.5ms)
+  Rendered layouts/_navigation.html.erb (0.7ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+Completed 200 OK in 12ms (Views: 6.1ms | ActiveRecord: 1.4ms)
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+Started GET "/students/new" for 127.0.0.1 at 2014-06-02 21:17:52 -0500
+Processing by StudentsController#new as HTML
+  Rendered students/new.html.erb within layouts/application (4.3ms)
+  Rendered layouts/_navigation_links.html.erb (0.2ms)
+  Rendered layouts/_navigation.html.erb (0.6ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+Completed 200 OK in 8ms (Views: 6.8ms | ActiveRecord: 0.0ms)
+Started GET "/assets/application.css" for 127.0.0.1 at 2014-06-02 21:17:52 -0500
+Started GET "/assets/vendor/modernizr.js" for 127.0.0.1 at 2014-06-02 21:17:52 -0500
+Started GET "/assets/application.js" for 127.0.0.1 at 2014-06-02 21:17:52 -0500
+Started POST "/students" for 127.0.0.1 at 2014-06-02 21:17:52 -0500
+Processing by StudentsController#create as HTML
+  Parameters: {"utf8"=>"✓", "student"=>{"email"=>"g@ooo.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Continue"}
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mStudent Exists (0.5ms)[0m  [1mSELECT  1 AS one FROM "students"  WHERE "students"."email" = 'g@ooo.com' LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "students" ("created_at", "email", "password_digest", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", "2014-06-03 02:17:52.897057"], ["email", "g@ooo.com"], ["password_digest", "$2a$04$aTyOT8kYCM6F9H3jEc5XwOVuiCY5uNm6IzjUU65lWJiuOz9SeEH7m"], ["updated_at", "2014-06-03 02:17:52.897057"]]
+  [1m[36m (5.8ms)[0m  [1mCOMMIT[0m
+Redirected to http://127.0.0.1:55003/user_steps
+Completed 302 Found in 16ms (ActiveRecord: 9.4ms)
+Started GET "/user_steps" for 127.0.0.1 at 2014-06-02 21:17:52 -0500
+Processing by UserStepsController#index as HTML
+Redirected to http://127.0.0.1:55003/user_steps/personal
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+Started GET "/user_steps/personal" for 127.0.0.1 at 2014-06-02 21:17:52 -0500
+Processing by UserStepsController#show as HTML
+  Parameters: {"id"=>"personal"}
+  [1m[35mStudent Load (0.5ms)[0m  SELECT  "students".* FROM "students"  WHERE "students"."id" = $1 LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "students".* FROM "students"  WHERE "students"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  Rendered user_steps/personal.html.erb within layouts/application (2.4ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "students".* FROM "students"  WHERE "students"."id" = $1 LIMIT 1  [["id", 2]]
+  Rendered layouts/_navigation_links.html.erb (0.8ms)
+  Rendered layouts/_navigation.html.erb (1.1ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+Completed 200 OK in 8ms (Views: 4.9ms | ActiveRecord: 0.6ms)
+Started GET "/" for 127.0.0.1 at 2014-06-02 21:17:53 -0500
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.8ms)
+  [1m[36mStudent Load (0.4ms)[0m  [1mSELECT  "students".* FROM "students"  WHERE "students"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  Rendered layouts/_navigation_links.html.erb (2.0ms)
+  Rendered layouts/_navigation.html.erb (2.9ms)
+  Rendered layouts/_messages.html.erb (0.4ms)
+Completed 200 OK in 9ms (Views: 7.6ms | ActiveRecord: 0.4ms)
+Started GET "/assets/write12.svg" for 127.0.0.1 at 2014-06-02 21:17:53 -0500
+Started GET "/assets/black223.svg" for 127.0.0.1 at 2014-06-02 21:17:53 -0500
+Started GET "/assets/female188.svg" for 127.0.0.1 at 2014-06-02 21:17:53 -0500
+Started GET "/assets/llcgirl.jpg" for 127.0.0.1 at 2014-06-02 21:17:53 -0500
+Started GET "/assets/pc6.svg" for 127.0.0.1 at 2014-06-02 21:17:53 -0500
+  [1m[35m (0.3ms)[0m  ALTER TABLE "schema_migrations" DISABLE TRIGGER ALL;ALTER TABLE "languages" DISABLE TRIGGER ALL;ALTER TABLE "skills" DISABLE TRIGGER ALL;ALTER TABLE "students" DISABLE TRIGGER ALL
+  [1m[36m (1.1ms)[0m  [1mselect table_name from information_schema.views where table_schema = 'db/test'[0m
+  [1m[35m (23.5ms)[0m  TRUNCATE TABLE "languages", "skills", "students" RESTART IDENTITY CASCADE;
+  [1m[36m (0.4ms)[0m  [1mALTER TABLE "schema_migrations" ENABLE TRIGGER ALL;ALTER TABLE "languages" ENABLE TRIGGER ALL;ALTER TABLE "skills" ENABLE TRIGGER ALL;ALTER TABLE "students" ENABLE TRIGGER ALL[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.3ms)[0m  ALTER TABLE "schema_migrations" DISABLE TRIGGER ALL;ALTER TABLE "languages" DISABLE TRIGGER ALL;ALTER TABLE "skills" DISABLE TRIGGER ALL;ALTER TABLE "students" DISABLE TRIGGER ALL
+  [1m[36m (0.9ms)[0m  [1mselect table_name from information_schema.views where table_schema = 'db/test'[0m
+  [1m[35m (5.9ms)[0m  TRUNCATE TABLE "languages", "skills", "students" RESTART IDENTITY CASCADE;
+  [1m[36m (0.2ms)[0m  [1mALTER TABLE "schema_migrations" ENABLE TRIGGER ALL;ALTER TABLE "languages" ENABLE TRIGGER ALL;ALTER TABLE "skills" ENABLE TRIGGER ALL;ALTER TABLE "students" ENABLE TRIGGER ALL[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "languages" ("name") VALUES ($1) RETURNING "id"[0m  [["name", "Ruby"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mStudent Exists (0.4ms)[0m  SELECT  1 AS one FROM "students"  WHERE "students"."email" IS NULL LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.0ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mStudent Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "students"  WHERE "students"."email" = 'greg@greg.com' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mStudent Exists (0.2ms)[0m  SELECT  1 AS one FROM "students"  WHERE "students"."email" = 'greg@greg.com' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mStudent Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "students"  WHERE "students"."email" = 'greg@greg.com' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.3ms)[0m  ALTER TABLE "schema_migrations" DISABLE TRIGGER ALL;ALTER TABLE "languages" DISABLE TRIGGER ALL;ALTER TABLE "skills" DISABLE TRIGGER ALL;ALTER TABLE "students" DISABLE TRIGGER ALL
+  [1m[36m (0.9ms)[0m  [1mselect table_name from information_schema.views where table_schema = 'db/test'[0m
+  [1m[35m (4.1ms)[0m  TRUNCATE TABLE "languages", "skills", "students" RESTART IDENTITY CASCADE;
+  [1m[36m (0.2ms)[0m  [1mALTER TABLE "schema_migrations" ENABLE TRIGGER ALL;ALTER TABLE "languages" ENABLE TRIGGER ALL;ALTER TABLE "skills" ENABLE TRIGGER ALL;ALTER TABLE "students" ENABLE TRIGGER ALL[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "languages" ("name") VALUES ($1) RETURNING "id"[0m  [["name", "Ruby"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mStudent Exists (0.4ms)[0m  SELECT  1 AS one FROM "students"  WHERE "students"."email" IS NULL LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mStudent Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "students"  WHERE "students"."email" = 'greg@greg.com' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mStudent Exists (0.2ms)[0m  SELECT  1 AS one FROM "students"  WHERE "students"."email" = 'greg@greg.com' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mStudent Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "students"  WHERE "students"."email" = 'greg@greg.com' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.3ms)[0m  ALTER TABLE "schema_migrations" DISABLE TRIGGER ALL;ALTER TABLE "languages" DISABLE TRIGGER ALL;ALTER TABLE "skills" DISABLE TRIGGER ALL;ALTER TABLE "students" DISABLE TRIGGER ALL
+  [1m[36m (0.9ms)[0m  [1mselect table_name from information_schema.views where table_schema = 'db/test'[0m
+  [1m[35m (5.8ms)[0m  TRUNCATE TABLE "languages", "skills", "students" RESTART IDENTITY CASCADE;
+  [1m[36m (0.2ms)[0m  [1mALTER TABLE "schema_migrations" ENABLE TRIGGER ALL;ALTER TABLE "languages" ENABLE TRIGGER ALL;ALTER TABLE "skills" ENABLE TRIGGER ALL;ALTER TABLE "students" ENABLE TRIGGER ALL[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "languages" ("name") VALUES ($1) RETURNING "id"[0m  [["name", "Ruby"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.0ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.0ms)[0m  COMMIT
+  [1m[36m (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35mStudent Exists (0.4ms)[0m  SELECT  1 AS one FROM "students"  WHERE "students"."email" IS NULL LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mStudent Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "students"  WHERE "students"."email" = 'greg@greg.com' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mStudent Exists (0.2ms)[0m  SELECT  1 AS one FROM "students"  WHERE "students"."email" = 'greg@greg.com' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mStudent Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "students"  WHERE "students"."email" = 'greg@greg.com' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.3ms)[0m  ALTER TABLE "schema_migrations" DISABLE TRIGGER ALL;ALTER TABLE "languages" DISABLE TRIGGER ALL;ALTER TABLE "skills" DISABLE TRIGGER ALL;ALTER TABLE "students" DISABLE TRIGGER ALL
+  [1m[36m (0.9ms)[0m  [1mselect table_name from information_schema.views where table_schema = 'db/test'[0m
+  [1m[35m (5.1ms)[0m  TRUNCATE TABLE "languages", "skills", "students" RESTART IDENTITY CASCADE;
+  [1m[36m (0.2ms)[0m  [1mALTER TABLE "schema_migrations" ENABLE TRIGGER ALL;ALTER TABLE "languages" ENABLE TRIGGER ALL;ALTER TABLE "skills" ENABLE TRIGGER ALL;ALTER TABLE "students" ENABLE TRIGGER ALL[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "languages" ("name") VALUES ($1) RETURNING "id"[0m  [["name", "Ruby"]]
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36m (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mStudent Exists (0.4ms)[0m  SELECT  1 AS one FROM "students"  WHERE "students"."email" IS NULL LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mStudent Exists (0.2ms)[0m  SELECT  1 AS one FROM "students"  WHERE "students"."email" = 'greg@greg.com' LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "students" ("child_first_name", "created_at", "email", "password_digest", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["child_first_name", "greg"], ["created_at", "2014-06-03 02:19:42.655524"], ["email", "greg@greg.com"], ["password_digest", "$2a$04$qGjO0M4TzQX4irCqsmGqYesqXYajelVDBro8gX8E6dz3aQZ05d79C"], ["updated_at", "2014-06-03 02:19:42.655524"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mStudent Exists (0.5ms)[0m  [1mSELECT  1 AS one FROM "students"  WHERE ("students"."email" = 'greg@greg.com' AND "students"."id" != 1) LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mStudent Exists (0.4ms)[0m  [1mSELECT  1 AS one FROM "students"  WHERE "students"."email" = 'greg@greg.com' LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "students" ("child_first_name", "created_at", "email", "password_digest", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["child_first_name", "greg"], ["created_at", "2014-06-03 02:19:42.663892"], ["email", "greg@greg.com"], ["password_digest", "$2a$04$ykTZsYuyVlu514PIhszVaORz9v60awkqnPQXQfA/oai/Uq5o0Bpky"], ["updated_at", "2014-06-03 02:19:42.663892"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mStudent Exists (0.2ms)[0m  SELECT  1 AS one FROM "students"  WHERE "students"."email" = 'greg@greg.com' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mStudent Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "students"  WHERE "students"."email" = 'greg@greg.com' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mStudent Exists (0.1ms)[0m  SELECT  1 AS one FROM "students"  WHERE "students"."email" = 'greg@greg.com' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mStudent Exists (0.2ms)[0m  SELECT  1 AS one FROM "students"  WHERE "students"."email" = 'greg@greg.com' LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "students" ("child_first_name", "created_at", "email", "password_digest", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["child_first_name", "greg"], ["created_at", "2014-06-03 02:19:42.681039"], ["email", "greg@greg.com"], ["password_digest", "$2a$04$jgNDSnOhojdUVI0patMfLOU96KApUPquNZ0oD2CHaxF2IUnDFw1zq"], ["updated_at", "2014-06-03 02:19:42.681039"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mStudent Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "students"  WHERE "students"."email" = 'greg@greg.com' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.3ms)[0m  ALTER TABLE "schema_migrations" DISABLE TRIGGER ALL;ALTER TABLE "languages" DISABLE TRIGGER ALL;ALTER TABLE "skills" DISABLE TRIGGER ALL;ALTER TABLE "students" DISABLE TRIGGER ALL
+  [1m[36m (0.9ms)[0m  [1mselect table_name from information_schema.views where table_schema = 'db/test'[0m
+  [1m[35m (6.5ms)[0m  TRUNCATE TABLE "languages", "skills", "students" RESTART IDENTITY CASCADE;
+  [1m[36m (0.2ms)[0m  [1mALTER TABLE "schema_migrations" ENABLE TRIGGER ALL;ALTER TABLE "languages" ENABLE TRIGGER ALL;ALTER TABLE "skills" ENABLE TRIGGER ALL;ALTER TABLE "students" ENABLE TRIGGER ALL[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "languages" ("name") VALUES ($1) RETURNING "id"[0m  [["name", "Ruby"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mStudent Exists (0.4ms)[0m  SELECT  1 AS one FROM "students"  WHERE "students"."email" IS NULL LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mStudent Exists (0.2ms)[0m  SELECT  1 AS one FROM "students"  WHERE "students"."email" = 'greg@greg.com' LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "students" ("child_first_name", "created_at", "email", "password_digest", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["child_first_name", "greg"], ["created_at", "2014-06-03 02:21:27.929486"], ["email", "greg@greg.com"], ["password_digest", "$2a$04$YhHW7Ig6zxl7IXTDJVu0xeG10faTF/BXoMKzC0rD8LgQ4zFW02eQq"], ["updated_at", "2014-06-03 02:21:27.929486"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mStudent Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "students"  WHERE ("students"."email" = 'greg@greg.com' AND "students"."id" != 1) LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mStudent Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "students"  WHERE "students"."email" = 'greg@greg.com' LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "students" ("child_first_name", "created_at", "email", "password_digest", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["child_first_name", "greg"], ["created_at", "2014-06-03 02:21:27.935671"], ["email", "greg@greg.com"], ["password_digest", "$2a$04$vQagz7IWWX9F8TCwiK4eBukwdXOVnhOChpJz/8fBnEFXECWfp7CfK"], ["updated_at", "2014-06-03 02:21:27.935671"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mStudent Exists (0.2ms)[0m  SELECT  1 AS one FROM "students"  WHERE "students"."email" = 'greg@greg.com' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mStudent Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "students"  WHERE "students"."email" = 'greg@greg.com' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mStudent Exists (0.2ms)[0m  SELECT  1 AS one FROM "students"  WHERE "students"."email" = 'greg@greg.com' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mStudent Exists (0.2ms)[0m  SELECT  1 AS one FROM "students"  WHERE "students"."email" = 'greg@greg.com' LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "students" ("child_first_name", "created_at", "email", "password_digest", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["child_first_name", "greg"], ["created_at", "2014-06-03 02:21:27.950247"], ["email", "greg@greg.com"], ["password_digest", "$2a$04$HfqQUgoM92obGva4ZMPfneYgXyEqKB/8BN4N6S6D7bsxTUPh1bIjW"], ["updated_at", "2014-06-03 02:21:27.950247"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mStudent Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "students"  WHERE "students"."email" = 'greg@greg.com' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK

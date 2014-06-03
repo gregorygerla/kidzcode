@@ -6,19 +6,19 @@
 		<%= student.label :age, "Child's Birthdate" %>
 	<%= student.text_field :age, class: "greg", value: "31.01.2000" %>
 	<%= student.error :age, class: 'error' %>
-	<%= student.label :parent_first_name, "What is your(parent/guardian) First Name" %>
+	<%= student.label :parent_first_name, "What is your First Name" %>
 	<%= student.text_field :parent_first_name,required: true %>
 	<%= student.error :parent_first_name, class: 'error' %>
 
-	<%= student.label :parent_last_name, "What is your(parent/guardian) Last Name" %>
+	<%= student.label :parent_last_name, "What is your Last Name" %>
 	<%= student.text_field :parent_last_name,:required => true %>
 	<%= student.error :parent_last_name, class: 'error' %>
 
-	<%= student.label :child_first_name, "Your child's First Name" %>
+	<%= student.label :child_first_name, "Child's First Name" %>
 	<%= student.text_field :child_first_name,:required => true %>
 	<%= student.error :child_first_name, class: 'error' %>
 
-	<%= student.label :child_last_name, "Your child's Last Name" %>
+	<%= student.label :child_last_name, "Child's Last Name" %>
 	<%= student.text_field :child_last_name,:required => true %>
 	<%= student.error :child_last_name, class: 'error' %>
 
