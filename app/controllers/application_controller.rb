@@ -1,7 +1,11 @@
 class ApplicationController < ActionController::Base
   	include Authentication
 def current
-    @student ||= Student.find(session[:student_id]) if session[:student_id]
+
+    
+    @current_user ||= session[:student_id] && Student.find_by_id(session[:student_id]) 
+ 
+    @current_user
   end
   helper_method :current_user,:email,:current
   # Prevent CSRF attacks by raising an exception.

@@ -1,6 +1,8 @@
 module Authentication
     def current_user
-    @student ||= Student.find(session[:student_id]) if session[:student_id]
+     @current_user ||= session[:student_id] && Student.find_by_id(session[:student_id]) 
+ 
+    @current_user
   end
 
   	def email
