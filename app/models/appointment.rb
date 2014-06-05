@@ -1,6 +1,7 @@
 class Appointment < ActiveRecord::Base
-
-validates :date,  :presence => true
-validates :hour,  :presence => true,
-                  :uniqueness => {:scope => :date}
+belongs_to :student
+# validates :date,  :presence => true
+# validates :hour,  :presence => true,
+#                   :uniqueness => {:scope => :date}
+accepts_nested_attributes_for :student
 end

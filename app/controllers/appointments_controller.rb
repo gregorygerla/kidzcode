@@ -9,25 +9,17 @@ def index
 end
 
 def new
-  @appointments = Appointment.create
-    respond_to do |format|
-      format.html
-      format.js
-      end
-   end
+  p params
+  p "asdfafd"
+end
  
 
 def create
-   @appointment = Appointment.create(params[:appointments])
-    if @appointment.save
-      redirect_to new_appointment_path
-    else
-      err = ''
-      @appointment.errors.full_messages.each do |m|
-      err << m
-    end
-
-      redirect_to new_appointment_path, :flash => { :alert => "#{err}, please try again" }
-    end
-  end
+   p session[:student_id]
+   p params
+  @appointment = Appointment.create(done:"false",date: params[:date],hour:params[:time],student_id: session[:student_id])
+  p "the appointment"
+  p @appointment
+  p @appointment
+end
 end

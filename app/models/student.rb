@@ -1,8 +1,11 @@
 	require 'bcrypt'
 class Student < ActiveRecord::Base 
 	has_many :skills
+	has_many :appointments
 	has_many :languages, through: :skills
 	accepts_nested_attributes_for :skills
+	accepts_nested_attributes_for :appointments
+
 
 	has_secure_password
 	validates :email, :presence => { :message => "Email cannot be blank" }

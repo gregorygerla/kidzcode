@@ -18,6 +18,8 @@ class StudentsController < ApplicationController
 	end
 
 	def show
+     @time = Time.now 
+     @greg = 2
 	end
 	def login
 

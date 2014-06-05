@@ -4,6 +4,7 @@ class CreateAppointments < ActiveRecord::Migration
     	t.date     :date
     	t.datetime :hour
     	t.boolean :done
+    	t.belongs_to :student
     end
   end
 end
