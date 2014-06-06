@@ -7,10 +7,6 @@
 	<%= student.text_field :age, class: "greg", value: "31.01.2000" %>
 	<%= student.error :age, class: 'error' %>
 
-	<%= student.label :parent_last_name, "What is your Last Name" %>
-	<%= student.text_field :parent_last_name,:required => true %>
-	<%= student.error :parent_last_name, class: 'error' %>
-
 	<%= student.label :child_first_name, "Child's First Name" %>
 	<%= student.text_field :child_first_name,:required => true %>
 	<%= student.error :child_first_name, class: 'error' %>
