@@ -18,8 +18,7 @@ def create
    p session[:student_id]
    p params
   @appointment = Appointment.create(done:"false",date: params[:date],hour:params[:time],student_id: session[:student_id])
-  p "the appointment"
-  p @appointment
-  p @appointment
+  @appointments = current_user.appointments
+  render partial: 'greg'
 end
 end

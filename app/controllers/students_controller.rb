@@ -18,6 +18,8 @@ class StudentsController < ApplicationController
 	end
 
 	def show
+	 @appointments = current_user.appointments
+	# p  @appointments.last.hour.strftime('%A')
      @time = Time.now 
      @greg = 2
 	end

@@ -1,7 +1,7 @@
 module CalendarHelper 
 	def weeks
 		today = Date.today
-		week = Date.today+5
+		week = Date.today+11
 	 	@this_week = (today..week).to_a
 	return @this_week
 	end

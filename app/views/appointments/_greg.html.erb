@@ -1,0 +1,8 @@
+<div class="row">
+<h1>Here are your upcoming sessions</h1>
+<ol>
+<% @appointments.each do |t| %>
+	<li><%= t.hour.strftime('%A') %>, <%= t.date %> At <%= t.hour.strftime('%I %p') %></li>
+	<% end %>
+</ol>
+</div>

@@ -46,8 +46,9 @@ ApplicationView.prototype = {
   			type: 'POST'
 			
 		})
-		.done(function(){
-			console.log("dfgss")
+		.done(function(data){
+			$('.appointments').hide()
+			$('.upcoming').html(data)
 		})
 	},
 	increaseSkill : function(e){
@@ -93,27 +94,34 @@ ApplicationController.prototype = {
 	},
 	pickSlot : function(e) {
 		e.preventDefault();
+		$('.book_appt').show()
 		parent = $(this).parent().parent()
 		parent.find('a').css('background-color','#00759C')
 		$( this ).css( "background-color", "green" )
+		applicationModel.appointmentTime.pop(1)
 		applicationModel.appointmentTime.push($(this).attr("data"))
-
+		$('.book_header').html("Confirm for "+applicationModel.appointmentDay+" at "+applicationModel.appointmentTime+"?")
 	},
 	updateSkill : function(e){
-		
+		e.preventDefault();
 		this.applicationView.increaseSkill(e)
 	},
 	showTimes : function(e){
+		debugger;
 		e.preventDefault();
 		parent = $(this).parent().parent()
 		parent.find('a').css('background-color','#00759C')
 		
 		$( this ).css( "background-color", "green" )
+
+		applicationModel.appointmentDay.pop(1)
 		applicationModel.appointmentDay.push($(this).attr("data"))
+
 		console.log($(this).attr("data"))
 		$('.day').show()
 	},
 	bookAppointment : function(e) {
+		e.preventDefault()
 		this.applicationView.ajaxAppointment(e)
 	}
 }
