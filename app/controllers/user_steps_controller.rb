@@ -19,7 +19,7 @@ class UserStepsController < ApplicationController
 	private
 
 	def person_params
-      params.require(:student).permit(:phone_number,:student_first_name,:student_last_name,:age,:language)
+      params.require(:student).permit(:phone_number,:parent_first_name,:parent_last_name,:student_first_name,:student_last_name,:age,:language)
     end
 
     def finish_wizard_path
