@@ -93,13 +93,15 @@ ApplicationController.prototype = {
 		$('.book').on('click',this.bookAppointment.bind(this))
 	},
 	pickSlot : function(e) {
+		console.log("Asdfadf")
 		e.preventDefault();
 		$('.book_appt').show()
 		parent = $(this).parent().parent()
 		parent.find('a').css('background-color','#00759C')
 		$( this ).css( "background-color", "green" )
 		applicationModel.appointmentTime.pop(1)
-		applicationModel.appointmentTime.push($(this).attr("data"))
+		applicationModel.appointmentTime.push($(this).attr("data"));
+		
 		$('.book_header').html("Confirm for "+applicationModel.appointmentDay+" at "+applicationModel.appointmentTime+"?")
 	},
 	updateSkill : function(e){
@@ -107,13 +109,13 @@ ApplicationController.prototype = {
 		this.applicationView.increaseSkill(e)
 	},
 	showTimes : function(e){
-		debugger;
+
 		e.preventDefault();
 		parent = $(this).parent().parent()
 		parent.find('a').css('background-color','#00759C')
 		
 		$( this ).css( "background-color", "green" )
-
+		$('.book_header').html("Confirm for "+applicationModel.appointmentDay+" at "+applicationModel.appointmentTime+"?")
 		applicationModel.appointmentDay.pop(1)
 		applicationModel.appointmentDay.push($(this).attr("data"))
 

@@ -23,6 +23,6 @@ class UserStepsController < ApplicationController
     end
 
     def finish_wizard_path
-    	'/students/new'
+    	student_path(current_user.id)
     end
 end
