@@ -26,7 +26,7 @@ gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0',          group: :doc
 gem 'capybara'
 gem 'heroku-deflater', :group => :production
-
+gem 'jquery-turbolinks'
   gem 'selenium-webdriver'
   gem 'shoulda-matchers'
   gem 'faker'
