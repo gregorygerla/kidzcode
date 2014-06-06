@@ -56,7 +56,9 @@ Rails.application.routes.draw do
   #     resources :products
   #   end
   get 'log_in' => 'sessions#new', :as => "login"
-  resources :students, :only => [:new,:create,:show,:info]
+  resources :students, :only => [:new,:create,:show,:info] do 
+      resources :appointments
+  end
   resources :sessions, :only => [:new,:create,:destroy]
   namespace :admin do
     resources :students, :only => [:index,:show,:update]

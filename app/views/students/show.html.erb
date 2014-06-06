@@ -1,1 +1,30 @@
-<h1>thank you for your interest</h1>
+<div class="upcoming"></div>
+<div class="row appointments"> 
+	<div class="row">
+		<br>
+		<h1>What day can you come in?</h1>
+
+		<ul class="button-group">
+		<% weeks.each do |t| %>
+		  <li><a href="#" class="button picker" dataval="off" data="<%= t %>"><%= t.strftime('%A')%><br><%= t %></a></li>
+			<% end %>
+		</ul>
+	</div>
+
+	<div class="row day">
+		<h1>What time works for you?</h1>
+		
+		<ul class="button-group">
+		<% appointments.each do |t| %>
+		 <li><a href="#" class="button timeslot" dataval="off" data="<%= t %>"><%= t %></a></li>
+		<% end %>
+		</ul>
+	</div>
+	<div class="row">
+	<div class="book_appt">
+		<h1 class="book_header"></h1>
+	<button class="book">Book</button>
+	</div>
+	</div>
+</div>
+

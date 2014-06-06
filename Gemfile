@@ -37,7 +37,7 @@ gem 'jquery-ui-rails'
 gem 'database_cleaner'
 gem 'activeadmin', github: 'gregbell/active_admin'
 gem 'spring',        group: :development
-
+gem 'appointments'
   gem 'rails_layout', group: :development
     gem 'rspec-rails', '~> 3.0.0.beta'
 gem 'rspec-its'
